@@ -41,4 +41,6 @@
     </div>
 </div>
 
-{% include homepage/sponsor_block.html %}
+{% if site.data.conf.show-sponsors %}
+    {% include homepage/sponsor_block.html %}
+{% endif %}

@@ -2,10 +2,10 @@
 # "Global" Vars
 ###########
 
-year: 2020
-hashtag: 'c4l20'
-location: 'Pittsburgh, Pennsylvania'
-hero-image-alt: "Daytime photo of Pittsburgh downtown area with gray clouds framed by yellow bridges"
+year: 2021
+hashtag: 'c4l21'
+location: ''
+hero-image-alt: ''
 
 search: false
 
@@ -15,49 +15,52 @@ search: false
 # These booleans affect the main menu links in the ways described below, as well
 # as displays in a few other places.
 # if true Speakers link -> /speakers/, if false -> /speakers/past-keynotes
-have-talks: true
-have-workshops: true
+have-talks: false
+have-workshops: false
 # if true Schedule link -> /schedule/, if false -> /schedule/timeline
-have-schedule: true
+have-schedule: false
 
 # day 0 = preconf day
 days:
-  - weekday: Sunday
-    date: March 8th
-    # date in a form that JS Date() constructor understands
-    date-data: 2020-03-08T23:59
   - weekday: Monday
-    date: March 9th
-    date-data: 2020-03-09T23:59
+    date: March 22nd
+    # date in a form that JS Date() constructor understands
+    date-data: 2021-03-22T23:59
   - weekday: Tuesday
-    date: March 10th
-    date-data: 2020-03-10T23:59
+    date: March 23rd
+    date-data: 2021-03-23T23:59
   - weekday: Wednesday
-    date: March 11th
-    date-data: 2020-03-11T23:59
+    date: March 24th
+    date-data: 2021-03-24T23:59
+  - weekday: Thursday
+    date: March 25th
+    date-data: 2021-03-25T23:59
+  - weekday: Friday
+    date: March 26th
+    date-data: 2021-03-26T23:59
 
 #############################
 # Venue Information
 ####################
 
 #Short Form for location
-city-state: 'Pittsburgh PA'
-city: 'Pittsburgh'
-state: 'PA'
+city-state: ''
+city: ''
+state: ''
 
 venue:
-    name: 'The Westin Pittsburgh'
-    street: '1000 Penn Avenue'
-    postal-code:  '15222'
-    phone: '+1(412)281-3700'
-    image: '/assets/img/venues/westin.jpg'
-    website: 'https://www.marriott.com/hotels/travel/pitwi-the-westin-pittsburgh/'
-    floorplan: 'https://www.marriott.com/hotels/event-planning/business-meeting/pitwi-the-westin-pittsburgh/#FloorplanLayoutf689'
-    directions: 'https://www.marriott.com/hotels/maps/travel/pitwi-the-westin-pittsburgh/'
-    a11y: 'https://www.marriott.com/hotels/fact-sheet/travel/pitwi-the-westin-pittsburgh/'
-    cost: "$159"
-    with-tax-cost: "$181.26"
-    cost-cutoff-date: 2020-02-14
+    name: ''
+    street: ''
+    postal-code: ''
+    phone: ''
+    image: ''
+    website: ''
+    floorplan: ''
+    directions: ''
+    a11y: ''
+    cost: ''
+    with-tax-cost: ''
+    cost-cutoff-date: 2021-01-01
 
 #############################
 # C4l Links
@@ -73,16 +76,16 @@ social-links:
 # Various Emails/contact info
 #############################
 
-main-conf-email: "code4lib@concentra-cms.com"
-sponsor-contact-email: "code4lib.sponsorship@gmail.com"
-scholarship-contact-email: "code4libaward@gmail.com"
-workshop-contact-email: "jglenn@andrew.cmu.edu"
-lpc-contact-email: "code4liblpc@gmail.com"
-accessibility-email: "code4lib.accessibility@gmail.com"
+main-conf-email: 'code4lib@concentra-cms.com'
+sponsor-contact-email: 'code4lib.sponsorship@gmail.com'
+scholarship-contact-email: 'code4libaward@gmail.com'
+workshop-contact-email: ''
+lpc-contact-email: 'code4liblpc@gmail.com'
+accessibility-email: 'code4lib.accessibility@gmail.com'
 # when empty, community support volunteers page will use main-conf-email
-duty-officer-email: "c4lcommunitysupport@googlegroups.com"
-duty-officer-phone: "734-707-1817"
-anonymous-form: "https://css4csv.clir.org/anonymous-incident-report-form/"
+duty-officer-email: 'c4lcommunitysupport@googlegroups.com'
+duty-officer-phone: ''
+anonymous-form: 'https://css4csv.clir.org/anonymous-incident-report-form/'
 
 ###################
 # Homepage section
@@ -93,48 +96,53 @@ anonymous-form: "https://css4csv.clir.org/anonymous-incident-report-form/"
 # - post:   for after the conference is over (TODO: we never made this template!)
 #
 ####################
-homepage-display: post
+homepage-display: pre
 
 livestream:
-  show: true
-  url: "https://www.youtube.com/c/code4lib/live"
+  show: false
+  url: 'https://www.youtube.com/c/code4lib/live'
 
 slides:
-  show: true
-  url: "https://osf.io/meetings/c4l20/"
-  contact: ""
-  email: ""
+  show: false
+  url: 'https://osf.io/meetings/c4l21/'
+  contact: ''
+  email: ''
 
 closed-captioning:
-  url: "https://2020archive.1capapp.com/event/cod4lib/"
-  show: true
+  url: 'https://2021archive.1capapp.com/event/cod4lib/'
+  show: false
 
 # Peri display descriptions and titles
 peri:
-  day1-am-title: "Preconference Workshops"
-  day1-am-desc: "Half and full-day workshops about tech, diversity, and more!"
-  day1-pm-title: "Newcomer Dinner"
-  day1-pm-desc: "It is a Code4Lib tradition to welcome those who are new to the conference"
-  day2-am-title: "Conference, Day 1"
-  day2-am-desc: "Keynote #1 kicks off the conference then talks until 5"
-  day2-pm-title: "Reception"
-  day2-pm-desc: "Join us for the reception at the Carnegie Museum of Pittsburgh"
-  day3-am-title: "Conference, Day 2"
+  day1-am-title: "Conference, Day 1"
+  day1-am-desc: "Keynote #1 kicks off the conference then talks until 5"
+  day1-pm-title: "Reception"
+  day1-pm-desc: "Join us for the reception at the Carnegie Museum of Pittsburgh"
+  day2-am-title: "Conference, Day 2"
+  day2-am-desc: "Talks until 5"
+  day2-pm-title: "Game Night"
+  day2-pm-desc: "Come join fellow code4libers in a few board or card games"
+  day3-am-title: "Conference, Day 3"
   day3-am-desc: "Talks until 5"
-  day3-pm-title: "Game Night"
-  day3-pm-desc: "Come join fellow code4libers in a few board or card games"
-  day4-am-title: "Conference, Day 3"
-  day4-am-desc: "Keynote #2 closes the conference then talks until 12:30"
+  day3-pm-title: "Social Event"
+  day3-pm-desc: "Lots of folks having fun"
+  day4-am-title: "Conference, Day 4"
+  day4-am-desc: "Talks until 5"
+  day4-pm-title: "Newcomer Dinner"
+  day4-pm-desc: "It is a Code4Lib tradition to welcome those who are new to the conference"
+  day5-am-title: "Conference, Day 5"
+  day5-am-desc: "Workshops"
 
 ###########
 # Sponsors
 ###########
 
+show-sponsors: false
 # If true, any "Sponsors" links will go to /prospectus instead of /sponsors
 call-for-sponsors: false
 homepage-sponsor-button: false
 # URL to document
-prospectus-document: '/assets/2020_c4l_Infosheet.pdf'
+prospectus-document: '/assets/2021_c4l_Infosheet.pdf'
 sponsor-btn-link: 'https://na.eventscloud.com/sponsor.c4l20'
 
 ##########
@@ -148,38 +156,38 @@ sponsor-btn-link: 'https://na.eventscloud.com/sponsor.c4l20'
 
 keynote-proposals:
   show: false
-  submission-form: "https://wiki.code4lib.org/2020_Keynote_Speakers_Nominations"
-  end-date: "2019-11-04"
+  submission-form: 'https://wiki.code4lib.org/2021_Keynote_Speakers_Nominations'
+  end-date: '2020-11-04'
 
 workshop-proposals:
   show: false
-  submission-form: "https://docs.google.com/forms/d/e/1FAIpQLScx95r2tJExNVDkBOdKdKe2jKij7lHhTcja7aXgDS1z9mmFPQ/viewform"
-  end-date: "2019-10-04"
+  submission-form: 'https://docs.google.com/forms/d/e/1FAIpQLScx95r2tJExNVDkBOdKdKe2jKij7lHhTcja7aXgDS1z9mmFPQ/viewform'
+  end-date: '2020-10-04'
 
 talk-proposals:
   show: false
-  submission-form: "https://docs.google.com/forms/d/e/1FAIpQLSehrUxXxcc_jPE_OwiY7Ou0mG0bgU2FIZeB7_F1B0DG8PQaEA/viewform"
-  end-date: "2019-10-16"
+  submission-form: 'https://docs.google.com/forms/d/e/1FAIpQLSehrUxXxcc_jPE_OwiY7Ou0mG0bgU2FIZeB7_F1B0DG8PQaEA/viewform'
+  end-date: '20120-10-16'
 
 panel-proposals:
   show: false
-  submission-form: ""
-  end-date: ""
+  submission-form: ''
+  end-date: ''
 
 poster-proposals:
   show: false
-  submission-form: "https://forms.gle/Jae5hWSZwVQFtzuK7"
-  end-date: "2019-12-06"
+  submission-form: 'https://forms.gle/Jae5hWSZwVQFtzuK7'
+  end-date: '2020-12-06'
 
 shirt-proposals:
   show: false
-  submission-form: "https://wiki.code4lib.org/2019_Code4Lib_T-Shirt_Design_Competition"
-  end-date: "2018-11-15"
+  submission-form: 'https://wiki.code4lib.org/2019_Code4Lib_T-Shirt_Design_Competition'
+  end-date: '2020-11-15'
 
 host-proposals:
   show: false
-  submission-form: "https://wiki.code4lib.org/2019_Hosting_Proposals"
-  end-date: "2018-02-23"
+  submission-form: 'https://wiki.code4lib.org/2019_Hosting_Proposals'
+  end-date: '2020-02-23'
 
 ###########
 # Voting
@@ -187,104 +195,104 @@ host-proposals:
 
 keynote-voting:
   show: false
-  url: "https://forms.gle/uDaMVX9nopjjNh5Y8"
-  end-date: "2019-12-02"
+  url: 'https://forms.gle/uDaMVX9nopjjNh5Y8'
+  end-date: '2019-12-02'
 
 workshop-voting:
   show: false
-  url: "https://docs.google.com/forms/d/e/1FAIpQLSfEAwmP9Wnrk2aXLgfEpnk0zS3W8M4rukx_DL3tCeaMjqHwdg/viewform"
-  end-date: "2019-11-19"
+  url: 'https://docs.google.com/forms/d/e/1FAIpQLSfEAwmP9Wnrk2aXLgfEpnk0zS3W8M4rukx_DL3tCeaMjqHwdg/viewform'
+  end-date: '2019-11-19'
 
 talk-voting:
   show: false
-  url: "https://forms.gle/DuNEqZ5gGtvmDtUZ8"
-  end-date: "2019-11-01"
+  url: 'https://forms.gle/DuNEqZ5gGtvmDtUZ8'
+  end-date: '2019-11-01'
 
 panel-voting:
   show: false
-  url: ""
+  url: ''
   end-date:
 
 poster-voting:
   show: false
-  url: "https://goo.gl/tM4JJq"
-  end-date: "2018-11-29"
+  url: 'https://goo.gl/tM4JJq'
+  end-date: '2018-11-29'
 
 shirt-voting:
   show: false
-  url: "https://goo.gl/forms/Bgo590LPEhjfJGkT2"
-  end-date: "2018-12-07"
+  url: 'https://goo.gl/forms/Bgo590LPEhjfJGkT2'
+  end-date: '2018-12-07'
 
 ##################
 # Schedule events
 ##################
 
 # usually on the wiki
-social-activities-url: ""
+social-activities-url: ''
 
 newcomer-dinner:
-    show: true
+    show: false
     # entering the URL doubles as a "show more info" switch, too
-    signup-url: "https://docs.google.com/document/d/1XCql9YgWydMluKfeAN9veDfms8u38shzE2wLlym179I/edit#heading=h.vmyysg627xj7"
-    transit-info: "https://docs.google.com/document/d/1vOgMNG0kOaPdsvnjNLld5xlK7pLKZPYzytp7u14MRnQ/edit"
-    activities-info: "https://www.google.com/maps/d/viewer?mid=1RI4SjmFkzoYX1k5cUgTlJ5zzjHQeAhui&ll=40.44383527823009%2C-79.9586392&z=14"
-    date: "2020-03-08"
+    signup-url: 'https://docs.google.com/document/d/1XCql9YgWydMluKfeAN9veDfms8u38shzE2wLlym179I/edit#heading=h.vmyysg627xj7'
+    transit-info: 'https://docs.google.com/document/d/1vOgMNG0kOaPdsvnjNLld5xlK7pLKZPYzytp7u14MRnQ/edit'
+    activities-info: 'https://www.google.com/maps/d/viewer?mid=1RI4SjmFkzoYX1k5cUgTlJ5zzjHQeAhui&ll=40.44383527823009%2C-79.9586392&z=14'
+    date: '2020-03-08'
 
 game-night:
-    show: true
-    url: "https://docs.google.com/spreadsheets/d/1QBJPChuIionq3wT_OaToQJ_eAuFpgWRWnxHvVqBLnjY/edit?usp=sharing"
-    date: "2020-03-10"
-    time: "7:30PM to 10:30PM"
-    location: "Bill’s Bar & Burger (in the Conference Hotel)"
+    show: false
+    url: 'https://docs.google.com/spreadsheets/d/1QBJPChuIionq3wT_OaToQJ_eAuFpgWRWnxHvVqBLnjY/edit?usp=sharing'
+    date: '2020-03-10'
+    time: '7:30PM to 10:30PM'
+    location: 'Bill’s Bar & Burger (in the Conference Hotel)'
 
 libtech-women:
-    show: true
-    date: "2020-03-10"
-    time: "5:30PM to 7:30PM"
-    location: "Bill’s Bar & Burger (in the Conference Hotel)"
+    show: false
+    date: '2020-03-10'
+    time: '5:30PM to 7:30PM'
+    location: 'Bill’s Bar & Burger (in the Conference Hotel)'
     hashtag: libtechwomen
 
 reception:
-    show: true
-    venue: "Carnegie Museum of Pittsburgh - Oakland"
-    street: "4400 Forbes Ave"
-    postal-code: "15213"
-    phone: "+1(412)-353-4795"
-    contact: "straubn@carnegiemuseums.org"
-    times: "6:30PM to 8:30PM"
-    date: "2020-03-09"
+    show: false
+    venue: 'Carnegie Museum of Pittsburgh - Oakland'
+    street: '4400 Forbes Ave'
+    postal-code: '15213'
+    phone: '+1(412)-353-4795'
+    contact: 'straubn@carnegiemuseums.org'
+    times: '6:30PM to 8:30PM'
+    date: '2020-03-09'
 
 karaoke-night:
-    show: true
-    url: "https://docs.google.com/document/d/1bKuSy14npN2uq-rqE9RAEmc4nZRpn99KnU9SK8dfEQ8/edit#heading=h.kxso70piv9tw"
-    date: ""
-    time: "8PM to 2AM"
-    location: "Tequila Cowboy Karaoke"
-    location-url: "https://tequilacowboy.com/pittsburgh/"
+    show: false
+    url: 'https://docs.google.com/document/d/1bKuSy14npN2uq-rqE9RAEmc4nZRpn99KnU9SK8dfEQ8/edit#heading=h.kxso70piv9tw'
+    date: ''
+    time: '8PM to 2AM'
+    location: 'Tequila Cowboy Karaoke'
+    location-url: 'https://tequilacowboy.com/pittsburgh/'
 
 self-event:
-    show: true
-    url: "https://docs.google.com/document/d/1bKuSy14npN2uq-rqE9RAEmc4nZRpn99KnU9SK8dfEQ8/edit?usp=sharing"
+    show: false
+    url: 'https://docs.google.com/document/d/1bKuSy14npN2uq-rqE9RAEmc4nZRpn99KnU9SK8dfEQ8/edit?usp=sharing'
 
 ###############
 # Volunteer
 ###############
 
 volunteer-committee:
-  show: false
-  url: "https://wiki.code4lib.org/Code4Lib_2020_Conference_Committees"
-  end-date: "2020-01-18"
+  show: true
+  url: 'https://wiki.code4lib.org/Code4Lib_2021_Conference_Committees'
+  end-date: '2021-01-18'
 
 volunteer-dutyoff:
   show: false
-  url: "https://goo.gl/forms/2DkdbUUDSSOMi1f33"
-  end-date: ""
+  url: 'https://goo.gl/forms/2DkdbUUDSSOMi1f33'
+  end-date: ''
 
 # for volunteers during conference like MCs, mic-minders, etc.
 volunteer-onsite:
   show: false
-  url: ""
-  end-date: ""
+  url: ''
+  end-date: ''
 
 ################
 # Scholarships
@@ -295,21 +303,21 @@ angel-fund:
     # whether to show the "donation thermometer" & Google Spreadsheet key for it
     thermometer: true
     # NOTE: spreadsheet needs to be "published to the web"
-    spreadsheet-key: "1IBDcAgamPKlEL-HcyfiHA6bLGf1KU8-5C1w-GN2Rze0"
+    spreadsheet-key: '1IBDcAgamPKlEL-HcyfiHA6bLGf1KU8-5C1w-GN2Rze0'
     url: https://mxmerchant.com/mxcustomer/d/27881511-a676-4fa5-80cb-9987204864c4/v3
 
 diversity-scholarship-applications:
   show: false
-  url: "/general-info/scholarships#how-to-apply"
-  url-text: "How to Apply"
-  end-date: "2019-12-02"
-  notification-date: "2019-12-17"
-  apply-url: "https://forms.gle/XFxkujq5HQhyac1eA"
+  url: '/general-info/scholarships#how-to-apply'
+  url-text: 'How to Apply'
+  end-date: '2019-12-02'
+  notification-date: '2019-12-17'
+  apply-url: 'https://forms.gle/XFxkujq5HQhyac1eA'
 
 # show sponsors for diversity scholarships on general-info/scholarships
 diversity-scholarship-sponsors:
   seeking: false
-  show: true
+  show: false
 
 ################
 # Other

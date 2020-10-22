@@ -254,7 +254,9 @@
 
 </div>
 
-{% include homepage/sponsor_block.html %}
+{% if site.data.conf.show-sponsors %}
+    {% include homepage/sponsor_block.html %}
+{% endif %}
 
 {% comment %}
 <div class="col-12">

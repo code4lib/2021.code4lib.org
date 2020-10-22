@@ -3,7 +3,7 @@
 - name: Venues
   url: /general-info/venues
 #- name: Social Activities
-#  url: /general-info/social 
+#  url: /general-info/social
 - name: Accessibility
   url: /general-info/accessibility
 - name: Scholarships

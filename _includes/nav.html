@@ -42,7 +42,9 @@
                 {% if site.data.conf.call-for-sponsors %}
                     <li class="nav-item"><a href="{{ site.baseurl }}{% link prospectus/index.html %}" class="nav-link">Sponsors</a></li>
                 {% else %}
+                    {% if site.data.conf.show-sponsors %}
                     <li class="nav-item"><a href="{{ site.baseurl }}{% link sponsors/index.html %}" class="nav-link">Sponsors</a></li>
+                    {% endif %}
                 {% endif %}
 
                 <li class="nav-item"><a href="{{ site.baseurl }}{% link general-info/attend.html %}" class="nav-link">General Info</a></li>
