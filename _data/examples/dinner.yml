@@ -5,3 +5,16 @@
   type: Pub
   url: '#'
   veg: 'yes'
+
+- restaurant-name: Apteka
+  city-state: Pittsburgh PA
+  url: https://aptekapgh.com/
+  type-of-food: Vegan
+  distance-from-hotel: More than 1 mile
+  vegetarian-options: Yes
+  vegan-options: Yes
+  takes-reservations: No
+  can-seat-more-than-one-group-of-6: No
+  price-point: $11-30
+  notes:
+  accessibility-notes: Accessible entry

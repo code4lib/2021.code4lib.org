@@ -1,16 +1,17 @@
 # NOTE: we've not traditionally used the github, twitter, slack, or bio at all
-- id: ophelia-the-omnipresent
-  name: Ophelia
-  last: Ophelia
-  bio: |
-    She toats loves Hamlet...a bit too much.
-  twitter_handle:
-  slack_handle:
-  github_handle:
+- id: aaaron-collier
+  name: Aaron Collier
+  last: Collier
+  pronouns: he/him/his
+  position-title: Software Engineer
+  bio: Aaron Collier joined the Infrastructure Team at Stanford Libraries as a developer in mid-2017 from the California State University Office of the Chancellor, where he served as Repository Manager for several years. His true passion is judging beer.
+  twitter: aaronisbrewing
+  slack: acollier
+  github: aaaron-collier
+  image_src: /assets/img/speakers/aaaron-collier.jpg
   keynote: false
-  work_title: Supporting Character
-  institution: Hamlet
-  image_src: /assets/img/nopics/nopic8.jpg
+
+## PREVIOUS EXAMPLE
 - id: melancholy-jaques
   name: Melancholy Jaques
   last: Jaques
@@ -23,22 +24,3 @@
   work_title: Introvert
   institution: Arden
   image_src: /assets/img/nopics/nopic10.jpg
-- id: duke-senior
-  name: Duke Senior
-  last: Senior
-  bio: |
-    The Yin to Jaques' Yang
-  keynote: false
-  work_title: Robin Hood
-  institution: Arden
-  image_src: /assets/img/nopics/nopic9.jpg
-- id: lady-macbeth
-  name: Lady Macbeth
-  last: Macbeth
-  bio: |
-    Out out...
-  twitter_handle: '???'
-  work_title: Heroine
-  institution: Dunsinane
-  image_src: /assets/img/nopics/nopic1.jpg
-  keynote: 1

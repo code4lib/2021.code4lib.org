@@ -58,3 +58,20 @@
   img: /assets/img/examples/sponsors/two.svg
   level: supporter
   annotation: "Closed Captioning"
+
+- name: oXygen XML
+  img: /assets/img/sponsors/oxygennn.png
+  link: https://www.oxygenxml.com
+  level: giveaway
+
+- name: Johns Hopkins Sheridan Libraries
+  img: /assets/img/sponsors/johnshopkinsss.jpg
+  link: https://www.library.jhu.edu
+  level: bronze
+  annotation: 'Childcare'
+
+- name: Balsamiq
+  img: /assets/img/sponsors/balsamiqqq.png
+  link: https://balsamiq.com/
+  level: giveaway
+  diversity: true
