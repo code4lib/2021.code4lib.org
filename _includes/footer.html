@@ -11,11 +11,13 @@
             {% link speakers/index.html %}{% else %}{% link speakers/past-keynotes.html %}
             {% endif %}">Speakers</a></li>
 
-            {% if site.data.conf.call-for-sponsors %}
-                <li class="list-inline-item tci"><a href="{{ site.baseurl }}{% link prospectus/index.html %}">Sponsors</a></li>
-            {% else %}
-                {% if site.data.conf.show-sponsors %}
-                    <li class="list-inline-item tci"><a href="{{ site.baseurl }}{% link sponsors/index.html %}">Sponsors</a></li>
+            {% if site.data.conf.show-sponsors %}
+                {% if site.data.conf.call-for-sponsors %}
+                    <li class="list-inline-item tci"><a href="{{ site.baseurl }}{% link prospectus/index.html %}">Sponsors</a></li>
+                {% else %}
+                    {% if site.data.conf.show-sponsors %}
+                        <li class="list-inline-item tci"><a href="{{ site.baseurl }}{% link sponsors/index.html %}">Sponsors</a></li>
+                    {% endif %}
                 {% endif %}
             {% endif %}
 

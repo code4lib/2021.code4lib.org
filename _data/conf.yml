@@ -136,7 +136,7 @@ peri:
 ###########
 # Sponsors
 ###########
-
+# If false, hides sponsors link in navigation and footer
 show-sponsors: false
 # If true, any "Sponsors" links will go to /prospectus instead of /sponsors
 call-for-sponsors: true
