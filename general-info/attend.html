@@ -134,16 +134,16 @@ active: Attend Code4Lib
     </div>
 </section>
 
-<!--
+
 <section class="general-info" id="remote">
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
-                <h2>Can't attend in person?</h2>
+                <h2>Can't attend the live stream?</h2>
 
-                <h3>Live Stream</h3>
+                <h3>Archive</h3>
                 <p>
-                    Presentations will be streamed and archived on
+                    Presentations will be archived on
                     our <a href="{{ site.data.conf.social-links.youtube}}">YouTube channel</a>.
                     Please be sure to thank our volunteers that make this happen.
                 </p>
@@ -157,8 +157,9 @@ active: Attend Code4Lib
                     <a href="{{ site.data.conf.social-links.irc}}">IRC</a>.
                 </p>
 
-                <h3>Live Transcription</h3>
+                {% if site.data.conf.closed-captioning.show %}
                 {% assign sponsors = site.data.sponsors | where:"transcription","true" %}
+                <h3>Live Transcription</h3>
                 <p>
                     We are thrilled to be able to provide
                     {% if site.data.conf.closed-captioning.show %}
@@ -189,8 +190,8 @@ active: Attend Code4Lib
                     </div>
                     {% endif %}
                 {% endfor %}
+                {% endif %}
             </div>
         </div>
     </div>
 </section>
--->
