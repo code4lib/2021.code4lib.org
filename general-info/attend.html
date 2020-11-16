@@ -17,7 +17,11 @@ active: Attend Code4Lib
                             <p>Registration will open at 12 p.m. EST / 9 a.m. PST on <span class="font-weight-bold">{{ site.data.registration.conference.start-date | date: '%A, %B %-d, %Y' }}</span>.</p>
                         {% endif %}
                     {% else %}
-                        <p>Code4Lib will be held from {{site.data.conf.days[0].date}} to {{site.data.conf.days.last.date}} this year. We have reserved a block at the {{site.data.conf.venue.name}}; see more details on the <a href="venues/">Venues</a> page.</p>
+                        <p>Code4Lib will be held from {{site.data.conf.days[0].date}} to {{site.data.conf.days.last.date}} this year.
+                            {% if site.data.conf.venue.name != '' %}
+                            We have reserved a block at the {{site.data.conf.venue.name}}; see more details on the <a href="venues/">Venues</a> page.
+                            {% endif %}
+                        </p>
                     {% endif %}
 
                     {% if site.data.registration.workshop-only.show %}
@@ -43,6 +47,7 @@ active: Attend Code4Lib
                         <li><span class="font-weight-bold">Reception "plus one"</span>: {{ site.data.registration.reception-plus-one-cost }} (limit one "plus one" per registration)</li>
                     {% endif %}
 
+                    {% if site.data.conf.venue.name != '' %}
                     <li>
                         <span class="font-weight-bold">{{site.data.conf.venue.name}}</span>:
                         {{ site.data.conf.venue.cost }}/night
@@ -54,6 +59,7 @@ active: Attend Code4Lib
                             until {{ site.data.conf.venue.cost-cutoff-date | date: "%B %-d" }}
                         {% endif %}
                     </li>
+                    {% endif %}
                 </ul>
 
                 <p>
@@ -76,6 +82,7 @@ active: Attend Code4Lib
             </div>
         </div>
 
+        <!--
         <div class="row">
             <div class="col-12">
                 <h2 id="health">Health & Wellness</h2>
@@ -84,14 +91,12 @@ active: Attend Code4Lib
                 <p>Because of this, We are actively working with our suppliers, primarily the hotel, to see what we can do to minimize the financial impact of decreased attendance. We would like to be able to provide those that have to cancel late a partial refund, but we are not certain of the possibility at this time. We are tracking those that are not able to attend and will follow up with them as information becomes available. This follow up will likely happen after the conclusion of the event.</p>
                 <p>Additionally, please remember, Code4Lib will once again stream all of the sessions on the main conference days (not the pre-conference workshops). Some sessions may be excluded if the presenter declines to allow the session to be streamed, but it’s generally very few. You can find information about this option below, under the “Can’t attend in person?” heading.</p>
                 <p>We understand that everyone has a personal decision to make, based on your research, health, and individual situation. We support you in that decision and look forward to your participation in Code4Lib 2020, whether it be in person or remote.</p>
-                <!--
                 <p>We are continually monitoring the news regarding the COVID-19 (Coronavirus) situation and staying aware of the recommended guidelines from the Centers for Disease Control (CDC) and the World Health Organization (WHO). We ask that you follow the recommended safety measures as defined by these organizations. Some of which include:</p>
                 <ul>
                     <li>Please begin preparing for your personal health at Code4Lib by acquiring alcohol-based hand-sanitizers, wipes and anything else you deem necessary to keep yourself safe during your travel time and while at Code4Lib.</li>
                     <li>While at Code4Lib, please be sure to wash hands often or keep clean with hand-sanitizers.</li>
                     <li>We ask that any attendees onsite who might begin to experience cold or flu-like symptoms (fever, cough, trouble breathing), to please seek medical care right away. Local emergency care facilities can be found on the Code4Lib Conduct & Safety page.</li>
                 </ul>
-                -->
                 <p>For more detailed information please visit the following websites:</p>
                 <ul>
                     <li>Centers for Disease Control: <a href="https://www.cdc.gov/coronavirus/2019-ncov/about/prevention-treatment.html">Coronavirus Prevent & Treatment</a></li>
@@ -99,6 +104,7 @@ active: Attend Code4Lib
                 </ul>
             </div>
         </div>
+        -->
 
         <div class="row">
             <div class="col-12">
@@ -128,7 +134,7 @@ active: Attend Code4Lib
     </div>
 </section>
 
-
+<!--
 <section class="general-info" id="remote">
     <div class="container-fluid">
         <div class="row">
@@ -187,3 +193,4 @@ active: Attend Code4Lib
         </div>
     </div>
 </section>
+-->
