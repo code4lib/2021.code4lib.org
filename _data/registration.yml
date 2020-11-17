@@ -26,6 +26,11 @@ conference:
   late-cost: "$450"
   workshop-half-day-cost: "$50"
   workshop-full-day-cost: "$100"
+  # Is registration capped? true/false
+  limited-capacity:
+
+reception:
+  plus-one-cost:
 
 childcare:
   # "show" toggles the child care entry on /general-info/attend, under 'Additional Information' heading
@@ -33,5 +38,3 @@ childcare:
   full-day-cost: "$30"
   half-day-cost: "$15"
   end-date: 2020-02-08
-
-reception-plus-one-cost:
