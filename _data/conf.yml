@@ -5,9 +5,15 @@
 year: 2021
 hashtag: 'c4l21'
 location: 'Virtual Conference'
-hero-image-alt: ''
-
 search: false
+
+###########################
+# Hero
+###########################
+# Place hero image in /assets/img/theme-images/
+hero-image-filename: 'hero-image.png'
+hero-image-source: 'https://pixabay.com/vectors/triangles-polygon-color-pink-1430105/'
+hero-image-alt: 'an image of multicolored fuchsia-toned triangle polygons'
 
 ########################
 # Program & Schedule
