@@ -5,9 +5,16 @@
 year: 2021
 hashtag: 'c4l21'
 location: 'Code4Lib 2021'
-hero-image-alt: ''
-
+hero-image-alt: 'colored mosaic'
 search: false
+
+###########################
+# Hero
+###########################
+# Place hero image in /assets/img/theme-images/
+hero-image-filename: 'hero-image.png'
+hero-image-source: 'https://pixabay.com/vectors/triangles-polygon-color-pink-1430105/'
+hero-image-alt: 'an image of multicolored fuchsia-toned triangle polygons'
 
 ########################
 # Program & Schedule
