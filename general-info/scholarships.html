@@ -105,13 +105,13 @@ subnav:
        <div class="col-12">
            <h2>Accepting Applications Now!</h2>
            <p>
-               As part of Code4Lib's ongoing commitment to reducing economic barriers that prevent participation for underrepresented groups, and to achieving a balanced representation of the human experience, we are pleased to announce that we are now seeking applicants for our <a href="/general-info/scholarships">{{site.data.conf.year}} Diversity Scholarship program</a>! The <a href="https://wiki.code4lib.org/Code4Lib_2020_Conference_Committees#Scholarship_Committee">Code4Lib Scholarship Committee</a> hopes to award multiple Diversity Scholarships, based on merit and need.  Each scholarship will cover up to $1500 for travel costs, lodging, and conference fees for selected applicants to attend the <a href="/">{{site.data.conf.year}} Code4Lib Conference</a> in {{site.data.conf.location}}.
+               As part of Code4Lib's ongoing commitment to reducing economic barriers that prevent participation for underrepresented groups, and to achieving a balanced representation of the human experience, we are pleased to announce that we are now seeking applicants for our <a href="/general-info/scholarships">{{site.data.conf.year}} Diversity Scholarship program</a>! The <a href="{{ site.data.conf.committee-wiki-url }}">Code4Lib Scholarship Committee</a> hopes to award multiple Diversity Scholarships, based on merit and need.  Each scholarship will cover up to {{ site.data.conf.max-scholarship-award }} for {% if site.data.conf.venue.name != '' %}travel costs, lodging, and {% endif %}conference fees for selected applicants to attend the <a href="/">{{site.data.conf.year}} Code4Lib Conference</a>.
            </p>
            <p>
               <strong>Applications will be accepted through {{ site.data.conf.diversity-scholarship-applications.end-date | date: '%B %-d'}}{% include date_ordinals.html date=site.data.conf.diversity-scholarship-applications.end-date%}</strong> (<a href="#how-to-apply">see below for more details</a>).
            </p>
             <p>
-                The scholarship will cover conference registration and hotel accommodations up front to scholarship awardees. Other incidentals like travel and meals may be reimbursed based on the amount awarded. Reimbursement will be managed independently at the conference. Pairing up housing with other scholarship awardees or conference attendees may also be accommodated. Please contact <a href="mailto:{{site.data.conf.scholarship-contact-email}}">{{site.data.conf.scholarship-contact-email}}</a> with any questions about this arrangement. We want to ensure that financial issues do not discourage anyone from applying to this award.
+                The scholarship will cover conference registration {% if site.data.conf.venue.name != '' %}and hotel accommodations{% endif %} up front to scholarship awardees.{% if site.data.conf.venue.name != '' %} Other incidentals like travel and meals may be reimbursed based on the amount awarded. Reimbursement will be managed independently at the conference. Pairing up housing with other scholarship awardees or conference attendees may also be accommodated.{% endif %} Please contact <a href="mailto:{{site.data.conf.scholarship-contact-email}}">{{site.data.conf.scholarship-contact-email}}</a> with any questions about this arrangement. We want to ensure that financial issues do not discourage anyone from applying to this award.
             </p>
             <p>
                 We do not expect scholarship recipients to be responsible for being an ambassador for their group or an educator of others during the conference. While learning and exchange may happen as a result of interactions between participants, scholarship recipients are encouraged to focus on getting the most out of their experience and have no special duties or obligations apart from conference attendance, engaged participation to their comfort level, and giving us feedback on their experience.
@@ -155,9 +155,9 @@ subnav:
                </li>
            </ul>
 
-            <h2> Registration Details</h2>
+            <h2>Registration Details</h2>
             <p>
-                Registration spots and hotel rooms are being held for scholarship recipients. If you can attend only if you receive a scholarship, there is no need to register for the conference or book a hotel room when registration opens. Code4Lib will assist you with both registration and hotel arrangements; however, if you register for the conference or book a hotel room, you will be reimbursed along with other expenses. Reimbursement for expenses will be provided to recipients during the conference.
+                Registration spots {% if site.data.conf.venue.name != '' %}and hotel rooms {% endif %}are being held for scholarship recipients. If you can attend only if you receive a scholarship, there is no need to register for the conference {% if site.data.conf.venue.name != '' %}or book a hotel room {% endif %}when registration opens. Code4Lib will assist you with registration{% if site.data.conf.venue.name != '' %} and hotel arrangements{% endif %}; however, if you register for the conference{% if site.data.conf.venue.name != '' %} or book a hotel room{% endif %}, you will be reimbursed along with other expenses. Reimbursement for expenses will be provided to recipients during the conference.
             </p>
        </div>
    </div>
@@ -178,7 +178,7 @@ subnav:
                        <li>A brief letter of interest, no more than 500 words, which:
                            <ul>
                                <li>Identifies your eligibility for a diversity scholarship</li>
-                               <li>Describes how you see yourself benefiting from and participating in the Code4Lib {{site.data.conf.year}} conference and the general Code4Lib community </li>
+                               <li>Describes how you see yourself benefiting from and participating in the Code4Lib {{site.data.conf.year}} conference and the general Code4Lib community</li>
                            </ul>
                        </li>
                        <li>Your current resume or CV</li>
