@@ -55,6 +55,8 @@ city-state: ''
 city: ''
 state: ''
 
+# NOTE: {% if site.data.conf.venue.name != '' %} is being used to remove textual references
+#       to a physical conference venue, when the conference is fully online.
 venue:
     name: ''
     street: ''
@@ -308,8 +310,8 @@ volunteer-onsite:
 angel-fund:
     show: false
     # whether to show the "donation thermometer" & Google Spreadsheet key for it
-    thermometer: true
     # NOTE: spreadsheet needs to be "published to the web"
+    thermometer: false
     spreadsheet-key: '1IBDcAgamPKlEL-HcyfiHA6bLGf1KU8-5C1w-GN2Rze0'
     url: https://mxmerchant.com/mxcustomer/d/27881511-a676-4fa5-80cb-9987204864c4/v3
 
@@ -320,6 +322,8 @@ diversity-scholarship-applications:
   end-date: '2019-12-02'
   notification-date: '2019-12-17'
   apply-url: 'https://forms.gle/XFxkujq5HQhyac1eA'
+  committee-wiki-url: 'https://wiki.code4lib.org/Code4Lib_2021_Conference_Committees#Scholarship_Committee'
+  max-scholarship-award: '$1500'
 
 # show sponsors for diversity scholarships on general-info/scholarships
 diversity-scholarship-sponsors:
