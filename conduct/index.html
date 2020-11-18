@@ -37,7 +37,7 @@ active: 'Conduct & Safety'
                     (including sexual) is not appropriate for any event venue, including talks, or any community channel such
                     as the chatroom or mailing list.</p>
 
-                  <p>  Harassment is understood as any behavior that threatens another person or group, or produces an unsafe
+                  <p>Harassment is understood as any behavior that threatens another person or group, or produces an unsafe
                     environment. It includes offensive verbal comments or non-verbal expressions related to gender, gender
                     identity, gender expression, sexual orientation, disability, physical appearance, body size, race, age,
                     religious beliefs, sexual or discriminatory images in public spaces (including online), deliberate
@@ -271,6 +271,7 @@ active: 'Conduct & Safety'
             {% endif %}
 
 
+            {% if site.data.conf.venue.name != '' %}
             <div class="row">
                 <div class="col-12">
                     <h2 id="photography">Photography Policy</h2>
@@ -292,6 +293,16 @@ active: 'Conduct & Safety'
                     </ul>
                 </div>
             </div>
+            {% else %}
+            <div class="row">
+                <div class="col-12">
+                    <h2 id="photography">Photography Policy</h2>
+                    <p>
+                        Policy under revision for a fully online conference.
+                    </p>
+                </div>
+            </div>
+            {% endif %}
 
         </div>
     </div>
