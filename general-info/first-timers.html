@@ -18,9 +18,9 @@ active: First Timers
       <p>
         We have a packed program with talks, preconferences, lightning talks, & breakout sessions.
 
-        The <a href="/schedule">full conference & pre-conference schedules</a> are available on the main conference page.
+        The {% if site.data.conf.have-schedule %}<a href="/schedule">{% else %}<a href="/schedule/timeline">{% endif %}full conference & pre-conference schedules</a> are available on the main conference page.
 
-        The main conference is <a href="/schedule"><strong>single track</strong></a>, meaning that you will hear the same talks as everyone else at the conference.
+        The main conference is {% if site.data.conf.have-schedule %}<a href="/schedule">{% else %}<a href="/schedule/timeline">{% endif %}<strong>single track</strong></a>, meaning that you will hear the same talks as everyone else at the conference.
         This cuts down on the “fear of missing out” that you might find yourself feeling at multi-track conferences where you have to choose one session out of many that are at the same time.
         There will be some sessions that you might not understand, but this is normal. This happens to everyone.
         No one is an expert in everything, so don't worry that you don't know every single thing that is mentioned in the presentations.
@@ -47,9 +47,16 @@ active: First Timers
           {% break %}
           {% endif %}
       {% endfor %}
+
+      {% if site.data.conf.venue.name != '' %}
       <p>
         Both lightning talks and breakout sessions signups take place at the conference. Signups are usually on a posterboard by the registration; specific details about signup times and places will be announced from the podium, as well as social media.
+      </p>
+      {% else %}
       <p>
+        Lightning talk and breakout session details will be available shortly.
+      </p>
+      {% endif %}
 
 
       <h2>Conduct &amp; Safety</h2>
@@ -59,10 +66,12 @@ active: First Timers
         </ul>
 
 
+      {% if site.data.conf.venue.name != '' %}
       <h2>Food</h2>
       <p>
-        Morning and afternoon breaks will include snacks and caffeine. On full conference days, lunch will also be provided. No lunch or snacks will be provided on the preconference day. <a href="/schedule">See the schedule for more details</a>
+        Morning and afternoon breaks will include snacks and caffeine. On full conference days, lunch will also be provided. No lunch or snacks will be provided on the preconference day. {% if site.data.conf.have-schedule %}<a href="/schedule">{% else %}<a href="/schedule/timeline">{% endif %}See the schedule for more details</a>
       </p>
+      {% endif %}
 
       {% if site.data.conf.social-activities-url != '' %}
       <h2>Social Activities</h2>
