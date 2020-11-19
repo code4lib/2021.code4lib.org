@@ -1,10 +1,12 @@
 {
-  "name": "2020.code4lib.org",
+  "name": "2021.code4lib.org",
   "version": "1.0.0",
-  "description": "Code4Lib 2018 Conference Site",
+  "description": "Code4Lib 2021 Conference Site",
   "main": "index.html",
   "dependencies": {
-    "bootstrap": "4.4.1"
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
   },
   "devDependencies": {},
   "scripts": {
@@ -12,12 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/code4lib/2020.code4lib.org.git"
+    "url": "git+https://github.com/code4lib/2021.code4lib.org.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/code4lib/2020.code4lib.org/issues"
+    "url": "https://github.com/code4lib/2021.code4lib.org/issues"
   },
-  "homepage": "https://github.com/code4lib/2020.code4lib.org#readme"
+  "homepage": "https://github.com/code4lib/2021.code4lib.org#readme"
 }
