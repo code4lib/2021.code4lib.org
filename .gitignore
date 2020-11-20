@@ -4,7 +4,7 @@ _site/*
 .jekyll-metadata
 npm-debug.log
 nbproject/*
-node_modules/*
+
 .sass-cache/*
 .ruby-version
 .vscode/*

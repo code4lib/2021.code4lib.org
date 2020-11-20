@@ -6,6 +6,7 @@
 @import 'mixins';
 @import 'links';
 @import 'variables';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
 // actual styles, order _may_ be important
 @import 'global';
 @import 'homepage';
@@ -23,5 +24,3 @@
 @import 'footer';
 @import 'timeline';
 @import 'sponsors';
-
-@import '/node_modules/bootstrap/dist/css/bootstrap.css';
