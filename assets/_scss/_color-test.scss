@@ -1,0 +1,93 @@
+/* ==========================================================================
+   Color Test for 2021
+   ========================================================================== */
+//
+// Variables
+// --------------------------------------------------
+
+// Background
+$oxford-blue: #061A40;
+$jungle-green: #041F1E;
+
+// Foreground
+$cultured-white: #F5F5F5;
+$turquoise: #00D5C0;
+$crayola-ink: #FA62F0;
+
+//
+// Settings
+// --------------------------------------------------
+
+.CT-body {
+    /* Margin bottom by footer height */
+    color: $cultured-white;
+    background-color: $jungle-green;
+    font-family: $font-family-sans-serif;
+    font-weight: 300;
+    padding: 50px;
+}
+
+.CT-body a {
+    color: $turquoise !important;
+}
+
+.CT-body a:hover, .CT-body a:focus {
+    background-color: $crayola-ink !important;
+    color: $cultured-white !important;
+}
+
+.CT-body hr{
+    border: 10px solid $turquoise;
+}
+
+.CT-body .clip-circle-lg {
+    background: transparent !important;
+    border: 0px !important;
+}
+
+.CT-body .speaker-box-inner {
+    border-top: 3px solid $crayola-ink;
+    border-left: 3px solid $crayola-ink;
+    border-right: 3px solid $crayola-ink;
+    border-radius: 3px;
+}
+
+.CT-body .arrow-down {
+    border-left: 140px solid transparent;
+    border-right: 140px solid transparent;
+    border-top: 15px solid $crayola-ink;
+    height: 0;
+    margin-top: 15px;
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    z-index: 99;
+}
+
+.CT-body .ct-btn-light{
+    background-color: $cultured-white;
+    color: $turquoise;
+    &:hover {
+        outline: 2px solid $crayola-ink;
+        outline-offset: -2px;
+    }
+}
+
+.CT-body .ct-btn-middle{
+    background-color: $gray-600;
+    color: $cultured-white;
+    &:hover {
+        outline: 2px solid $crayola-ink;
+        outline-offset: -2px;
+    }
+}
+
+.CT-body .ct-btn-dark{
+    background-color: $gray-900;
+    color: $gray-300;
+    &:hover {
+        outline: 2px solid $crayola-ink;
+        outline-offset: -2px;
+    }
+}
+
