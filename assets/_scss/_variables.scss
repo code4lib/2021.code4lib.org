@@ -41,19 +41,27 @@ $primary:                 #27251f;
 $primary-dark:            darken($primary, 10%) !default;
 $primary-light:           lighten($primary, 10%) !default;
 
-$accent:                  #fdb827;
+$accent:                  #00D5C0; //Turquoise
 $accent-dark:             darken($accent, 10%) !default;
 $accent-light:            lighten($accent, 10%);
 $accent-darker:           darken($accent, 20%);
 $accent-lighter:          lighten($accent, 20%);
 
+$tertiary:                #FA62F0; //Shocking Crayola Pink
+$tertiary-dark:           darken($tertiary, 10%) !default;
+$tertiary-light:          lighten($tertiary, 10%);
+$tertiary-darker:         darken($tertiary, 20%);
+$tertiary-lighter:        lighten($tertiary, 20%);
+
+$dark-accent:             #061A40; //Alternative to black for dark backgrounds
+
 $brand-primary:           $accent !default; // #337ab7
 $brand-success:           #5cb85c !default;
 $brand-info:              #5bc0de !default;
-$brand-warning:           #f0ad4e !default;
-$brand-danger:            #d9534f !default;
+$brand-warning:           $tertiary !default;
+$brand-danger:            #FF6B6B !default;
 
-$accent-link-primary:    #fdb771 !default;
+$accent-link-primary:    #FA62F0 !default;
 $accent-primary-hover:   lighten($accent-link-primary, 10%) !default;
 
 // General
