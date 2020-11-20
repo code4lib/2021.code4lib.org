@@ -10,10 +10,10 @@
 }
 
 #conferenceInfo {
-  background-color: $primary;
+  background-color: $dark-accent; //formerly $primary
 
   h1 {
-    background-color: fade-out($primary-light, .35);
+    background-color: fade-out($dark-accent, .35);
     color: $white;
     font-family: $font-family-serif;
     font-size: 2em;
