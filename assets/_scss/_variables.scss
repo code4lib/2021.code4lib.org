@@ -83,9 +83,9 @@ $section-3-color:         $gray-lighter;
 $section-3-link:          $accent-dark;
 $section-3-hover:         darken($accent-light, 6.5%);
 
-$footer-bg:               $gray-darker;
+$footer-bg:               $black;
 $footer-color:            $gray-lighter;
-$footer-link:             lighten($accent-light, 30%);
+$footer-link:             $accent-light;
 $footer-hover:            darken($footer-link, 6.5%);
 
 // Clip circle

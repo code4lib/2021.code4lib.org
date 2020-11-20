@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .footer {
-  background-color: #464745;
+  background-color: $footer-bg;
   bottom: 0;
   box-sizing: border-box;
   color: $footer-color;
@@ -16,7 +16,7 @@
   width: 100%;
 
   p {
-    font-size: .8em;
+    font-size: .9em;
   }
 
   a {
@@ -29,8 +29,8 @@
   }
 
   ul {
-    margin-bottom: 1.25em;
-    margin-top: 1.25em;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
   }
 }
 
