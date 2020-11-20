@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Preconference Workshops
+title: Postconference Workshops
 categories: preconf
 ---
 
-<div class="container-fluid" id="preconference">
+<div class="container-fluid" id="postconference">
     <div class="row">
         <div class="col-12">
-            <h1>Proposals for Preconference Workshops</h1>
+            <h1>Proposals for Postconference Workshops</h1>
 
             {% if site.data.conf.workshop-proposals.show %}
             <a class="btn btn-warning btn-lg float-right" href="{{ site.data.conf.workshop-proposals.submission-form }}">
@@ -19,19 +19,19 @@ categories: preconf
     <div class="row">
         <div class="col-12">
             <p>
-                Pre-conferences can either be a 1-day (six hour) or a 1/2-day (three hour) session and will occur on {{ site.data.conf.days[0].weekday }}, {{ site.data.conf.days[0].date }}, {{ site.data.conf.year }}.
+                Post-conferences can be scheduled in 90 minute increments up to six hours in length and will occur on {{ site.data.conf.days.last.weekday }}, {{ site.data.conf.days.last.date }}, {{ site.data.conf.year }}.
             </p>
             <p>
-                The pre-conference sessions give folks a space to share and build
+                The post-conference sessions give folks a space to share and build
                 knowledge, as well as to teach attendees new skills relevant to library
-                technology. Pre-conference sessions can range from workshops to working
+                technology. Post-conference sessions can range from workshops to working
                 sessions. We welcome a variety of ideas and encourage submissions from
                 first-time presenters and members of groups not well-represented within the
                 Code4Lib community, including but not limited to: women, people of color,
                 people with disabilities, LGBT+.
             </p>
             <p>
-                If you're looking for inspiration, there are many great examples of pre-conferences from previous years.
+                If you're looking for inspiration, there are many great examples of post-conferences from previous years.
                 {% assign lastyear =  site.data.conf.year | minus: 1 %}
                 <ul>{% for year in (2016..lastyear) reversed %}
                     <li><a href="http://{{year}}.code4lib.org/workshops/">{{year}} Conference</a></li>
