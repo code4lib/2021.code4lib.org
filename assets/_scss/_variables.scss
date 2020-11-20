@@ -17,24 +17,15 @@ $gray-800: #67655d !default;
 $gray-900: #464745 !default;
 $black:    #000 !default;
 
-// $gray-base:               #332c2f !default;
-// $gray-darker:             #464745 !default; // #222
-// $gray-dark:               #67655d !default;
-// $gray:                    #8e908c;
-// $gray-light:              #d4d8d1 !default;
-// $gray-lighter:            #f6fdfd !default;
-
 
 //From Bootstrap3
 //## Gray and brand colors for use across Bootstrap.
-
 $gray-base:              #332c2f !default;
 $gray-darker:            $gray-900 !default; // #222
 $gray-dark:              $gray-800 !default; // #333
 $gray:                   $gray-600 !default; // #555
 $gray-light:             $gray-400 !default; // #777
 $gray-lighter:           $gray-200 !default; // #eee
-
 //End fo gray setting
 
 $primary:                 #27251f;
