@@ -14,7 +14,10 @@
 }
 
 a.speaker-info-toggle {
-  color: $primary-light;
+  color: $turquoise;
+  &:hover {
+    color: $link-color-light;
+  }
 }
 
 p.speaker-title,
@@ -143,10 +146,11 @@ p.speaker-inst {
   background-color: $speaker-selected-bg;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  outline: $speaker-selected-outline;
 }
 
 .speaker-box.selected a {
-  color: $white;
+  color: $speaker-selected-color;
 
   &:active,
   &:focus,
@@ -163,7 +167,7 @@ p.speaker-inst {
 .arrow-down {
   border-left: 140px solid transparent;
   border-right: 140px solid transparent;
-  border-top: 15px solid $speaker-selected-bg;
+  border-top: 15px solid $speaker-selected-arrow;
   height: 0;
   margin-top: 15px;
   opacity: 0;

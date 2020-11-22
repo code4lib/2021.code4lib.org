@@ -140,3 +140,25 @@
     }
   }
 }
+
+#prepared-talks a.btn {
+  background-color: $btn-bg-color-mid;
+  color: $btn-color-mid;
+  border-color: $btn-border-color-mid;
+  border: 1px solid;
+    &:hover {
+        border: 1px solid $btn-border-hover;
+        //outline-offset: -2px;
+    }
+}
+
+#postconference a.btn {
+  background-color: $btn-bg-color-mid;
+  color: $btn-color-mid;
+  border-color: $btn-border-color-mid;
+  border: 1px solid;
+    &:hover {
+        border: 1px solid $btn-border-hover;
+        //outline-offset: -2px;
+    }
+}
