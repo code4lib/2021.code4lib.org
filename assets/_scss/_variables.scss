@@ -5,8 +5,8 @@ $bootstrap-sass-asset-helper: true !default;
 // --------------------------------------------------
 
 // Background
-$oxford-blue: #061A40;
-$jungle-green: #041F1E;
+$oxford-blue: #060c40;
+$xiketic: #070413;
 
 // Foreground
 $cultured-white: #F5F5F5;
@@ -54,7 +54,7 @@ $gray-light:             $gray-400 !default; // #777
 $gray-lighter:           $gray-200 !default; // #eee
 //End fo gray setting
 
-$primary:                 $jungle-green;
+$primary:                 $xiketic;
 $primary-dark:            darken($primary, 10%) !default;
 $primary-light:           lighten($primary, 10%) !default;
 
@@ -64,7 +64,7 @@ $accent-light:            lighten($accent, 10%);
 $accent-darker:           darken($accent, 20%);
 $accent-lighter:          lighten($accent, 20%);
 
-$brand-primary:           $jungle-green !default; // #337ab7
+$brand-primary:           $oxford-blue !default; // #337ab7
 $brand-success:           #5cb85c !default;
 $brand-info:              #5bc0de !default;
 $brand-warning:           $gray-600 !default;
@@ -87,7 +87,7 @@ $section-2-color:         color-contrast($primary);
 $section-2-link:          $accent-dark;
 $section-2-hover:         $accent-lighter;
 
-$section-3-bg:            $jungle-green;
+$section-3-bg:            $oxford-blue;
 $section-3-color:         $gray-lighter;
 $section-3-link:          $accent-dark;
 $section-3-hover:         darken($accent-light, 6.5%);
@@ -108,7 +108,7 @@ $sponsor-badge-ribbon:    $accent-light;
 $sponsor-badge-bg:        $gray-lighter;
 
 // Speaker Box
-$speaker-selected-bg:     $oxford-blue;
+$speaker-selected-bg:     $xiketic;
 $speaker-selected-color:  $turquoise;
 $speaker-selected-outline:  2px solid $crayola-ink;
 $speaker-selected-arrow:  $crayola-ink;
@@ -160,7 +160,7 @@ $night-event:             $primary-dark;
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               $jungle-green !default;
+$body-bg:               $oxford-blue !default;
 //** Global text color on `<body>`.
 $text-color:            $cultured-white !default;
 
