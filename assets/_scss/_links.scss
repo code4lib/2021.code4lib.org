@@ -1,11 +1,12 @@
 @mixin link-styles {
   border-bottom: 1px dotted;
-  color: $primary-dark;
+  color: $turquoise;
   text-decoration: none;
 }
 
 @mixin link-styles-states {
-  background-color: $accent;
+  //background-color: $accent;
+  color: $link-color-light;
   border-bottom: 2px solid;
   text-decoration: none;
 }

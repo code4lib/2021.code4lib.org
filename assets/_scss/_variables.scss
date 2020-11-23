@@ -1,4 +1,30 @@
 $bootstrap-sass-asset-helper: true !default;
+
+// --------------------------------------------------
+// 2021 Variables
+// --------------------------------------------------
+
+// Background
+$oxford-blue: #061A40;
+$jungle-green: #041F1E;
+
+// Foreground
+$cultured-white: #F5F5F5;
+$turquoise: #00D5C0;
+$crayola-ink: #FA62F0;
+
+// Buttons
+$btn-bg-color-mid: #495057; //$gray-700
+$btn-color-mid: $cultured-white;
+$btn-border-color-mid: #8e908c; //$gray-600
+$btn-border-hover: $crayola-ink;
+
+// Random Utils
+$transparent: transparent !important;
+$icosahedron-color: #2692b2;
+$hero-transition: #770681;
+
+
 //
 // Variables
 // --------------------------------------------------
@@ -28,23 +54,23 @@ $gray-light:             $gray-400 !default; // #777
 $gray-lighter:           $gray-200 !default; // #eee
 //End fo gray setting
 
-$primary:                 #27251f;
+$primary:                 $jungle-green;
 $primary-dark:            darken($primary, 10%) !default;
 $primary-light:           lighten($primary, 10%) !default;
 
-$accent:                  #fdb827;
+$accent:                  $crayola-ink;
 $accent-dark:             darken($accent, 10%) !default;
 $accent-light:            lighten($accent, 10%);
 $accent-darker:           darken($accent, 20%);
 $accent-lighter:          lighten($accent, 20%);
 
-$brand-primary:           $accent !default; // #337ab7
+$brand-primary:           $jungle-green !default; // #337ab7
 $brand-success:           #5cb85c !default;
 $brand-info:              #5bc0de !default;
-$brand-warning:           #f0ad4e !default;
+$brand-warning:           $gray-600 !default;
 $brand-danger:            #d9534f !default;
 
-$accent-link-primary:    #fdb771 !default;
+$accent-link-primary:    $gray-600 !default;
 $accent-primary-hover:   lighten($accent-link-primary, 10%) !default;
 
 // General
@@ -56,23 +82,23 @@ $tab-focus-color: rgba(0, 103, 244, 0.43);
 //## Unique Code4Lib conference site components
 
 // Sections
-$section-2-bg:            $primary;
+$section-2-bg:            $cultured-white;
 $section-2-color:         color-contrast($primary);
 $section-2-link:          $accent-dark;
 $section-2-hover:         $accent-lighter;
 
-$section-3-bg:            $primary-dark;
+$section-3-bg:            $jungle-green;
 $section-3-color:         $gray-lighter;
 $section-3-link:          $accent-dark;
 $section-3-hover:         darken($accent-light, 6.5%);
 
-$footer-bg:               $gray-darker;
+$footer-bg:               $black;
 $footer-color:            $gray-lighter;
 $footer-link:             lighten($accent-light, 30%);
 $footer-hover:            darken($footer-link, 6.5%);
 
 // Clip circle
-$clip-circle-border:      $accent-light;
+$clip-circle-border:      $transparent;
 
 // Sponsor Badges
 $sponsor-badge-primary:   $accent;
@@ -82,8 +108,10 @@ $sponsor-badge-ribbon:    $accent-light;
 $sponsor-badge-bg:        $gray-lighter;
 
 // Speaker Box
-$speaker-selected-bg:     $primary;
-$speaker-selected-color:  $gray-lighter;
+$speaker-selected-bg:     $oxford-blue;
+$speaker-selected-color:  $turquoise;
+$speaker-selected-outline:  2px solid $crayola-ink;
+$speaker-selected-arrow:  $crayola-ink;
 $speaker-info-bg:         $gray-light;
 $speaker-info-color:      $gray-base;
 
@@ -106,8 +134,8 @@ $timeline-content-bg:     $gray-lighter;
 $timeline-content-shadow: $gray;
 
 // Testimonials
-$testimonial-bg:          $accent;
-$testimonial-border:      $gray-base;
+$testimonial-bg:          $gray-light;
+$testimonial-border:      $accent;
 $testimonial-color:       $primary-dark;
 
 // Presentation Info Box
@@ -132,12 +160,14 @@ $night-event:             $primary-dark;
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               $gray-lighter !default;
+$body-bg:               $jungle-green !default;
 //** Global text color on `<body>`.
-$text-color:            $gray-base !default;
+$text-color:            $cultured-white !default;
 
 //** Global textual link color.
-$link-color:            $primary !default;
+$link-color:            $turquoise !default;
+$link-color-light:      lighten($turquoise, 10%);
+$link-color-dark:       darken($turquoise, 10%);
 $link-decoration:       none !default;
 $link-hover-color:      $primary-dark !default;
 $link-hover-decoration: underline !default;

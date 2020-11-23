@@ -10,7 +10,7 @@
 }
 
 #conferenceInfo {
-  background-color: $primary;
+  background-color: $hero-transition;
 
   h1 {
     background-color: fade-out($primary-light, .35);
@@ -55,12 +55,12 @@
    ========================================================================== */
 
 #heroImageAttribution {
-  background-color: $accent;
+  background-color: $hero-transition;
   color: $primary-dark;
   font-size: .9em;
 
   a {
-    color: $primary-dark;
+    color: $cultured-white;
   }
 }
 
@@ -134,6 +134,9 @@
 }
 
 // "Welcome to..." section of the home page
+.welcome {
+  background-color: $oxford-blue;
+}
 .welcome a {
   @include link-styles;
 
