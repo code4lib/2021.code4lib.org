@@ -11,7 +11,7 @@ $xiketic: #070413;
 // Foreground
 $cultured-white: #F5F5F5;
 $turquoise: #00D5C0;
-$crayola-ink: #F971F0 ;
+$crayola-pink: #F971F0 ;
 $honey-yellow: #FDB827;
 
 // Buttons
@@ -60,7 +60,7 @@ $primary:                 $xiketic;
 $primary-dark:            darken($primary, 10%) !default;
 $primary-light:           lighten($primary, 10%) !default;
 
-$accent:                  $crayola-ink;
+$accent:                  $crayola-pink;
 $accent-dark:             darken($accent, 10%) !default;
 $accent-light:            lighten($accent, 10%);
 $accent-darker:           darken($accent, 20%);
@@ -112,8 +112,8 @@ $sponsor-badge-bg:        $gray-lighter;
 // Speaker Box
 $speaker-selected-bg:     $xiketic;
 $speaker-selected-color:  $turquoise;
-$speaker-selected-outline:  2px solid $crayola-ink;
-$speaker-selected-arrow:  $crayola-ink;
+$speaker-selected-outline:  2px solid $crayola-pink;
+$speaker-selected-arrow:  $crayola-pink;
 $speaker-info-bg:         $gray-light;
 $speaker-info-color:      $gray-base;
 
