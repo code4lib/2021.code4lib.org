@@ -37,7 +37,7 @@ $honey-yellow-darker: darken($honey-yellow, 10%);
 }
 
 .CT-body a {
-    color: $turquoise !important;
+    color: $turquoise;
 }
 
 // .CT-body a:hover, .CT-body a:focus {
@@ -48,7 +48,7 @@ $honey-yellow-darker: darken($honey-yellow, 10%);
 
 // Alternative hover effect:
 .CT-body a:hover, .CT-body a:focus {
-    color: $crayola-pink !important;
+    color: $crayola-pink;
 }
 
 .CT-body hr{
