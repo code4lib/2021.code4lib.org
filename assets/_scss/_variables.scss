@@ -5,23 +5,30 @@ $bootstrap-sass-asset-helper: true !default;
 // --------------------------------------------------
 
 // Background
-$oxford-blue: #061A40;
-$jungle-green: #041F1E;
+$oxford-blue: #060c40;
+$xiketic: #070413;
 
 // Foreground
 $cultured-white: #F5F5F5;
 $turquoise: #00D5C0;
-$crayola-ink: #FA62F0;
+$crayola-pink: #F971F0 ;
+$honey-yellow: #FDB827;
+
+//Foreground lighter
+$cultured-white-lighter: #FFF;
+$turquoise-lighter: lighten($turquoise, 10%);
+$crayola-pink-lighter: lighten($crayola-pink, 10%);
+$honey-yellow-lighter: lighten($honey-yellow, 10%);
 
 // Buttons
-$btn-bg-color-mid: #495057; //$gray-700
-$btn-color-mid: $cultured-white;
-$btn-border-color-mid: #8e908c; //$gray-600
-$btn-border-hover: $crayola-ink;
+$btn-bg-color-mid: $honey-yellow;
+$btn-color-mid: #000;
+$btn-border-color-mid: #000;
+$btn-border-hover: $honey-yellow-lighter;
 
 // Random Utils
 $transparent: transparent !important;
-$icosahedron-color: #2692b2;
+$icosahedron-color: $turquoise;
 $hero-transition: #770681;
 
 
@@ -51,20 +58,21 @@ $gray-darker:            $gray-900 !default; // #222
 $gray-dark:              $gray-800 !default; // #333
 $gray:                   $gray-600 !default; // #555
 $gray-light:             $gray-400 !default; // #777
+$gray-light:             $cultured-white; //2021 override
 $gray-lighter:           $gray-200 !default; // #eee
 //End fo gray setting
 
-$primary:                 $jungle-green;
+$primary:                 $xiketic;
 $primary-dark:            darken($primary, 10%) !default;
 $primary-light:           lighten($primary, 10%) !default;
 
-$accent:                  $crayola-ink;
+$accent:                  $crayola-pink;
 $accent-dark:             darken($accent, 10%) !default;
 $accent-light:            lighten($accent, 10%);
 $accent-darker:           darken($accent, 20%);
 $accent-lighter:          lighten($accent, 20%);
 
-$brand-primary:           $jungle-green !default; // #337ab7
+$brand-primary:           $oxford-blue !default; // #337ab7
 $brand-success:           #5cb85c !default;
 $brand-info:              #5bc0de !default;
 $brand-warning:           $gray-600 !default;
@@ -87,7 +95,7 @@ $section-2-color:         color-contrast($primary);
 $section-2-link:          $accent-dark;
 $section-2-hover:         $accent-lighter;
 
-$section-3-bg:            $jungle-green;
+$section-3-bg:            $oxford-blue;
 $section-3-color:         $gray-lighter;
 $section-3-link:          $accent-dark;
 $section-3-hover:         darken($accent-light, 6.5%);
@@ -108,10 +116,10 @@ $sponsor-badge-ribbon:    $accent-light;
 $sponsor-badge-bg:        $gray-lighter;
 
 // Speaker Box
-$speaker-selected-bg:     $oxford-blue;
+$speaker-selected-bg:     $xiketic;
 $speaker-selected-color:  $turquoise;
-$speaker-selected-outline:  2px solid $crayola-ink;
-$speaker-selected-arrow:  $crayola-ink;
+$speaker-selected-outline:  2px solid $crayola-pink;
+$speaker-selected-arrow:  $crayola-pink;
 $speaker-info-bg:         $gray-light;
 $speaker-info-color:      $gray-base;
 
@@ -160,7 +168,7 @@ $night-event:             $primary-dark;
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               $jungle-green !default;
+$body-bg:               $oxford-blue !default;
 //** Global text color on `<body>`.
 $text-color:            $cultured-white !default;
 

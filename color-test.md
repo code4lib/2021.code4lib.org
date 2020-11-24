@@ -27,9 +27,10 @@ Oxford Blue (#061A40), do a test.)
 - Feel free to use shades or tints of colors to achieve accessible results.
 
 <div class="mt-5">
-    <p>Customized buttons here <button class="btn ct-btn-light">button light</button> </p>
-    <p>Customized buttons here <button class="btn ct-btn-middle">button middle</button> </p>
-    <p>Customized buttons here <button class="btn ct-btn-dark">button dark</button> </p>
+##Buttons
+    <p>Customized buttons here <button class="btn ct-btn-light">button light</button> <button type="button" class="btn ct-btn-outline-light">light outline</button></p>
+    <p>Customized buttons here <button class="btn ct-btn-middle">button middle</button> <button type="button" class="btn ct-btn-outline-middle">middle outline</button></p>
+    <p>Customized buttons here <button class="btn ct-btn-dark">button dark</button> <button type="button" class="btn ct-btn-outline-dark">middle dark</button></p>
 </div>
 
 ---
