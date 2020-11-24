@@ -15,6 +15,11 @@ $turquoise: #00D5C0;
 $crayola-pink: #FA62F0;
 $honey-yellow: #FDB827;
 
+//Lighter
+$cultured-white-lighter: #FFF;
+$turquoise-lighter: lighten($turquoise, 10%);
+$crayola-pink-lighter: lighten($crayola-pink, 10%);
+$honey-yellow-lighter: lighten($honey-yellow, 10%);
 //
 // Settings
 // --------------------------------------------------
@@ -47,16 +52,16 @@ $honey-yellow: #FDB827;
 }
 
 .CT-body .speaker-box-inner {
-    border-top: 3px solid $crayola-ink;
-    border-left: 3px solid $crayola-ink;
-    border-right: 3px solid $crayola-ink;
+    border-top: 3px solid $crayola-pink;
+    border-left: 3px solid $crayola-pink;
+    border-right: 3px solid $crayola-pink;
     border-radius: 3px;
 }
 
 .CT-body .arrow-down {
     border-left: 140px solid transparent;
     border-right: 140px solid transparent;
-    border-top: 15px solid $crayola-ink;
+    border-top: 15px solid $crayola-pink;
     height: 0;
     margin-top: 15px;
     opacity: 0;
@@ -66,29 +71,53 @@ $honey-yellow: #FDB827;
 }
 
 .CT-body .ct-btn-light{
-    background-color: $cultured-white;
-    color: $turquoise;
+    background-color: $honey-yellow;
+    color: $black;
     &:hover {
-        outline: 2px solid $crayola-ink;
-        outline-offset: -2px;
+        background-color: $honey-yellow-lighter;
+    }
+}
+
+.CT-body .ct-btn-outline-light{
+    border-color: $honey-yellow;
+    color: $honey-yellow;
+    &:hover {
+        border-color: $honey-yellow-lighter;
+        color: $honey-yellow-lighter;
     }
 }
 
 .CT-body .ct-btn-middle{
-    background-color: $gray-600;
-    color: $cultured-white;
+    background-color: $crayola-pink;
+    color: $black;
     &:hover {
-        outline: 2px solid $crayola-ink;
-        outline-offset: -2px;
+        background-color: $crayola-pink-lighter;
+    }
+}
+
+.CT-body .ct-btn-outline-middle{
+    border-color: $crayola-pink;
+    color: $crayola-pink;
+    &:hover {
+        border-color: $crayola-pink-lighter;
+        color: $crayola-pink-lighter;
     }
 }
 
 .CT-body .ct-btn-dark{
-    background-color: $gray-900;
-    color: $gray-300;
+    background-color: $turquoise;
+    color: $black;
     &:hover {
-        outline: 2px solid $crayola-ink;
-        outline-offset: -2px;
+        background-color: $turquoise-lighter;
+    }
+}
+
+.CT-body .ct-btn-outline-dark{
+    border-color: $turquoise;
+    color: $turquoise;
+    &:hover {
+        border-color: $turquoise-lighter;
+        color: $turquoise-lighter;
     }
 }
 
