@@ -20,6 +20,9 @@ $cultured-white-lighter: #FFF;
 $turquoise-lighter: lighten($turquoise, 10%);
 $crayola-pink-lighter: lighten($crayola-pink, 10%);
 $honey-yellow-lighter: lighten($honey-yellow, 10%);
+$turquoise-darker: darken($turquoise, 10%);
+$crayola-pink-darker: darken($crayola-pink, 10%);
+$honey-yellow-darker: darken($honey-yellow, 10%);
 //
 // Settings
 // --------------------------------------------------
@@ -37,9 +40,15 @@ $honey-yellow-lighter: lighten($honey-yellow, 10%);
     color: $turquoise !important;
 }
 
+// .CT-body a:hover, .CT-body a:focus {
+//     background-color: $black !important;
+//     color: $cultured-white !important;
+// }
+
+
+// Alternative hover effect:
 .CT-body a:hover, .CT-body a:focus {
-    background-color: $black !important;
-    color: $cultured-white !important;
+    color: $crayola-pink !important;
 }
 
 .CT-body hr{
@@ -74,7 +83,9 @@ $honey-yellow-lighter: lighten($honey-yellow, 10%);
     background-color: $honey-yellow;
     color: $black;
     &:hover {
-        background-color: $honey-yellow-lighter;
+        background-color: transparent;
+        color: $honey-yellow-lighter;
+        border-color: $honey-yellow-darker;
     }
 }
 
@@ -82,8 +93,9 @@ $honey-yellow-lighter: lighten($honey-yellow, 10%);
     border-color: $honey-yellow;
     color: $honey-yellow;
     &:hover {
-        border-color: $honey-yellow-lighter;
-        color: $honey-yellow-lighter;
+        background-color: $honey-yellow;
+        color: black;
+        border-color: $honey-yellow-darker;
     }
 }
 
@@ -91,7 +103,9 @@ $honey-yellow-lighter: lighten($honey-yellow, 10%);
     background-color: $crayola-pink;
     color: $black;
     &:hover {
-        background-color: $crayola-pink-lighter;
+        background-color: transparent;
+        color: $crayola-pink;
+        border-color: $crayola-pink-darker;
     }
 }
 
@@ -99,8 +113,9 @@ $honey-yellow-lighter: lighten($honey-yellow, 10%);
     border-color: $crayola-pink;
     color: $crayola-pink;
     &:hover {
-        border-color: $crayola-pink-lighter;
-        color: $crayola-pink-lighter;
+        background-color: $crayola-pink;
+        color: black;
+        border-color: $crayola-pink-darker;
     }
 }
 
@@ -108,7 +123,9 @@ $honey-yellow-lighter: lighten($honey-yellow, 10%);
     background-color: $turquoise;
     color: $black;
     &:hover {
-        background-color: $turquoise-lighter;
+        background-color: transparent;
+        color: $turquoise-lighter;
+        border-color: $turquoise-darker;
     }
 }
 
@@ -116,8 +133,9 @@ $honey-yellow-lighter: lighten($honey-yellow, 10%);
     border-color: $turquoise;
     color: $turquoise;
     &:hover {
-        border-color: $turquoise-lighter;
-        color: $turquoise-lighter;
+        background-color: $turquoise;
+        color: black;
+        border-color: $turquoise-darker;
     }
 }
 
