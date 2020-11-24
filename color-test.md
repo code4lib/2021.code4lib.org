@@ -16,18 +16,18 @@ title: Color Test Page
 visual components (icons, etc.).
 
 - Turquoise (#00D5C0) can be used as a foreground with Oxford Blue (#061A40) or Dark Jungle Green (#041F1E) background
-with sufficient contrast to WCAG 2.0 AAA for regular font, larger font, and visual components (icons, etc.).
+with sufficient contrast to WCAG 2.0 AAA for regular font, [larger font](#), and visual components (icons, etc.).
 
 - Shocking Crayola Pink (#FA62F0) can be used as a foreground with Dark Jungle Green (#041F1E) background for WCAG AA,
 but it does not meet WCAG AAA for regular font (large font and visual components like icons okay).
 
-- For any other combination (e.g. "Cultured" white (#F5F5F5) on Turquoise (#00D5C0) , Shocking Crayola Pink (#FA62F0) on
+- For any other combination (e.g. ["Cultured" white (#F5F5F5)](#) on Turquoise (#00D5C0) , Shocking Crayola Pink (#FA62F0) on
 Oxford Blue (#061A40), do a test.)
 
 - Feel free to use shades or tints of colors to achieve accessible results.
 
+## [Buttons](#)
 <div class="mt-5">
-##Buttons
     <p>Customized buttons here <button class="btn ct-btn-light">button light</button> <button type="button" class="btn ct-btn-outline-light">light outline</button></p>
     <p>Customized buttons here <button class="btn ct-btn-middle">button middle</button> <button type="button" class="btn ct-btn-outline-middle">middle outline</button></p>
     <p>Customized buttons here <button class="btn ct-btn-dark">button dark</button> <button type="button" class="btn ct-btn-outline-dark">middle dark</button></p>
