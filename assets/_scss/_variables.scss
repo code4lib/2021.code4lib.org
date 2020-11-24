@@ -14,11 +14,17 @@ $turquoise: #00D5C0;
 $crayola-pink: #F971F0 ;
 $honey-yellow: #FDB827;
 
+//Foreground lighter
+$cultured-white-lighter: #FFF;
+$turquoise-lighter: lighten($turquoise, 10%);
+$crayola-pink-lighter: lighten($crayola-pink, 10%);
+$honey-yellow-lighter: lighten($honey-yellow, 10%);
+
 // Buttons
-$btn-bg-color-mid: #495057; //$gray-700
-$btn-color-mid: $cultured-white;
-$btn-border-color-mid: #8e908c; //$gray-600
-$btn-border-hover: $crayola-ink;
+$btn-bg-color-mid: $honey-yellow;
+$btn-color-mid: #000;
+$btn-border-color-mid: #000;
+$btn-border-hover: $honey-yellow-lighter;
 
 // Random Utils
 $transparent: transparent !important;
