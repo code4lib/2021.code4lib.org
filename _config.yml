@@ -1,6 +1,6 @@
 url: http://2021.code4lib.org
 permalink: /:categories/:title
-exclude: [node_modules, vendor]
+exclude: [vendor]
 repository: code4lib/2021.codelib.org
 future: true
 timezone: America/New_York
