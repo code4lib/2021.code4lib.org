@@ -8,25 +8,22 @@ title: Color Test Page
 ### H3 SubTitle
 #### H4 SubTitle
 
+- Oxford Blue (#061A40) or Xiketic (#041F1E) can be used as a background.
 
+- “Cultured” white (#F5F5F5) can be used as a foreground with Oxford Blue (#061A40) or Xiketic (#070413) background with sufficient contrast to WCAG 2.0 AAA for regular font, larger font, and visual components (icons, etc.).
 
-- Oxford Blue (#061A40) or Dark Jungle Green (#041F1E)can be used as a background.
+- Turquoise (#00D5C0) can be used as a foreground with Oxford Blue (#061A40) or Xiketic (#070413) background with sufficient contrast to WCAG 2.0 AAA for regular font, larger font, and visual components (icons, etc.) ([Results with Xiketic](https://webaim.org/resources/contrastchecker/?fcolor=00D5C0&bcolor=070413); [Results with Oxford Blue](https://webaim.org/resources/contrastchecker/?fcolor=00D5C0&bcolor=061A40))
 
-- "Cultured" white (#F5F5F5) can be used as a foreground with [Oxford Blue (#061A40)](https://github.com/code4lib/2021.code4lib.org/wiki/2021---Banner-and-Color-scheme) or Dark Jungle Green (#041F1E) background with sufficient contrast to WCAG 2.0 AAA for regular font, larger font, and
-visual components (icons, etc.).
+- Shocking Crayola Pink (#F971F0) can be used as a foreground with Xiketic (#070413) background with sufficient contrast to WCAG 2.0 AAA for regular font, larger font, and visual components (icons, etc.) ([Results with Xiketic](https://webaim.org/resources/contrastchecker/?fcolor=F971F0&bcolor=070413); [Results with Oxford Blue](https://webaim.org/resources/contrastchecker/?fcolor=F971F0&bcolor=061A40))
 
-- Turquoise (#00D5C0) can be used as a foreground with Oxford Blue (#061A40) or Dark Jungle Green (#041F1E) background
-with sufficient contrast to WCAG 2.0 AAA for regular font, [larger font](#), and visual components (icons, etc.).
+- Honey Yellow (#FDB827) can be used as a foreground with Xiketic (#070413) background with sufficient contrast to WCAG 2.0 AAA for regular font, larger font, and visual components (icons, etc.) ([Results with Xiketic](https://webaim.org/resources/contrastchecker/?fcolor=FDB827&bcolor=070413); [Results with Oxford Blue](https://webaim.org/resources/contrastchecker/?fcolor=FDB827&bcolor=061A40))
 
-- Shocking Crayola Pink (#FA62F0) can be used as a foreground with Dark Jungle Green (#041F1E) background for WCAG AA,
-but it does not meet WCAG AAA for regular font (large font and visual components like icons okay).
-
-- For any other combination (e.g. ["Cultured" white (#F5F5F5)](#) on Turquoise (#00D5C0) , Shocking Crayola Pink (#FA62F0) on
-Oxford Blue (#061A40), do a test.)
+- For any other combination (e.g. “Cultured” white (#F5F5F5) on Turquoise (#00D5C0) , Shocking Crayola Pink (#F971F0) on Oxford Blue (#061A40), do a test.)
 
 - Feel free to use shades or tints of colors to achieve accessible results.
 
-## [Buttons](#)
+
+## Buttons
 <div class="mt-5">
     <p>Customized buttons here <button class="btn ct-btn-light">button light</button> <button type="button" class="btn ct-btn-outline-light">light outline</button></p>
     <p>Customized buttons here <button class="btn ct-btn-middle">button middle</button> <button type="button" class="btn ct-btn-outline-middle">middle outline</button></p>
