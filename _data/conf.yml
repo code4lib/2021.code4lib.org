@@ -163,7 +163,7 @@ sponsor-btn-link: 'https://na.eventscloud.com/sponsor.c4l20'
 ###########
 
 keynote-proposals:
-  show: true
+  show: false
   submission-form: 'https://wiki.code4lib.org/2021_Keynote_Speakers_Nominations'
   end-date: '2020-11-25'
 
