@@ -168,7 +168,7 @@ keynote-proposals:
   end-date: '2020-11-25'
 
 workshop-proposals:
-  show: true
+  show: false
   submission-form: 'https://docs.google.com/forms/d/e/1FAIpQLSfGLxdVHROBtxAviUEbfpH4QVYBT7dX4voXt210y92ByWo-kw/viewform'
   end-date: '2020-11-30'
 
