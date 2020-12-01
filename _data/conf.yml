@@ -173,9 +173,9 @@ workshop-proposals:
   end-date: '2020-11-30'
 
 talk-proposals:
-  show: false
-  submission-form: 'https://docs.google.com/forms/d/e/1FAIpQLSehrUxXxcc_jPE_OwiY7Ou0mG0bgU2FIZeB7_F1B0DG8PQaEA/viewform'
-  end-date: '20120-10-16'
+  show: true
+  submission-form: 'https://docs.google.com/forms/d/e/1FAIpQLSfTKj7rT3P82f3vggZZRq15nA_OaXiAiKZmcMIVaAxDvctFjg/viewform'
+  end-date: '2020-12-21'
 
 panel-proposals:
   show: false
