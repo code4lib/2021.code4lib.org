@@ -143,6 +143,7 @@ subnav:
        <div class="col-12">
            <a name="criteria"></a>
            <h2>Eligibility, Criteria, And Requirements</h2>
+           {% if site.data.conf.criteria.show %}
            <ul>
                <li>
                An applicant must be a member of a group not well-represented within the code4lib community, including but not limited to: women, people of color, LGBTQ+, ability/disability, non-binary gender identities, etc. We also invite applications from members of underrepresented and/or marginalized groups that don't fit into the categories listed above.
@@ -154,10 +155,15 @@ subnav:
                The scholarship recipients will be selected based upon their merit and financial needs.
                </li>
            </ul>
+           {% else %}
+           <p>
+               More information to come
+           </p>
+           {% endif %}
 
             <h2>Registration Details</h2>
             <p>
-                Registration spots {% if site.data.conf.venue.name != '' %}and hotel rooms {% endif %}are being held for scholarship recipients. If you can attend only if you receive a scholarship, there is no need to register for the conference {% if site.data.conf.venue.name != '' %}or book a hotel room {% endif %}when registration opens. Code4Lib will assist you with registration{% if site.data.conf.venue.name != '' %} and hotel arrangements{% endif %}; however, if you register for the conference{% if site.data.conf.venue.name != '' %} or book a hotel room{% endif %}, you will be reimbursed along with other expenses. Reimbursement for expenses will be provided to recipients during the conference.
+                Registration spots {% if site.data.conf.venue.name != '' %}and hotel rooms {% endif %}are being held for scholarship recipients. If you can attend only if you receive a scholarship, there is no need to register for the conference {% if site.data.conf.venue.name != '' %}or book a hotel room {% endif %}when registration opens. Code4Lib will assist you with registration{% if site.data.conf.venue.name != '' %} and hotel arrangements{% endif %}; however, if you register for the conference{% if site.data.conf.venue.name != '' %} or book a hotel room{% endif %}, you will be reimbursed. Reimbursement for expenses will be provided to recipients during the conference.
             </p>
        </div>
    </div>
@@ -195,7 +201,7 @@ subnav:
                </p>
            {% else %}
                <p>
-                   Applications for diversity scholarships are not currently being collected. When we are accepting applications, this site will detail what is required.
+                   Applications for scholarship are not currently being collected. When we are accepting applications, this site will detail what is required.
                </p>
            {% endif %}
        </div>
@@ -203,4 +209,5 @@ subnav:
 </div>
 
 {% include_relative angel-fund.html %}
+
 </section>

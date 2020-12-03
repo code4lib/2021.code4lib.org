@@ -306,6 +306,10 @@ volunteer-onsite:
 # Scholarships
 ################
 
+criteria:
+  # if you have this year's eligibility requirements, show criteria section on general-info/scholarships
+  show: false
+
 angel-fund:
     show: false
     # whether to show the "donation thermometer" & Google Spreadsheet key for it
