@@ -150,7 +150,7 @@ show-sponsors: true
 call-for-sponsors: true
 homepage-sponsor-button: true
 # URL to document
-prospectus-document: '/assets/2021_c4l_Infosheet.pdf'
+prospectus-document: ''
 sponsor-btn-link: 'https://na.eventscloud.com/sponsor.c4l21'
 
 ##########
