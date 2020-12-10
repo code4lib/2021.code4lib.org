@@ -26,7 +26,7 @@ active: Attend Code4Lib
 
                     {% if site.data.registration.workshop-only.show %}
                         <h3>Postconference Workshops</h3>
-                        <p><a class="btn btn-lg btn-warning" href="{{ site.data.registration.workshop-only.url }}">Pre Conf Registration</a></p>
+                        <p><a class="btn btn-lg btn-warning" href="{{ site.data.registration.workshop-only.url }}">Post-Conference Registration</a></p>
                     {% endif %}
             </div>
         </div>
@@ -40,9 +40,13 @@ active: Attend Code4Lib
 
                     <li><span class="font-weight-bold">Main Conference (after {{ site.data.registration.conference.end-date | date: "%B %-d" }})</span>: {{ site.data.registration.conference.late-cost }}</li>
 
+                    {% if site.data.registration.post-conference.show %}
+                    <li><span class="font-weight-bold">Post-Conference</span>: Pricing & Details Coming Soon</li>
+                    {% else %}
                     <li><span class="font-weight-bold">Pre-Conferences (with main conference registration)</span>: {{ site.data.registration.conference.workshop-half-day-cost }} per half day ({{ site.data.registration.conference.workshop-full-day-cost }} for full day)</li>
 
                     <li><span class="font-weight-bold">Pre-Conference Only</span>: {{ site.data.registration.workshop-only.half-day-cost }} per half day ({{ site.data.registration.workshop-only.full-day-cost }} for full day) {%- if site.data.registration.workshop-only.start-date -%}. Opens {{ site.data.registration.workshop-only.start-date | date: "%B %-d" }}.{%- endif -%}</li>
+                    {% endif %}
 
                     {% if site.data.registration.reception.plus-one-cost %}
                         <li><span class="font-weight-bold">Reception "plus one"</span>: {{ site.data.registration.reception.plus-one-cost }} (limit one "plus one" per registration)</li>
@@ -64,22 +68,17 @@ active: Attend Code4Lib
                 </ul>
 
                 <p>
-                    When you register, you will be able to select one all-day workshop or two
-                    half-day workshops. As with past Code4Lib conferences, it will be
-                    possible to register for the main conference, the main conference +
-                    post-conference day, or only for the post-conference day (post-conference
-                    only day registration will open in mid-January).
-                </p>
-
-                <p>
                     <span class="font-weight-bold">Payment Policy</span>: Payment for the full amount of registration fees must be made at the time of registration or within 48 hours of the completion of registration.
                 </p>
 
                 <p>
-                    <span class="font-weight-bold">Cancellation Policy</span>:  All cancellations received on or before {{ site.data.registration.conference.cancellation-date | date: "%B %-d, %Y" }} are eligible for a full refund of fees paid, less a 10% cancellation fee.
-                    No refunds will be issued after the {{ site.data.registration.conference.cancellation-date | date: "%B %-d" }} cut-off date.
-                    Registrants are able to transfer completed registrations to colleagues - please contact <a href="mailto:{{ site.data.conf.main-conf-email }}">{{ site.data.conf.main-conf-email }}</a> to finalize this process.
+                    <span class="font-weight-bold">Cancellation Policy</span>: Refunds will not be issued this year (except in extenuating circumstances). Registrants are able to transfer completed registrations to colleagues - please contact <a href="mailto:{{ site.data.conf.main-conf-email }}">{{ site.data.conf.main-conf-email }}</a> to finalize this process.
                 </p>
+
+                <p>
+                    When you register, you will be able to select one all-day workshop or two half-day workshop (depending on final offerings.) As with past Code4Lib conferences, it will be possible to register for the main conference, the main conference + post-conference day, or only for the post-conference day (post-conference only day registration will open in mid-January).
+                </p>
+
             </div>
         </div>
 
