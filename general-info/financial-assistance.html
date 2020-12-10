@@ -1,0 +1,227 @@
+---
+layout: secondary-nav
+title: Financial Assistance
+nav: general-info
+active: Financial Assistance
+subnav:
+#- name: Recipients
+#  url: '#recipients'
+#- name: 'Eligibility, Criteria, & Requirements'
+#  url: '#criteria'
+#- name: 'How to Apply'
+#  url: '#how-to-apply'
+- name: 'Individual Giving'
+  url: '#angel-fund'
+---
+
+{% assign year = site.data.conf.year %}
+
+<section class="general-info">
+
+<!-- REMOVE FOR 2021
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <h1>Scholarships</h1>
+                {% if site.data.conf.diversity-scholarship-applications.show %}
+                <div class="row">
+                    <div class="card panel-default">
+                        <div class="card-body">
+                            <div class="col-9">
+                                Diversity Scholarship applications are being accepted through {{ site.data.conf.diversity-scholarship-applications.end-date | date: '%B %-d'}}{% include date_ordinals.html date=site.data.conf.diversity-scholarship-applications.end-date %}.
+                            </div>
+                            <div class="col-3">
+                                <a class="btn btn-warning btn-sm btn-block" href="{{ site.data.conf.diversity-scholarship-applications.url }}">
+                                    Apply
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+
+                {% if site.data.conf.diversity-scholarship-sponsors.seeking %}
+                    <p>
+                        We are seeking organizations to sponsor diversity scholarships; if you are interested, please contact <a href="mailto:{{site.data.conf.sponsor-contact-email}}">{{site.data.conf.sponsor-contact-email}}</a>.
+                    </p>
+                {% endif %}
+
+                {% if site.data.conf.angel-fund.show %}
+                    <p>
+                        Individual community members can also support the Diversity Scholarships program via our <a href="#angel-fund">Angel Fund</a>.
+                    </p>
+                {% endif %}
+
+                {% if site.data.scholarship-recipients %}
+                    <h2 id="recipients">{{year}} Code4Lib Scholarship Recipients</h2>
+                    <p>
+                        The Scholarship Committee is pleased to announce the
+                        Code4Lib {{year}} Conference Diversity Scholarship awardees.
+                        Through the generosity of <a href="#sponsors">our
+                        sponsors</a> and the Code4lib community we were able to
+                        award {{ site.data.scholarship-recipients|size }}
+                        scholarships to defray costs associated with attending
+                        the conference. We received a large number of applications
+                        from highly qualified candidates this year, and it was a
+                        humbling experience for the committee to select just
+                        {{ site.data.scholarship-recipients|size }} awardees.
+                        Congratulations to all Code4Lib scholarship recipients!
+                    </p>
+
+                    <dl>
+                        {% for person in site.data.scholarship-recipients %}
+                            <dt>{{ person.name }}
+                                {% if person.twitter_handle.size > 0 %}
+                                &nbsp;
+                                <span class="speaker-bio">
+                                    <span class="icon icon--twitter">
+                                      <a href="https://twitter.com/{{ person.twitter_handle }}">
+                                          <svg viewBox="0 0 18 18">
+                                              <path fill="#006272" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                                              c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"></path>
+                                          </svg>
+                                        <span class="username">{{ person.twitter_handle }}</span>
+                                      </a>
+                                    </span>
+                                </span>
+                                {% endif %}
+                            </dt>
+                            {% if person.bio.size > 0 %}
+                                <dd>{{ person.bio }}</dd>
+                            {% else %}
+                                <dd class="sr-only">No bio provided.</dd>
+                            {% endif %}
+                        {% endfor %}
+                    </dl>
+                {% else %}
+                {% comment %} remove from secondary nav (jQuery not yet on page) {% endcomment %}
+                <script>document.querySelector('.secondarynav a[href="#recipients"]').parentElement.remove()</script>
+                {% endif %}
+        </div>
+    </div>
+</div>
+
+{% if site.data.conf.diversity-scholarship-applications.show %}
+<div class="container-fluid">
+   <div class="row">
+       <div class="col-12">
+           <h2>Accepting Applications Now!</h2>
+           <p>
+               As part of Code4Lib's ongoing commitment to reducing economic barriers that prevent participation for underrepresented groups, and to achieving a balanced representation of the human experience, we are pleased to announce that we are now seeking applicants for our <a href="/general-info/scholarships">{{site.data.conf.year}} Diversity Scholarship program</a>! The <a href="{{ site.data.conf.committee-wiki-url }}">Code4Lib Scholarship Committee</a> hopes to award multiple Diversity Scholarships, based on merit and need.  Each scholarship will cover up to {{ site.data.conf.max-scholarship-award }} for {% if site.data.conf.venue.name != '' %}travel costs, lodging, and {% endif %}conference fees for selected applicants to attend the <a href="/">{{site.data.conf.year}} Code4Lib Conference</a>.
+           </p>
+           <p>
+              <strong>Applications will be accepted through {{ site.data.conf.diversity-scholarship-applications.end-date | date: '%B %-d'}}{% include date_ordinals.html date=site.data.conf.diversity-scholarship-applications.end-date%}</strong> (<a href="#how-to-apply">see below for more details</a>).
+           </p>
+            <p>
+                The scholarship will cover conference registration {% if site.data.conf.venue.name != '' %}and hotel accommodations{% endif %} up front to scholarship awardees.{% if site.data.conf.venue.name != '' %} Other incidentals like travel and meals may be reimbursed based on the amount awarded. Reimbursement will be managed independently at the conference. Pairing up housing with other scholarship awardees or conference attendees may also be accommodated.{% endif %} Please contact <a href="mailto:{{site.data.conf.scholarship-contact-email}}">{{site.data.conf.scholarship-contact-email}}</a> with any questions about this arrangement. We want to ensure that financial issues do not discourage anyone from applying to this award.
+            </p>
+            <p>
+                We do not expect scholarship recipients to be responsible for being an ambassador for their group or an educator of others during the conference. While learning and exchange may happen as a result of interactions between participants, scholarship recipients are encouraged to focus on getting the most out of their experience and have no special duties or obligations apart from conference attendance, engaged participation to their comfort level, and giving us feedback on their experience.
+            </p>
+       </div>
+   </div>
+</div>
+{% endif %}
+
+{% if site.data.conf.diversity-scholarship-sponsors.show  %}
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <h2 id="sponsors">Made possible by the generosity of our sponsors and community</h2>
+
+      {% assign sponsors = site.data.sponsors | where: "diversity", true %}
+      <div class="sponsor-group">
+        {% for sponsor in sponsors %}
+          {% include sponsors/logo.html sponsor=sponsor no-annotation=true %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<div class="container-fluid">
+   <div class="row">
+       <div class="col-12">
+           <a name="criteria"></a>
+           <h2>Eligibility, Criteria, And Requirements</h2>
+           {% if site.data.conf.criteria.show %}
+           <ul>
+               <li>
+               An applicant must be a member of a group not well-represented within the code4lib community, including but not limited to: women, people of color, LGBTQ+, ability/disability, non-binary gender identities, etc. We also invite applications from members of underrepresented and/or marginalized groups that don't fit into the categories listed above.
+               </li>
+               <li>
+               Applicants must be interested in actively engaging with the Code4Lib community. For more information about Code4Lib, see the <a href="/general-info/about-c4l">About Code4Lib Page</a>.
+               </li>
+               <li>
+               The scholarship recipients will be selected based upon their merit and financial needs.
+               </li>
+           </ul>
+           {% else %}
+           <p>
+               More information to come
+           </p>
+           {% endif %}
+
+            <h2>Registration Details</h2>
+            <p>
+                Registration spots {% if site.data.conf.venue.name != '' %}and hotel rooms {% endif %}are being held for scholarship recipients. If you can attend only if you receive a scholarship, there is no need to register for the conference {% if site.data.conf.venue.name != '' %}or book a hotel room {% endif %}when registration opens. Code4Lib will assist you with registration{% if site.data.conf.venue.name != '' %} and hotel arrangements{% endif %}; however, if you register for the conference{% if site.data.conf.venue.name != '' %} or book a hotel room{% endif %}, you will be reimbursed. Reimbursement for expenses will be provided to recipients during the conference.
+            </p>
+       </div>
+   </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <a name="how-to-apply"></a>
+            <h2>How to Apply</h2>
+            {% if site.data.conf.diversity-scholarship-applications.show %}
+                <p>
+                   Submit your application materials via the Code4Lib online form: <a href="{{ site.data.conf.diversity-scholarship-applications.apply-url }}">{{ site.data.conf.diversity-scholarship-applications.apply-url }}</a>
+                </p>
+                <p>
+                   You will need to prepare:
+                   <ol>
+                       <li>A brief letter of interest, no more than 500 words, which:
+                           <ul>
+                               <li>Identifies your eligibility for a diversity scholarship</li>
+                               <li>Describes how you see yourself benefiting from and participating in the Code4Lib {{site.data.conf.year}} conference and the general Code4Lib community</li>
+                           </ul>
+                       </li>
+                       <li>Your current resume or CV</li>
+                       <li>Contact information for one reference who can speak to your professional goals and/or achievements</li>
+                   </ol>
+               <p>
+                   Please note: Your brief letter of interest and current CV/resume should be <strong>combined into a single PDF</strong>. Your file should follow a “Lastname-Firstname.pdf” naming convention. Questions can be directed to <a href="mailto:{{site.data.conf.scholarship-contact-email}}">{{site.data.conf.scholarship-contact-email}}</a>.
+               </p>
+               <p>
+                   The application deadline is midnight on <strong>{{ site.data.conf.diversity-scholarship-applications.end-date | date: '%b %-d, %Y '}}</strong>.
+               </p>
+               <p>
+                  The scholarship committee will notify all applicants by <strong>{{ site.data.conf.diversity-scholarship-applications.notification-date | date: '%b %-d, %Y'}}</strong>, regardless of award results.
+               </p>
+           {% else %}
+               <p>
+                   Applications for scholarship are not currently being collected. When we are accepting applications, this site will detail what is required.
+               </p>
+           {% endif %}
+       </div>
+   </div>
+</div>
+-->
+
+<div class="container-fluid">
+<div class="row">
+    <div class="col-12">
+        <h1>Financial Assistance</h1>
+        <p>Every year we have seen the Code4Lib Community gather together to support diversity and inclusion with the Diversity Scholarships. Due to the ups and downs of the past year, we have chosen to direct our financial support to those experiencing financial hardships.</p>
+        <p>We understand that budgets have been cut around the world and many individuals are experiencing transitions that may cause financial hardships. We strive to make Code4Lib accessible to all that want to attend. If you are interested in participating this year, but are challenged by the registration fee, please complete the Financial Assistance Form to request financial assistance.</p>
+        <p>Financial Assistance Form will be linked here once registration opens.</p>
+    </div>
+</div>
+</div>
+
+{% include_relative angel-fund.html %}
+
+</section>
