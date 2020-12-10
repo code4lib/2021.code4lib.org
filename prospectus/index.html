@@ -13,7 +13,7 @@ published: true
                     <img src="{{ site.baseurl }}/assets/img/persistent/prospectus-collage.jpg" title="Credit sdellis on Twitter" alt="Code4Lib Collage" width="100%">
                 </p>
                 <p>
-                  The Code4Lib {{site.data.conf.year}} Conference, scheduled for early {{site.data.conf.year}} in {{site.data.conf.location}}, presents an opportunity for vendors, organizations, libraries, and projects to show their support for open and collaborative solutions for higher education, libraries, museums, and archives by providing financial support and attending the conference.
+                  The Code4Lib {{site.data.conf.year}} Conference, scheduled for {{site.data.conf.days[0].date-data | date: "%B %-d"}} - {{site.data.conf.days.last.date-data | date: "%-d"}}{% if site.data.conf.venue.name != '' %} in {{site.data.conf.location}}{% endif %}, presents an opportunity for vendors, organizations, libraries, and projects to show their support for open and collaborative solutions for higher education, libraries, museums, and archives by providing financial support and attending the conference.
                 </p>
                 <a class="btn btn-warning btn-lg" href="{{site.data.conf.sponsor-btn-link}}">Sponsor Code4Lib {{site.data.conf.year}}</a>
 
@@ -38,7 +38,7 @@ published: true
                   <ul>
                     <li>Conference speakers and programs are chosen by a voting process open to the entire community.</li>
                     <li>Sessions are live-streamed to support remote attendance. Beginning in 2016, the stream was captioned in real-time to promote accessibility, and the community is committed to continuing this service.</li>
-                    <li>Diversity scholarships help members of underrepresented communities attend the conference and take advantage of learning and networking opportunities. Many individual community members donate personally to increase the number of scholarships.</li>
+                    <!--<li>Diversity scholarships help members of underrepresented communities attend the conference and take advantage of learning and networking opportunities. Many individual community members donate personally to increase the number of scholarships.</li>-->
                     <li>Our single-track format promotes broad sharing of ideas; the 20-minute time limit for presentations allows topics on a wide variety of technologies.</li>
                   </ul>
                 </p>
@@ -56,9 +56,9 @@ published: true
                   Code4Lib offers a nexus for technical professionals from galleries, libraries, museums, and archives. Through sponsoring the conference, you can help create connections between projects and individuals, encourage good ideas to cross the gaps between subcommunities, and spawn new ideas. You can also help practitioners level up their skills in technology as well as collaboration with professionals in different areas of expertise.
                 </p>
 
-                <p>
+                <!-- <p>
                   The Code4Lib community takes inclusion and equity seriously. By sponsoring Code4Lib's diversity scholarships, you can help ensure that the attendees better represent the mix of people that galleries, libraries, museums, and archives technology should both embody and serve.
-                </p>
+                </p> -->
 
                 <p>
                   Your sponsorship of the conference can also provide immediate, concrete benefits to you and your organization. Code4Lib attendees include active practitioners who may be interested in your product, open source project, or services as well as department heads and senior administrators (approximately 17% of attendees last year) who make purchase decisions. Sponsors are strongly encouraged to send their staff to the conference to take advantage of access to the people and ideas who make up the Code4Lib community.
