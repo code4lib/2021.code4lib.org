@@ -3,7 +3,7 @@
 		<div class="col-12">
 			<h2>Individual Giving</h2>
 			<p>
-				The Code4Lib community understands that this year has brought financial hardship to many of us. To help ease the financial burden and encourage broad participation, we're offering multiple scholarships to attend the annual conference. In addition to seeking organization sponsors for scholarships, we accept donations from individuals who would like to support the scholarship program. Individual donors will be thanked on the Scholarship page, though anonymous donation is also possible. All funds raised will go towards conference registration costs for Code4Lib's scholarship recipients.
+				The Angel Fund has proven over the years to be a successful way for individuals in the community to support the Diversity Scholarships. We would like to continue accepting donations from individuals who would like to support this year’s Financial Assistance Program. Individual donors will be thanked below, though anonymous donation is also possible. All funds raised will help pay the conference registration costs for anyone in the community requesting financial assistance for our annual conference.
 			</p>
             {% if site.data.conf.angel-fund.show %}
             <p>
@@ -12,6 +12,10 @@
 			<div>
 				<a class="btn btn-warning btn-lg" href="{{ site.data.conf.angel-fund.url }}" target="_blank">Donate to the Angel Fund today!</a>
 			</div><br>
+			{% else %}
+			<p>
+				Click Here to Donate Now (link coming soon!) OR add on a donation during your registration.
+			</p>
 			{% endif %}
 
 			<div id="donation-total"></div>

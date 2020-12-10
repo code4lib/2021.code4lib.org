@@ -3,6 +3,8 @@
 ###############
 
 # include "$" in all "cost" strings, makes templates cleaner
+post-conference:
+  show: true
 
 workshop-only:
   # "show" only affects a button on the general-info/attend page
@@ -15,17 +17,17 @@ workshop-only:
 
 conference:
   # "show" means display information on the home page and /general-info/attend
-  show: false
+  show: true
   url: "https://na.eventscloud.com/c4l20"
-  start-date: 2019-12-11
-  end-date: 2020-02-10
+  start-date: 2021-01-20
+  end-date: 2020-03-12
   cancellation-date: 2020-02-12
   # "open" means people can register
   open: false
-  cost: "$375"
-  late-cost: "$450"
-  workshop-half-day-cost: "$50"
-  workshop-full-day-cost: "$100"
+  cost: "$49"
+  late-cost: "$59"
+  workshop-half-day-cost: ""
+  workshop-full-day-cost: ""
   # Is registration capped? true/false
   limited-capacity:
 
