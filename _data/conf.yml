@@ -151,7 +151,7 @@ call-for-sponsors: true
 homepage-sponsor-button: true
 # URL to document
 prospectus-document: '/assets/2021_c4l_Infosheet.pdf'
-sponsor-btn-link: 'https://na.eventscloud.com/sponsor.c4l20'
+sponsor-btn-link: 'https://na.eventscloud.com/sponsor.c4l21'
 
 ##########
 # !!!NOTE!!! All 'end-date' vars should be in the following format: YYYY-MM-DD
