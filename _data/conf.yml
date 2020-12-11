@@ -202,9 +202,9 @@ host-proposals:
 ###########
 
 keynote-voting:
-  show: false
-  url: 'https://forms.gle/uDaMVX9nopjjNh5Y8'
-  end-date: '2019-12-02'
+  show: true
+  url: 'https://forms.gle/QbNwRbSwhE7E67ik7'
+  end-date: '2021-01-08'
 
 workshop-voting:
   show: false
