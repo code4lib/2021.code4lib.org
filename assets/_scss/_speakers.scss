@@ -103,12 +103,12 @@ p.speaker-inst {
 }
 
 .speaker-info.show {
-  -moz-transition: max-height .35s ease;
-  -o-transition: max-height .35s ease;
-  -webkit-transition: max-height .35s ease;
+  -moz-transition: max-height .15s ease;
+  -o-transition: max-height .15s ease;
+  -webkit-transition: max-height .15s ease;
   max-height: 600px;
-  transition: max-height .35s ease;
-  transition-delay: .15s;
+  transition: max-height .15s ease;
+  transition-delay: .0s;
 }
 
 .speaker-info-inner {

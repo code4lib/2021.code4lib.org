@@ -73,18 +73,7 @@ jQuery(document).ready(function($){
     }
 
     function toggleSpeaker(target){
-        var shownHeight;
-
-        if ($('.speaker-info.show').length){
-            shownHeight = $('.speaker-info.show').height();
-        } else {
-            shownHeight = 0;
-        }
-
-        $('html, body').animate({
-            scrollTop: $(target+'-id').offset().top - shownHeight
-        }, 500);
-        if (!$(target+'-id').hasClass('show')){
+        if (!$(target+'-id').hasClass('selected')){
                 $('.speaker-info').removeClass('show');
                 $('.speaker-box').removeClass('selected');
                 $(target+'-info').addClass('show');
