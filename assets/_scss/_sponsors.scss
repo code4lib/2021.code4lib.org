@@ -150,7 +150,7 @@
   -o-transition-duration: .3s;
   -webkit-border-radius: 0 5px 5px 0;
   -webkit-transition-duration: .3s;
-  background-color: $accent-light;
+  background-color: $crayola-pink;
   border-radius: 0 5px 5px 0;
   left: 0;
   padding: 30px 0;
@@ -174,9 +174,11 @@
     -o-transition-duration: .3s;
     -webkit-border-radius: 0 0 5px 0;
     -webkit-transition-duration: .3s;
-    background-color: $accent-light;
+    background-color: $oxford-blue;
     border-radius: 0 0 5px;
-    color: $black;
+    border-bottom: 2px solid $crayola-pink;
+    border-top: 2px solid $crayola-pink;
+    border-right: 2px solid $crayola-pink;
     padding: 20px;
     text-align: left;
     transition-duration: .3s;
