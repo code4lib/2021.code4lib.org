@@ -1,37 +1,17 @@
 <div class="container-fluid" id="angel-fund">
 	<div class="row">
 		<div class="col-12">
+			{% if site.data.conf.angel-fund.show %}
 			<h2>Individual Giving</h2>
 			<p>
 				The Angel Fund has proven over the years to be a successful way for individuals in the community to support the Diversity Scholarships. We would like to continue accepting donations from individuals who would like to support this year’s Financial Assistance Program. Individual donors will be thanked below, though anonymous donation is also possible. All funds raised will help pay the conference registration costs for anyone in the community requesting financial assistance for our annual conference.
 			</p>
-            {% if site.data.conf.angel-fund.show %}
-            <p>
-				When donating, select a matching fund using the <strong>Special Designation</strong> drop-down menu. Please feel free to direct any question to <a href="mailto:{{ site.data.conf.sponsor-contact-email }}">{{ site.data.conf.sponsor-contact-email }}</a>.
-			</p>
 			<div>
 				<a class="btn btn-warning btn-lg" href="{{ site.data.conf.angel-fund.url }}" target="_blank">Donate to the Angel Fund today!</a>
 			</div><br>
-			{% else %}
-			<p>
-				<a href="https://mxmerchant.com/mxcustomer/d/46efc4f8-1366-4943-a367-3d11cda79283/v3">Click Here to Donate Now</a> OR add on a donation during your registration.
-			</p>
 			{% endif %}
 
 			<div id="donation-total"></div>
-
-			<!--
-			<div class="row">
-				<p class="col-md-8 js-matching-funds">
-					Matching Funds are a great way to raise Diversity Scholarship funds and to double your donation’s impact! The organization(s) listed below have generously pledged to match your donations once a Matching Fund goal is reached.
-				</p>
-				<div class="col-md-4">
-					<a href="http://libtechwomen.org/">
-						<img class="img-fluid" src="/assets/img/sponsors/libtechwomen.jpg" alt="LibTechWomen">
-					</a>
-				</div>
-			</div>
-			-->
 
 			{% if site.data.conf.angel-fund.thermometer %}
 				<div id="donation-thermometers"></div>

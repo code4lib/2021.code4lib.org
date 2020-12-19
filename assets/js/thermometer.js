@@ -1,6 +1,6 @@
 ---
 ---
-const key = '1IBDcAgamPKlEL-HcyfiHA6bLGf1KU8-5C1w-GN2Rze0'
+const key = '1U-FaszOhcXxpQnfMaI9TbRfcpQfPxrogfl8zrFIVIOk'
 // data is on separate worksheets of the same spreadsheet
 const donations_url = `https://spreadsheets.google.com/feeds/cells/${key}/1/public/basic?alt=json`
 const goals_url = `https://spreadsheets.google.com/feeds/cells/${key}/2/public/basic?alt=json`
