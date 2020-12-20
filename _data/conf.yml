@@ -311,12 +311,12 @@ criteria:
   show: false
 
 angel-fund:
-    show: false
+    show: true
     # whether to show the "donation thermometer" & Google Spreadsheet key for it
     # NOTE: spreadsheet needs to be "published to the web"
-    thermometer: false
-    spreadsheet-key: '1IBDcAgamPKlEL-HcyfiHA6bLGf1KU8-5C1w-GN2Rze0'
-    url: https://mxmerchant.com/mxcustomer/d/27881511-a676-4fa5-80cb-9987204864c4/v3
+    thermometer: true
+    spreadsheet-key: '1U-FaszOhcXxpQnfMaI9TbRfcpQfPxrogfl8zrFIVIOk'
+    url: https://mxmerchant.com/mxcustomer/d/46efc4f8-1366-4943-a367-3d11cda79283/v3
 
 diversity-scholarship-applications:
   show: false
