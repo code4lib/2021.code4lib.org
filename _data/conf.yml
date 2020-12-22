@@ -173,7 +173,7 @@ workshop-proposals:
   end-date: '2020-12-13'
 
 talk-proposals:
-  show: true
+  show: false
   submission-form: 'https://docs.google.com/forms/d/e/1FAIpQLSfTKj7rT3P82f3vggZZRq15nA_OaXiAiKZmcMIVaAxDvctFjg/viewform'
   end-date: '2020-12-21'
 
