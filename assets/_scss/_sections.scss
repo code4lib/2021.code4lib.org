@@ -42,6 +42,16 @@ section:nth-of-type(3n+3) {
 section .general-info {
   background: none;
   //color: $gray-base;
+  li.actions-list {
+      list-style: none;
+  }
+  li.actions-list span {
+      display: block;
+      margin-bottom: 16px;
+  }
+  .list-heading {
+      margin-top: 16px;
+  }
 }
 
 section .general-info a {
