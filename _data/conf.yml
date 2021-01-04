@@ -212,9 +212,9 @@ workshop-voting:
   end-date: '2019-11-19'
 
 talk-voting:
-  show: false
-  url: 'https://forms.gle/DuNEqZ5gGtvmDtUZ8'
-  end-date: '2019-11-01'
+  show: true
+  url: 'https://forms.gle/MsnFX4G5rZLraRwKA'
+  end-date: '2021-01-22'
 
 panel-voting:
   show: false
