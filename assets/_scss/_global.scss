@@ -30,13 +30,13 @@ h4,
 h5 {
   font-family: $font-family-sans-serif;
   letter-spacing: .02em;
-
-  &.expo {
-    border-bottom: 1px solid $crayola-pink;
-  }
-
   margin-top: $font-size-base;
   margin-bottom: $font-size-base;
+}
+
+.expo {
+    border-bottom: 1px solid $crayola-pink;
+    margin-bottom: $font-size-base;
 }
 
 .btn:focus {

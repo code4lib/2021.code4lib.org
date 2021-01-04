@@ -128,162 +128,133 @@ subnav:
 	
 	<div class="row">
 		<div class="col-12">
-			<h2 id="platform">Conference Platform Accessibility</h2>
-			<p> 
-				Code4Lib 2021 will be using Whova as the conference platform. In general, the platform is accessible, but it is missing landmarks and headers on pages. You can <a href="https://github.com/terrill/whova-a11y-fix">install a userscript</a> in your browser (Tampermonkey for Chrome or Greasemonkey for Firefox) that will create landmarks and headers. The userscript is not available for Safari. For assistance, contact <a href="mailto:{{site.data.conf.accessibility-email}}">{{site.data.conf.accessibility-email}}</a>. 
-			</p>
-		</div>
-	</div>
-	
-	<div class="row">
-		<div class="col-12">
-			<h2 id="presenters">Accessibility Instructions for Presenters</h2>
-            <p>
-                All presenters should please review these accessibility requirements and presentation logistics. Make note of the four action items for your talk(s).
-            </p>
-
-            <h3>Action 1: Submit Slides Early for Supporting Live Captioning</h3>
-            <p>
-                Code4Lib {{site.data.conf.year}} will feature live captioning during the three days of the general conference. In order to improve the quality of this service, we
-                ask presenters to send their slides to us so that the captioners can use them as reference and improve the quality of the live text stream.
-            </p>
-			
-            {% if site.data.conf.slides.show %}
-            <p>
-                Please submit your slides to the <a href="{{site.data.conf.slides.url}}">Code4Lib {{site.data.conf.year}} repository</a>
-                or to {{site.data.conf.slides.contact}} (<a href="mailto:{{site.data.conf.slides.email}}?Subject=Code4Lib%20Slides">{{site.data.conf.slides.email}}</a>)
-                at least 24 hours before your presentation (the earlier the better).
-            </p>
-            {% endif %}
-			
-            <p>
-                <strong>NOTE:</strong> You can continue to edit and change your slides after submission. You do not need to resubmit any changes unless you
-                feel you added any difficult words or terms that would be challenging for live captioning. Keep in mind that the captioners may not have domain
-                expertise in libraries.
-            </p>
-
-            <h3>Action 2: Design an Accessible Presentation</h3>
-            <p>
-                Presenters are encouraged to use the following guidelines to ensure that their presentations are visually accessible to attendees in an online environment. <a href="https://wiki.diglib.org/Creating_Accessible_and_Interactive_Online_Presentations">More detailed information on creating accessible online presentations is available from the Digital Library Federation</a>.
-            </p>
-			
-            <h4>Basic Slide Design</h4>
-            <ul>
-                <li>
-					Use an easy-to-read font. Suggested fonts include: Helvetica and its clones (Arial, Calibri, etc.), Gill Sans, Comic Sans (seriously!), Verdana, Franklin Gothic, Rockwell, Tahoma, Lucida, and Times New Roman.
-				</li>
-                <li>
-					Try to minimize the amount of text on each slide. Use bullet points instead of full paragraphs. Limit your slides to 1 main idea and 3 supporting ideas per slide.
-				</li>
-                <li>Aim for a font size of 20-30 point. Generally, do not go below 24-point for slide content.</li>
-                <li>Use underlining, italics, and boldface sparingly.</li>
-                <li>
-                    Aim for a font size of 20-30 point. Generally, do not go below 18-point for slide content (if you plan to share your slides
-                    with the community, it’s okay to use smaller fonts for references and URIs).
-                </li>
-				<li>
-					Choose text and background colors that have good contrast and are easy to read, such as black/white, white/dark blue, yellow/black, off-white/black. You can <a href="http://webaim.org/resources/contrastchecker/">use a contrast checker</a> to check for good contrast, or the <a href="https://projects.susielu.com/viz-palette">Viz Palette Designer to select color palettes</a>.
-				</li>
-				<li>
-					Leave space at the bottom of the slides for the live captioning to appear (usually about ¼ the overall size of the slide). There should be no important text in this area.
-				</li>
-				<li>
-					If you will have your camera on during your slides, it’s suggested that you leave a corner of your slides free of important text, so that your presenter image doesn’t cover up anything.
-				</li>
-				<li>
-					[caption]The above image is of a slide with blank space at the top right corner to house the camera view of the speaker. At the bottom of the slide, there is an image footer that can be easily covered by the closed captioning.[/caption]
-				</li>
-            </ul>
-			
-            <h4>Graphs and Charts</h4>
-            <ul>
-                <li>
-                    Use the built-in options for creating charts and graphs instead of using an image or screencap, so that a person using assistive technology can access the data.
-                </li>
-                <li>
-                    For color blindness considerations, add patterns or labels in graphs and charts, or use the <a href="https://projects.susielu.com/viz-palette">Viz Palette Designer</a> to select sight-friendly color palettes. 
-                </li>
-            </ul>
-			
-            <h4>Images/Videos/Animations</h4>
-            <ul>
-                <li>Avoid blinking text and animations that endlessly repeat.</li>
-                <li>
-                    If your presentation features lots of animations, videos, etc., please include a warning at the start of your talk. This is especially
-                    needed if any contain lots of flicker.
-                </li>
-				<li>Be mindful of progressing quickly back and forth through slides, to reduce flicker.</li>
-                <li>If a video contains sound or dialogue, please try to use a version with captioning.</li>
-				<li>
-					Include Alt text for all images in the slides you upload to the repository. WebAIM has useful information about <a href="https://webaim.org/techniques/alttext/">alt text and how to write it</a>.
-				</li>
-				<li>While presenting, describe any images, and give a descriptive introduction for a video.</li>
-            </ul>
-			
-            <h4>Sharing Slides</h4>
-            <ul>
-                <li>
-                    Participants are encouraged to share their slides. If placed on the web, please include a short link in your opening slides for attendees
-                    to view on their personal machines.
-                </li>
-                <li>Include speaker notes with your files if the file format allows. In particular, describe any images, tables, charts, etc. in the notes.</li>
-                <li>
-					It’s easier to make your original presentation slides accessible than it is to produce an <a href="http://webaim.org/techniques/acrobat/">accessible PDF/A of your slides</a>. Please see <a href="http://webaim.org/techniques/powerpoint/">PowerPoint</a> and <a href="https://www.swarthmore.edu/sites/default/files/assets/documents/academic-advising-support/Accessible%20Presentations.pdf">KeyNote</a> accessibility advice, as well as <a href="https://support.google.com/docs/answer/6199477?hl=en">Google Slides accessibility pages</a>. 
-                </li>
-            </ul>
-			<h4>Supplemental Materials</h4>
-			<ul>
-				<li>Use the built-in accessibility checker for any supplemental materials you want to include with your presentation.</li>
-				<li>When possible, do not use PDF. Make materials available in their original format (Word, txt, Excel, etc.) to ensure their accessibility.</li>
-			</ul>
-			
-			<h3>Action 3: Be inclusive in your presentation</h3>
-			Please follow the <a href="/conduct/">Code of Conduct</a> during any interaction with others at the conference. 
-			<ul>
-				<li>
-					If your presentation is interactive, tell the audience at the start what you will be doing (“I will ask you to write down some thoughts multiple times during the presentation, so please get a pen and paper now,” or “I’ll give you 1 minute to fill out this poll”), and actually give them enough time to complete the work.
-				</li>
-				<li>
-					Presenters should use an external unidirectional microphone or headset with mic. This will cut down on external noises (people  talking, computer fan noises, etc.) and make it easier for live captioning. Make sure the mic is directly in front of your mouth to ensure the best audio capture. 
-				</li>
-				<li>
-					Speak slowly and clearly, like a newscaster, to make it easier for the captioner (and audience) to understand you.
-				</li>
-				<li>
-					If you are answering questions from the chat, read the question out loud and credit the person asking it (unless you are taking anonymous questions). 
-				</li>
-				<li>
-					If you are using jargon or discipline-specific language, let the live captioner know ahead of time what those words are and how to spell them. You can also place them in your speaker notes or on the slides of the presentation to make it clear to the audience as well. (When in doubt, assume it’s jargon!)
-				</li>
-				<li>
-					Describe images to the audience as you present, and give a brief description of a video before you play it if it has no captions. 
-				</li>
-				<li>
-					Instead of asking your audience to read a slide, read it aloud to them instead (the audience may have a very small screen, or may not be able to see the slides). 
-				</li>
-				<li>Read aloud any URLs to the audience. Use a URL shortener like <a href="https://tinyurl.com/">tinyurl</a> or <a href="https://bitly.com/">bit.ly</a> to make it easier. </li>
-				<li>If you are using a script, share it with the live captioner prior to your presentation.</li>
-			</ul>
-		</div>
-	</div>
-	
-	<div class="row">
-		<div class="col-12">
-			<h2 id="attendees">Accessibility Instructions for Attendees</h2>
-			<ul>
-				<li>
-					If you plan on speaking during the conference, make sure you have a good quality microphone or a headset with a microphone to ensure that the live captioner and the speakers can hear and understand you. Any live events (except the breakout sessions) will be live captioned. 
-				</li>
-				<li>Keep your microphone and camera off unless you are asked to unmute either.</li>
-				<li>Speak slowly. </li>
-			</ul>
-		</div>
-	</div>
-		
-	<div class="row">
-		<div class="col-12">
 			<h2 id="contactus">Contact</h2>
             <p>Contact <a href="mailto:{{site.data.conf.accessibility-email}}">{{site.data.conf.accessibility-email}}</a> with any questions or concerns related to the conference's accessibility.</p>
+            <h2 id="presenters">Accessibility Instructions for Presenters</h2>
+            <p>
+                All presenters should please review these accessibility requirements and presentation logistics. Make note
+                of the four action items for your talk(s).
+            </p>
+
+            <ul>
+                <li class="actions-list">
+                    <span class="h3">Action 1: PC/Mac Compatibility</span>
+                    <p>
+                        Ensure that your slides will display correctly on BOTH Mac and PC.
+                        There will be a presenter laptop at the podium to streamline transitions
+                        and minimize tech issues. We don’t yet know if it will be a Mac or a PC.
+                        If you absolutely need to use your own laptop (e.g. a demo that only
+                        works on your machine), please let your Program Committee Liaison know ASAP.
+                    </p>
+                </li>
+
+                <li class="actions-list">
+                    <span class="h3">Action 2: Submit Slides Early for Supporting Live Captioning</span>
+                    <p>
+                        Code4Lib {{site.data.conf.year}} will feature live captioning during the three days of the general conference. In order to improve the quality of this service, we ask presenters to send their slides to us so that the captioners can use them as reference and improve the quality of the live text stream.
+                    </p>
+                    {% if site.data.conf.slides.url != "" %}
+                    <p>
+                        Please submit your slides to the <a href="{{site.data.conf.slides.url}}">Code4Lib {{site.data.conf.year}} repository</a>
+                        or to {{site.data.conf.slides.contact}}
+                        (<a href="mailto:{{site.data.conf.slides.email}}?Subject=Code4Lib%20Slides">{{site.data.conf.slides.email}}</a>)
+                        at least 24 hours before your presentation (the earlier the better).
+                    </p>
+                    {% endif %}
+                    <p>
+                        <strong>NOTE:</strong> You can continue to edit and change your slides
+                        after submission. You do not need to resubmit any changes unless you
+                        feel you added any difficult words or terms that would be challenging
+                        for live captioning. Keep in mind that the captioners may not have domain
+                        expertise in libraries.
+                    </p>
+                </li>
+
+                <li class="actions-list">
+                    <span class="h3">Action 3: Design a Visually Accessible Presentation</span>
+                    <p>
+                    Presenters are encouraged to use the following guidelines to ensure that
+                    their presentations are visually accessible to attendees.
+                    </p>
+
+                    <span class="h4">Font</span>
+                    <ul>
+                        <li>Avoid fonts that use thin strokes in the characters.</li>
+                        <li>Choose readable sans serif or serif fonts. Generally avoid script or monospaced fonts.</li>
+                        <li>
+                            Suggested fonts include: Helvetica and its clones (Arial, Calibri,
+                            etc.), Gill Sans, Comic Sans (seriously!), Verdana, Franklin Gothic,
+                            Rockwell, Tahoma, Lucida, and Times New Roman.
+                        </li>
+                        <li>Use underlining, italics, and boldface sparingly.</li>
+                        <li>
+                            Aim for a font size of 20-30 point. Generally, do not go below
+                            18-point for slide content (if you plan to share your slides
+                            with the community, it’s okay to use smaller fonts for references
+                            and URIs).
+                        </li>
+                    </ul>
+
+                    <span class="h4 list-heading">Colors</span>
+                    <ul>
+                        <li>
+                            Choose text and background colors that have good contrast. You can
+                            use a <a href="http://webaim.org/resources/contrastchecker/">contrast
+                            checker</a> to check for good contrast. The web accessibility thresholds
+                            are not relevant to slide presentations, but higher contrast is still better.
+                        </li>
+                        <li>
+                            For color blindness considerations, add patterns or labels in graphs and charts.
+                            This is especially important if are using either red-green or yellow-blue
+                            color combinations. These are the two most common types of color blindness.
+                            If you are uncertain about a color choice, a <a href="http://www.color-blindness.com/coblis-color-blindness-simulator/">color
+                            blindness simulator</a> may help.
+                        </li>
+                    </ul>
+
+                    <span class="h4 list-heading">Videos/Animations</span>
+                    <ul>
+                        <li>Avoid blinking text and animations that endlessly repeat.</li>
+                        <li>
+                            If your presentation features lots of animations, videos, etc.,
+                            please include a warning at the start of your talk. This is especially
+                            needed if any contain lots of flicker.
+                        </li>
+                        <li>
+                            If a video contains sound or dialogue, please try to use a version
+                            with captioning.
+                        </li>
+                    </ul>
+
+                    <span class="h4 list-heading">Sharing Slides</span>
+                    <ul>
+                        <li>
+                            Participants are encouraged to share their slides. If placed on the
+                            web, please include a short link in your opening slides for attendees
+                            to view on their personal machines.
+                        </li>
+                        <li>
+                            Include speaker notes with your files if the file format allows.
+                            In particular, describe any images, tables, charts, etc. in the notes.
+                        </li>
+                        <li>Specific advice for different presentation tools and formats:
+                            <ul>
+                                <li>
+                                    PDFs: Use PDF/A format: <a href="http://webaim.org/techniques/acrobat/">
+                                    http://webaim.org/techniques/acrobat/</a>
+                                </li>
+                                <li>
+                                    PowerPoint and KeyNote accessibility advice:
+                                    <a href="http://webaim.org/techniques/powerpoint/">http://webaim.org/techniques/powerpoint/</a>
+                                    and <a href="https://www.swarthmore.edu/sites/default/files/assets/documents/academic-advising-support/Accessible%20Presentations.pdf">https://www.swarthmore.edu/sites/default/files/assets/documents/academic-advising-support/Accessible%20Presentations.pdf</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            </div>
         </div>
     </div>
 </div>

@@ -112,7 +112,7 @@ livestream:
 
 slides:
   show: false
-  url: 'https://osf.io/meetings/c4l21/'
+  url: ''
   contact: ''
   email: ''
 
@@ -123,21 +123,21 @@ closed-captioning:
 # Peri display descriptions and titles
 peri:
   day1-am-title: "Conference, Day 1"
-  day1-am-desc: "Keynote #1 kicks off the conference then talks until 5"
-  day1-pm-title: "Reception"
-  day1-pm-desc: "Join us for the reception at the Carnegie Museum of Pittsburgh"
+  day1-am-desc: "Keynote"
+  day1-pm-title: "Reception?"
+  day1-pm-desc: "Join us"
   day2-am-title: "Conference, Day 2"
-  day2-am-desc: "Talks until 5"
+  day2-am-desc: "Awesome Talks"
   day2-pm-title: "Game Night"
-  day2-pm-desc: "Come join fellow code4libers in a few board or card games"
+  day2-pm-desc: "Board or card games"
   day3-am-title: "Conference, Day 3"
-  day3-am-desc: "Talks until 5"
+  day3-am-desc: "Awesome Talks"
   day3-pm-title: "Social Event"
   day3-pm-desc: "Lots of folks having fun"
   day4-am-title: "Conference, Day 4"
-  day4-am-desc: "Talks until 5"
-  day4-pm-title: "Newcomer Dinner"
-  day4-pm-desc: "It is a Code4Lib tradition to welcome those who are new to the conference"
+  day4-am-desc: "Awesome Talks"
+  day4-pm-title: "Hackathon"
+  day4-pm-desc: "Let's do this"
   day5-am-title: "Conference, Day 5"
   day5-am-desc: "Workshops"
 
@@ -173,7 +173,7 @@ workshop-proposals:
   end-date: '2020-12-13'
 
 talk-proposals:
-  show: true
+  show: false
   submission-form: 'https://docs.google.com/forms/d/e/1FAIpQLSfTKj7rT3P82f3vggZZRq15nA_OaXiAiKZmcMIVaAxDvctFjg/viewform'
   end-date: '2020-12-21'
 

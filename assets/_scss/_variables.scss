@@ -175,11 +175,12 @@ $text-color:            $cultured-white !default;
 //** Global textual link color.
 $link-color:            $turquoise !default;
 $link-color-light:      lighten($turquoise, 10%);
-$link-color-dark:       #770681;
+$link-color-dark:       #ea1cdd; //#770681;
 $link-decoration:       none !default;
 $link-hover-color:      $primary-dark !default;
 $link-hover-decoration: underline !default;
 $link-hover-dark:       darken($accent-dark, 10%);
+$link-hover-light:      darken($link-color-dark, 10%);
 
 //== Typography
 //
