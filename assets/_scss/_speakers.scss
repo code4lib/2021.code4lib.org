@@ -47,13 +47,13 @@ p.speaker-session {
 p.speaker-bio a,
 p.speaker-session a {
   &:not(.icon) {
-    color: $link-color-dark;
+    color: $link-color-dark !important;
     border-bottom: 2px dotted;
 
     &:active,
     &:focus,
     &:hover {
-      color: $link-hover-dark;
+      color: $link-hover-light;
       border-bottom: 0;
     }
   }
