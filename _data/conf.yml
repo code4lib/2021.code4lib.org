@@ -188,7 +188,7 @@ poster-proposals:
   end-date: '2020-12-06'
 
 shirt-proposals:
-  show: true
+  show: false
   submission-form: 'https://docs.google.com/forms/d/e/1FAIpQLSczoRX5Rd37TIWT9MhZJxS1hR7V3UQu0aU93rzhF8jY8as1KQ/viewform?usp=sf_link'
   end-date: '2021-01-13'
 
