@@ -19,7 +19,7 @@ conference:
   # "show" means display information on the home page and /general-info/attend
   show: true
   url: "https://na.eventscloud.com/c4l20"
-  start-date: 2021-01-20
+  start-date: 2021-01-19
   end-date: 2020-03-12
   cancellation-date: 2020-02-12
   # "open" means people can register
