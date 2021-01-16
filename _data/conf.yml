@@ -227,9 +227,9 @@ poster-voting:
   end-date: '2018-11-29'
 
 shirt-voting:
-  show: false
-  url: 'https://goo.gl/forms/Bgo590LPEhjfJGkT2'
-  end-date: '2018-12-07'
+  show: true
+  url: 'https://forms.gle/5nMtw8Degbfgm2ja7 '
+  end-date: '2021-01-21'
 
 ##################
 # Schedule events
