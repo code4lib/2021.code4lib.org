@@ -40,13 +40,19 @@ active: Attend Code4Lib
 
                     <li><span class="font-weight-bold">Main Conference (after {{ site.data.registration.conference.end-date | date: "%B %-d" }})</span>: {{ site.data.registration.conference.late-cost }}</li>
 
-                    {% if site.data.registration.post-conference.show %}
-                    <li><span class="font-weight-bold">Post-Conference</span>: Pricing & Details Coming Soon</li>
-                    {% else %}
-                    <li><span class="font-weight-bold">Pre-Conferences (with main conference registration)</span>: {{ site.data.registration.conference.workshop-half-day-cost }} per half day ({{ site.data.registration.conference.workshop-full-day-cost }} for full day)</li>
 
-                    <li><span class="font-weight-bold">Pre-Conference Only</span>: {{ site.data.registration.workshop-only.half-day-cost }} per half day ({{ site.data.registration.workshop-only.full-day-cost }} for full day) {%- if site.data.registration.workshop-only.start-date -%}. Opens {{ site.data.registration.workshop-only.start-date | date: "%B %-d" }}.{%- endif -%}</li>
+                    {% if site.data.registration.post-conference.show %}
+                        {% if site.data.registration.post-conference.workshop-half-day-cost %}
+                            <li><span class="font-weight-bold">Post-Conference</span>: {{ site.data.registration.post-conference.workshop-half-day-cost }} per workshop</li>
+                        {% else %}
+                            <li><span class="font-weight-bold">Post-Conference</span>: Pricing & Details Coming Soon</li>
+                        {% endif %}
+                    {% else %}
+                        <li><span class="font-weight-bold">Pre-Conferences (with main conference registration)</span>: {{ site.data.registration.conference.workshop-half-day-cost }} per half day ({{ site.data.registration.conference.workshop-full-day-cost }} for full day)</li>
+
+                        <li><span class="font-weight-bold">Pre-Conference Only</span>: {{ site.data.registration.workshop-only.half-day-cost }} per half day ({{ site.data.registration.workshop-only.full-day-cost }} for full day) {%- if site.data.registration.workshop-only.start-date -%}. Opens {{ site.data.registration.workshop-only.start-date | date: "%B %-d" }}.{%- endif -%}</li>
                     {% endif %}
+
 
                     {% if site.data.registration.reception.plus-one-cost %}
                         <li><span class="font-weight-bold">Reception "plus one"</span>: {{ site.data.registration.reception.plus-one-cost }} (limit one "plus one" per registration)</li>
@@ -76,7 +82,10 @@ active: Attend Code4Lib
                 </p>
 
                 <p>
-                    When you register, you will be able to select one all-day workshop or two half-day workshop (depending on final offerings.) As with past Code4Lib conferences, it will be possible to register for the main conference, the main conference + post-conference day, or only for the post-conference day (post-conference only day registration will open in mid-January).
+                    When you register, you will be able to select two half-day workshop. As with past Code4Lib conferences, it will be possible to register for the main conference, the main conference + post-conference(s), or only for the post-conference workshop(s)
+                </p>
+                <p>
+                    <span class="font-weight-bold">Post-conference only registration will open towards the end of February, depending on availability</span>
                 </p>
 
             </div>
