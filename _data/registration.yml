@@ -9,7 +9,7 @@ post-conference:
 workshop-only:
   # "show" only affects a button on the general-info/attend page
   show: false
-  url: "https://na.eventscloud.com/c4l20"
+  url: "https://na.eventscloud.com/c4l21"
   # precon-only registration cost may differ from precons with general registration
   half-day-cost: "$60"
   full-day-cost: "$120"
@@ -18,12 +18,12 @@ workshop-only:
 conference:
   # "show" means display information on the home page and /general-info/attend
   show: true
-  url: "https://na.eventscloud.com/c4l20"
+  url: "https://na.eventscloud.com/c4l21"
   start-date: 2021-01-19
-  end-date: 2020-03-12
-  cancellation-date: 2020-02-12
+  end-date:
+  cancellation-date:
   # "open" means people can register
-  open: false
+  open: true
   cost: "$49"
   late-cost: "$59"
   workshop-half-day-cost: ""
