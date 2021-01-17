@@ -5,6 +5,7 @@
 # include "$" in all "cost" strings, makes templates cleaner
 post-conference:
   show: true
+  workshop-half-day-cost: "$19"
 
 workshop-only:
   # "show" only affects a button on the general-info/attend page
