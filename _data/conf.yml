@@ -21,10 +21,10 @@ hero-image-alt: 'colored mosaic'
 # These booleans affect the main menu links in the ways described below, as well
 # as displays in a few other places.
 # if true Speakers link -> /speakers/, if false -> /speakers/past-keynotes
-have-talks: false
+have-talks: true
 have-workshops: false
 # if true Schedule link -> /schedule/, if false -> /schedule/timeline
-have-schedule: false
+have-schedule: true
 
 # day 0 = preconf day
 days:
