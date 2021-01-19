@@ -21,7 +21,7 @@ conference:
   show: true
   url: "https://na.eventscloud.com/c4l21"
   start-date: 2021-01-19
-  end-date:
+  end-date: 2021-03-12
   cancellation-date:
   # "open" means people can register
   open: true
