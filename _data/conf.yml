@@ -227,7 +227,7 @@ poster-voting:
   end-date: '2018-11-29'
 
 shirt-voting:
-  show: true
+  show: false
   url: 'https://forms.gle/5nMtw8Degbfgm2ja7 '
   end-date: '2021-01-21'
 
