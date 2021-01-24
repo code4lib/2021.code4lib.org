@@ -147,7 +147,7 @@ peri:
 # If false, hides sponsors link in navigation and footer
 show-sponsors: true
 # If true, any "Sponsors" links will go to /prospectus instead of /sponsors
-call-for-sponsors: true
+call-for-sponsors: false
 homepage-sponsor-button: true
 # URL to document
 prospectus-document: ''
