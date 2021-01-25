@@ -13,7 +13,7 @@
   institution: NC State University Libraries
   position-title: Associate Head, User Experience
   bio: Andreas Orphanides is Associate Head, User Experience at the NC State University Libraries. His work focuses on developing high-quality, thoughtfully designed solutions to support teaching, learning, and information discovery. He holds a Bachelor of Arts from Oberlin College, a Master of Science in Library Science from UNC-Chapel Hill, and a Master of Computer Science from NC State University. His professional interests include human factors, systems analysis, and design ethics. In addition to his UX work, Dre is occasionally an adjunct instructor at the UNC-Chapel Hill School of Information and Library Science, and teaches people how to hit each other with swords at Mid-South Fencers' Club. Outside of work, he has too many cats.
-  image_src: /assets/img/nopics/nopic8.jpg
+  image_src: /assets/img/speakers/andreas-orphandies.png
   keynote: false
 
 - id: eric-phetteplace
@@ -22,7 +22,7 @@
   institution: California College of the Arts
   position-title: Systems Librarian
   bio: Eric has been a Systems Librarian at an art and design college for over six years. He maintains a wide variety of web applications, including a Koha ILS, Moodle LMS, Django-based website, and openEQUELLA digital archive. His interests include usability, web design, equity, and automating processes using scripts and APIs. His most recent research projects including investigating full text linking in discovery layers.
-  image_src: /assets/img/nopics/nopic4.jpg
+  image_src: /assets/img/speakers/eric-phetteplace.jpg
   keynote: false
 
 - id: genevieve-havemeyerking
@@ -40,7 +40,7 @@
   institution: California Digital Library
   position-title: Publishing Systems Developer
   bio: Hardy is a DSpace Committer, since 2011, and works for the California Digital Library as a Publishing Systems Developer. He's currently learning a lot about many different tech stacks, but has been especially enjoying working with the Janeway scholarly publishing platform. Prior to working for CDL, Hardy worked for UCLA Library as a developer on both their services team (back-end stuff), and their applications team (front-end stuff). He is keenly interested in DevOps tools, technologies, and cultures. You may notice Hardy's location says Missouri, which, yes, means he's a remote worker. He loves working at home, and will talk your ear off about it if you let him.
-  image_src: /assets/img/nopics/nopic6.jpg
+  image_src: /assets/img/speakers/hardy-pottinger.jpg
   keynote: false
 
 - id: nick-krabbenhoeft
