@@ -1,0 +1,16 @@
+---
+layout: default
+title: Speakers
+---
+
+<div>
+    <div title="Whova event and conference app" id="whova-speakerwidget">
+        <p id="whova-loading">Loading...</p>
+    </div>
+    <script src="https://whova.com/static/frontend/xems/js/whova-speaker-widget.js?eid=codel_202103&host=https://whova.com" type="text/javascript"  id="embeded-speaker-script"></script>
+    <div id="whova-wrap">Powered By <a class="brandlink" target="_blank" href="https://www.whova.com"><b>Whova</b></a>
+        <div id="whova-mgm">
+            <a href="https://whova.com/virtual-conference-platform/" id="whova-emslink" target="_blank">Virtual conference platform</a>
+        </div>
+    </div>
+</div>
