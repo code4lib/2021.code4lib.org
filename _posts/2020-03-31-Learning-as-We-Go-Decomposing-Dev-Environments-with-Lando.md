@@ -4,10 +4,10 @@ type: workshop
 categories: workshops
 speakers-text: Hardy Pottinger
 speakers: hardy-pottinger
-start-time: 09:00 AM
-end-time: 12:00 PM
+startTime: 9AM
+endTime: 12PM
 time: am
-slugTitle: [session-name|slug]
+slugTitle: learning-as-we-go-decomposing-dev-environments-with-lando
 title: Learning as We Go&#58; Decomposing Dev Environments with Lando
 ---
 <p>Things have gotten better: most projects know that getting new developers up to speed is important. We keep notes on the hard stuff. But, typing long lists of mysterious commands, and keeping track of all the details, is still something many of us expect of new collaborators. We can do better. <a href="https://lando.dev/">Lando</a>&nbsp;is one tool that can help.</p>

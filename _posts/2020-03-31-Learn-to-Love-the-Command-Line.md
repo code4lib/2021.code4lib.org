@@ -4,10 +4,10 @@ type: workshop
 categories: workshops
 speakers-text: Eric Phetteplace
 speakers: eric-phetteplace
-start-time: 01:00 PM
-end-time: 04:00 PM
+startTime: 1PM
+endTime: 4PM
 time: pm
-slugTitle: [session-name|slug]
+slugTitle: learn-to-love-the-command-line
 title: Learn to Love the Command Line
 ---
 <p>The command line interface (CLI) offers immense potential to savvy users because of the way tedious, repetitive processes can be automated on the fly. Bulk processing of files and other objects is ideally suited to a CLI environment. There are also many standards tools that lack graphical applications or who have more flexibility on the command line, such as the git version control software. But it can be intimidating to begin using the CLI, as a clunky syntax and knowledge of ancillary topics like "standard output" and file mode permissions become hurdles.</p>
