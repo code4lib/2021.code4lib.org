@@ -17,11 +17,16 @@
 }
 
 .back-workshops {
-  border-top: solid 1px $white;
+  //border-top: solid 1px $white;
   color: $black;
   display: block;
   margin: 10px 0;
   padding: 10px 0 5px 0;
+}
+
+.back-workshops:hover {
+  color: $turquoise;
+  cursor: pointer;
 }
 
 .talk-detail-box {
@@ -85,7 +90,8 @@
 
 .workshop-well {
   -webkit-flex-flow: row wrap;
-  background-color: $white;
+  background-color: $cultured-white;
+  color: $speaker-info-color;
   border-radius: 5px;
   display: flex;
   flex-flow: row wrap;
@@ -96,9 +102,9 @@
 }
 
 .workshop-well p {
-  font-size: .9em;
+  font-size: 1.0em;
   line-height: 1.3em;
-  word-break: break-all;
+  //word-break: break-all;
 }
 
 .workshop-well a {

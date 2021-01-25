@@ -4,7 +4,7 @@
 
 .sched-well {
   background-color: $cultured-white;
-  color: $black;
+  color: $speaker-info-color;
   border-radius: 10px;
   box-shadow: 4px 5px 0px rgba(0, 0, 0, .11);
   margin-bottom: 20px;
@@ -36,4 +36,12 @@
 .text-right h3 {
   font-size: 1.25em;
 
+}
+
+.pagination {
+  display: inline-flex;
+  border: 1px solid $cultured-white;
+}
+.page-item {
+  border: 1px solid $cultured-white;
 }
