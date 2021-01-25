@@ -66,6 +66,7 @@
                 <br>
             {% endif %}
 
+            {% comment %}
             {% if page.type == 'workshop' %}
             <div class="col-12 col-sm-8 col-md-9">
                 <h2>Location</h2>
@@ -77,6 +78,7 @@
                 </p>
             </div>
             {% endif %}
+            {% endcomment %}
         </div>
         <div class="col-12 col-sm-4 col-md-3 text-center">
             <div class="row talk-detail-box">
@@ -110,10 +112,12 @@
                 <!-- building for workshops -->
                 {% if page.type == 'workshop' %}
                 <div class="col-12 col-sm-12 col-md-12 time-length">
+                    <!--
                     <div class="talk-box-detail-icon"><span class="glyphicon glyphicon-map-marker"></span></div>
                     <div class="talk-box-detail-value">
                         {{ location_display }}
                     </div>
+                    -->
                     <div>
                         <a class="back-workshops" href="/workshops">⇦ Return to Workshop List</a>
                     </div>
