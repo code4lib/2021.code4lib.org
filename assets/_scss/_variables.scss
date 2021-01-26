@@ -621,15 +621,15 @@ $nav-pills-active-link-hover-color:         $component-active-color !default;
 //##
 
 $pagination-color:                     $speaker-info-color !default;
-$pagination-bg:                        $cultured-white !default;
+$pagination-bg:                        #dadada !default;
 $pagination-border:                    $cultured-white !default;
 
-$pagination-hover-color:               $link-hover-color !default;
+$pagination-hover-color:               $speaker-info-color !default;
 $pagination-hover-bg:                  $gray-lighter !default;
-$pagination-hover-border:              $cultured-white !default;
+$pagination-hover-border:              $gray-lighter !default;
 
-$pagination-active-color:              $turquoise !default;
-$pagination-active-bg:                 $brand-primary !default;
+$pagination-active-color:              $speaker-info-color !default;
+$pagination-active-bg:                 $cultured-white !default;
 $pagination-active-border:             $cultured-white !default;
 
 $pagination-disabled-color:            $gray-light !default;
