@@ -108,12 +108,14 @@
 }
 
 .workshop-well a {
-  @include link-styles;
+  //@include link-styles;
+  color: #ea1cdd;
 
   &:hover,
   &:focus,
   &:active {
-    @include link-styles-states;
+    //@include link-styles-states;
+    text-decoration: underline;
   }
 }
 
