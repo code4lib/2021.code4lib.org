@@ -3,7 +3,8 @@
    ========================================================================== */
 
 .sched-well {
-  background-color: $white;
+  background-color: $cultured-white;
+  color: $speaker-info-color;
   border-radius: 10px;
   box-shadow: 4px 5px 0px rgba(0, 0, 0, .11);
   margin-bottom: 20px;
@@ -17,12 +18,14 @@
 }
 
 .sched-well a {
-  @include link-styles;
+  //@include link-styles;
+  color: #ea1cdd !important;
 
   &:active,
   &:focus,
   &:hover {
-    @include link-styles-states;
+    //@include link-styles-states;
+    text-decoration: underline;
   }
 }
 
@@ -35,4 +38,13 @@
 .text-right h3 {
   font-size: 1.25em;
 
+}
+
+.pagination {
+  display: inline-flex;
+  border: 1px solid $cultured-white;
+}
+.page-item {
+  border-left: 1px solid $cultured-white;
+  border-right: 1px solid $cultured-white;
 }
