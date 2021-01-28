@@ -7,6 +7,7 @@ $bootstrap-sass-asset-helper: true !default;
 // Background
 $oxford-blue: #060c40;
 $xiketic: #070413;
+$oxford-blue-desat: #0D1661;
 
 // Foreground
 $cultured-white: #F5F5F5;
@@ -19,7 +20,7 @@ $cultured-white-lighter: #FFF;
 $turquoise-lighter: lighten($turquoise, 10%);
 $crayola-pink-lighter: lighten($crayola-pink, 10%);
 $honey-yellow-lighter: lighten($honey-yellow, 10%);
-
+$crayola-pink-desat: #EE44E2;
 // Buttons
 $btn-bg-color-mid: $honey-yellow;
 $btn-color-mid: #000;
