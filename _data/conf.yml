@@ -147,8 +147,10 @@ peri:
 # If false, hides sponsors link in navigation and footer
 show-sponsors: true
 # If true, any "Sponsors" links will go to /prospectus instead of /sponsors
-call-for-sponsors: true
+call-for-sponsors: false
+# Individual Page Buttons
 homepage-sponsor-button: true
+sponsorpage-sponsor-button: true
 # URL to document
 prospectus-document: ''
 sponsor-btn-link: 'https://na.eventscloud.com/sponsor.c4l21'
