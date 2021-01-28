@@ -160,9 +160,13 @@ $jumbotron-btn-color:     $gray-lighter;
 $jumbotron-btn-hover:     darken($primary-dark, 6.5%);
 
 // Event cards
-$day-event:               $accent-light;
-$night-event:             $primary-dark;
-
+$card-bg:                 $oxford-blue-desat;
+$event-card-color:        $cultured-white;
+$day-event-cap:           $honey-yellow;
+$day-event-icon-color:    darken($honey-yellow, 6.5%);
+$night-event:             $turquoise;
+$day-night-icon-bg:       $card-bg;
+$schedule-card-title:     $crayola-pink-desat;
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
@@ -171,6 +175,7 @@ $night-event:             $primary-dark;
 $body-bg:               $oxford-blue !default;
 //** Global text color on `<body>`.
 $text-color:            $cultured-white !default;
+$text-color-subtle:     #ccc; 
 
 //** Global textual link color.
 $link-color:            $turquoise !default;
