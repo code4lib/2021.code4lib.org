@@ -37,7 +37,14 @@
 
 .text-right h3 {
   font-size: 1.25em;
+}
 
+.timezone {
+  font-size: 16px;
+  color: #8a8a8a;
+  &.info-box {
+    color: $xiketic;
+  }
 }
 
 .pagination {

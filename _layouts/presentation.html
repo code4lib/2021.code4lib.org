@@ -100,7 +100,9 @@
                 {% if page.type == 'workshop' %}
                 <div class="col-12 col-sm-12 col-md-12 time-slot">
                     <div class="talk-box-detail-icon"><span class="glyphicon glyphicon-time"></span></div>
-                    <div class="talk-box-detail-value">{{ page_length }}</div>
+                    <div class="talk-box-detail-value">{{ page_length }}
+                        <br/><div class="timezone info-box">Eastern Time</div>
+                    </div>
                 </div>
                 {% elsif page.type == 'poster' %}
                 <div class="col-12 col-sm-12 col-md-12 time-slot">
