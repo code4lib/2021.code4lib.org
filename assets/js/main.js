@@ -72,12 +72,36 @@ jQuery(document).ready(function($){
         }, 300);
     }
 
+//    function toggleSpeaker(target){
+//        if (!$(target+'-id').hasClass('selected')){
+//                $('.speaker-info').removeClass('show');
+//                $('.speaker-box').removeClass('selected');
+//                $(target+'-info').addClass('show');
+//                $(target+'-id').addClass('selected');
+//            } else {
+//                $(target+'-info').removeClass('show');
+//                $(target+'-id').removeClass('selected');
+//            }
+//    }
+
     function toggleSpeaker(target){
-        if (!$(target+'-id').hasClass('selected')){
+        var shownHeight;
+
+        if ($('.speaker-info.show').length){
+            shownHeight = $('.speaker-info.show').height();
+        } else {
+            shownHeight = 0;
+        }
+
+        $('html, body').animate({
+            scrollTop: $(target+'-id').offset().top - shownHeight
+        }, 500);
+        if (!$(target+'-id').hasClass('show')){
                 $('.speaker-info').removeClass('show');
                 $('.speaker-box').removeClass('selected');
                 $(target+'-info').addClass('show');
                 $(target+'-id').addClass('selected');
+                $(target+'-id + div.speaker-info a' ).attr('tabindex', '0');
             } else {
                 $(target+'-info').removeClass('show');
                 $(target+'-id').removeClass('selected');
