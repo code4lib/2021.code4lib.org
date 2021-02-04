@@ -7,3 +7,51 @@
   img: /assets/img/sponsors/schoolOfInformationSciencesatIllinois.png
   link: https://ischool.illinois.edu/
   level: contributor
+
+- name: Developers For Diversity
+  img: /assets/img/sponsors/devs4diversity.png
+  link: 
+  level: bronze
+  annotation: 'Diversity'
+
+- name: Princeton University Libraries
+  img: /assets/img/sponsors/PUL.png
+  link: https://library.princeton.edu/
+  level: bronze
+  annotation: 'Diversity'
+
+- name: EBSCO Information Systems
+  img: /assets/img/sponsors/EBSCO.png
+  link: https://www.ebsco.com/
+  level: silver
+
+- name: LYRASIS
+  img: /assets/img/sponsors/LYRASIS.png
+  link: https://www.lyrasis.org/Pages/Main.aspx
+  level: bronze
+
+- name: ArchivesSpace
+  img: /assets/img/sponsors/archivesSpace.jpg
+  link: https://archivesspace.org/
+  level: supporter
+
+- name: Balsamiq Studios
+  img: /assets/img/sponsors/Balsamiq.png
+  link: https://balsamiq.com/
+  level: bronze
+  annotation: 'Closed Captioning'
+  
+- name: Innovative Interfaces
+  img: /assets/img/sponsors/InnovativeInterfaces.ai
+  link: https://www.iii.com/
+  level: silver
+
+- name: Springer Nature
+  img: /assets/img/sponsors/springerNature.jpg
+  link: https://www.springernature.com/gp
+  level: silver
+
+- name: OCLC
+  img: /assets/img/sponsors/OCLC.png
+  link: https://www.oclc.org/
+  level: platinum
