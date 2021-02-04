@@ -27,7 +27,7 @@
 
 - name: LYRASIS
   img: /assets/img/sponsors/LYRASIS.png
-  link: https://www.lyrasis.org/Pages/Main.aspx
+  link: https://www.lyrasis.org/
   level: bronze
 
 - name: ArchivesSpace
@@ -48,8 +48,8 @@
 
 - name: Springer Nature
   img: /assets/img/sponsors/springerNature.jpg
-  link: https://www.springernature.com/gp
-  level: silver
+  link: https://www.springernature.com/
+  level: supporter
 
 - name: OCLC
   img: /assets/img/sponsors/OCLC.png
