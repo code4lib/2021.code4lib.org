@@ -185,9 +185,9 @@ panel-proposals:
   end-date: ''
 
 poster-proposals:
-  show: false
-  submission-form: 'https://forms.gle/Jae5hWSZwVQFtzuK7'
-  end-date: '2020-12-06'
+  show: true
+  submission-form: 'https://forms.gle/sSQWDgFxHbDwojoW6'
+  end-date: '2020-02-15'
 
 shirt-proposals:
   show: false
