@@ -75,6 +75,7 @@ subnav:
 			   {% else %}
 			   This page will be updated when the information is available.
 				{% endif %}
+				Sessions which were recorded before the conference will include captions as well.
             </p>
 		</div>
 	</div>
@@ -150,14 +151,14 @@ subnav:
 					<span class="h3">Action 1: Submit Slides Early for Supporting Live Captioning</span>
 					<p>
 					Code4Lib {{site.data.conf.year}} will feature live captioning during the three days of the general conference. In order to improve the quality of this service, we
-					ask presenters to send their slides to us so that the captioners can use them as reference and improve the quality of the live text stream.
+					ask presenters to upload the slides to the <em>repository</em> so that the captioners can use them as reference and improve the quality of the live text stream.
 					</p>
 			
 					{% if site.data.conf.slides.show %}
 					<p>
 					Please submit your slides to the <a href="{{site.data.conf.slides.url}}">Code4Lib {{site.data.conf.year}} repository</a>
 					or to {{site.data.conf.slides.contact}} (<a href="mailto:{{site.data.conf.slides.email}}?Subject=Code4Lib%20Slides">{{site.data.conf.slides.email}}</a>)
-					at least 24 hours before your presentation (the earlier the better).
+					at least 48 hours before your presentation (the earlier the better).
 					</p>
 					{% endif %}
 			
@@ -171,7 +172,7 @@ subnav:
 				<li class="actions-list">
 					<span class="h3">Action 2: Design an Accessible Presentation</span>
 					<p>
-					Presenters are encouraged to use the following guidelines to ensure that their presentations are visually accessible to attendees in an online environment. <a href="https://wiki.diglib.org/Creating_Accessible_and_Interactive_Online_Presentations">More detailed information on creating accessible online presentations is available from the Digital Library Federation</a>.
+					Presenters are encouraged to use the following guidelines to ensure that their presentations are visually accessible to attendees in an online environment. <a href="https://wiki.diglib.org/Creating_Accessible_and_Interactive_Online_Presentations">More detailed information on creating accessible online presentations is available from the Digital Library Federation</a>. You can also view these guidelines in action on the <a href="{{site.data.conf.slide-template.url}}">Sample Presentation</a>, which uses the conference template.
 					</p>
 			
 					<span class="h4 list-heading">Basic Slide Design</span>
@@ -183,11 +184,6 @@ subnav:
 							Try to minimize the amount of text on each slide. Use bullet points instead of full paragraphs. Limit your slides to 1 main idea and 3 supporting ideas per slide.
 						</li>
 						<li>Aim for a font size of 20-30 point. Generally, do not go below 24-point for slide content.</li>
-						<li>Use underlining, italics, and boldface sparingly.</li>
-						<li>
-							Aim for a font size of 20-30 point. Generally, do not go below 18-point for slide content (if you plan to share your slides
-							with the community, it’s okay to use smaller fonts for references and URIs).
-						</li>
 						<li>
 							Choose text and background colors that have good contrast and are easy to read, such as black/white, white/dark blue, yellow/black, off-white/black. You can <a href="http://webaim.org/resources/contrastchecker/">use a contrast checker</a> to check for good contrast, or the <a href="https://projects.susielu.com/viz-palette">Viz Palette Designer to select color palettes</a>.
 						</li>
@@ -197,11 +193,11 @@ subnav:
 						<li>
 							If you will have your camera on during your slides, it’s suggested that you leave a corner of your slides free of important text, so that your presenter image doesn’t cover up anything.
 						</li>
-						<!---
+						
 						<li>
-							[caption]The above image is of a slide with blank space at the top right corner to house the camera view of the speaker. At the bottom of the slide, there is an image footer that can be easily covered by the closed captioning.[/caption]
+							<a href="{{site.data.conf.slide-template.url}}">Use the C4L 2021 Template to produce an accessible slide presentation</a>, which already incorporates all the above issues, including space for live captioning and the camera view.
 						</li>
-						-->
+						
 					</ul>
 				
 					<span class="h4 list-heading">Graphs and Charts</span>
@@ -235,7 +231,7 @@ subnav:
 						</li>
 						<li>Include speaker notes with your files if the file format allows. In particular, describe any images, tables, charts, etc. in the notes.</li>
 						<li>
-							It’s easier to make your original presentation slides accessible than it is to produce an <a href="http://webaim.org/techniques/acrobat/">accessible PDF/A of your slides</a>. Please see <a href="http://webaim.org/techniques/powerpoint/">PowerPoint</a> and <a href="https://www.swarthmore.edu/sites/default/files/assets/documents/academic-advising-support/Accessible%20Presentations.pdf">KeyNote</a> accessibility advice, as well as <a href="https://support.google.com/docs/answer/6199477?hl=en">Google Slides accessibility pages</a>. 
+							It’s easier to make your original presentation slides accessible than it is to produce an accessible PDF of your slides. Please see <a href="http://webaim.org/techniques/powerpoint/">PowerPoint</a> and <a href="https://www.swarthmore.edu/sites/default/files/assets/documents/academic-advising-support/Accessible%20Presentations.pdf">KeyNote</a> accessibility advice, as well as <a href="https://support.google.com/docs/answer/6199477?hl=en">Google Slides accessibility pages</a>. 
 						</li>
 					</ul>
 					
