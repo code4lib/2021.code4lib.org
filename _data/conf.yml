@@ -89,7 +89,8 @@ sponsor-contact-email: 'code4lib.sponsorship@gmail.com'
 scholarship-contact-email: 'code4libaward@gmail.com'
 workshop-contact-email: 'casden@email.unc.edu'
 lpc-contact-email: 'code4liblpc@gmail.com'
-accessibility-email: 'code4lib.accessibility@gmail.com'
+# accessibility-email: 'code4lib.accessibility@gmail.com'
+accessibility-email: 'code4libaccessibility@googlegroups.com'
 # when empty, community support volunteers page will use main-conf-email
 duty-officer-email: 'c4lcommunitysupport@googlegroups.com'
 duty-officer-phone: ''
@@ -112,10 +113,13 @@ livestream:
 
 slides:
   show: false
-  url: ''
+  url: 'https://osf.io/meetings/c4l21/'
   contact: ''
   email: ''
 
+slide-template:
+  url: '/assets/C4L2021-template.pptx'
+  
 closed-captioning:
   url: 'https://2021archive.1capapp.com/event/cod4lib/'
   show: false
