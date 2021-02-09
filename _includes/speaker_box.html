@@ -43,7 +43,7 @@
             {% for shop in workshops  %}
                 {% for speaker_id in shop.speakers %}
                     {% if speaker_id == speaker.id %}
-                    <p class="speaker-session">Workshop: <a href="{{ shop.url }}">{{ shop.title }}</a></p>
+                    <p class="speaker-session">Workshop: <a href="{{ shop.url }}" tabindex="-1">{{ shop.title }}</a></p>
                     {% endif %}
                 {% endfor %}
             {% endfor %}
