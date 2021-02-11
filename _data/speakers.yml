@@ -10,7 +10,7 @@
 - id: alexandria-kalika
   name: Alexandria Kalika
   email: kalikaa@oclc.org
-  institution: 
+  institution: OCLC
   position-title: Senior Softwear Engineer
   bio: Alexandria Kalika has worked at OCLC for the past 4 years in a variety of roles involving Big Data techologies and using machine learning to find insights in WorldCat data. She works with Hadoop, python, and Tableau during the day while tinkering with electronics and reading about latest advances in AI during her time off.
   image_src: /assets/img/speakers/alexandria-kalika.jpg
@@ -20,7 +20,7 @@
   name: Alicia Fagerving
   email: alicia.fagerving@wikimedia.se
   institution: Wikimedia Sverige
-  position-title: developer
+  position-title: Developer
   bio: Alicia Fagerving is a developer at Wikimedia Sverige, a Swedish non-profit that supports free knowledge, with a strong but not exclusive focus on Wikipedia and related projects. They specialize in collaborating with cultural heritage organizations on open data and resources on the Wikimedia platforms.
   image_src: /assets/img/speakers/alicia-fagerving.jpg
   keynote: false
@@ -28,9 +28,9 @@
 - id: alison-rhonemus
   name: Alison Rhonemus
   email: alisonrhonemus@nypl.org
-  institution: 
-  position-title: 
-  bio: 
+  institution: New York Public Library
+  position-title: Digital Archives Assistant
+  bio: Alison is the Digital Archives Assistant at the New York Public Library
   image_src: /assets/img/nopics/nopic1.jpg
   keynote: false
 
@@ -38,7 +38,7 @@
   name: Amy Drayer
   email: adrayer@umn.edu
   institution: University of Minnesota Libraries
-  position-title: 
+  position-title:
   bio: Amy has a masters degree in information science and has worked in systems and web development for libraries for over fifteen years in a variety of settings including public, special, military, and academic libraries. Amy's work focuses on developing web interfaces utilizing inclusive design principles, usability, accessibility, and optimization tools to deliver user-oriented experience.
   image_src: /assets/img/speakers/amy-drayer.png
   keynote: false
@@ -100,7 +100,7 @@
 - id: david-w-hodges
   name: David W. Hodges
   email: dwh2128@columbia.edu
-  institution: 
+  institution: Columbia University
   position-title: Special Collections Analyst
   bio: David W. Hodges is Special Collections Analyst in the Digital Collections and Preservation Services unit of Columbia University Libraries. He specializes in data pipelines and workflows around archival and digital collections, ebook discovery and delivery, and site usage metrics. He has worked in the Libraries since 2016.
   image_src: /assets/img/speakers/david-hodges.jpg
@@ -118,7 +118,7 @@
 - id: dr-katherine-deibel
   name: Dr. Katherine Deibel
   email: kndeibel@syr.edu
-  institution: 
+  institution: Syracuse University
   position-title: Inclusion & Accessibility Librarian
   bio: Kate Deibel is the Inclusion & Accessibility Librarian at Syracuse University Libraries in New York. She has a PhD in Computer Science from the University of Washington but would much rather talk about web comics, chili peppers, her cat, technology adoption, and changing the world.
   image_src: /assets/img/speakers/dr-katherine-deibel.jpg
@@ -127,16 +127,16 @@
 - id: ed-hill
   name: Ed Hill
   email: hillchar@pdx.edu
-  institution: 
+  institution: Portland State University
   position-title: Emerging Technologies Librarian and Head of Library Technologies
-  bio: 
+  bio: Ed is Emerging Technologies Librarian and Head of Library Technologies at Portland State University
   image_src: /assets/img/nopics/nopic2.jpg
   keynote: false
 
 - id: edwin-sperr
   name: Edwin Sperr
   email: esperr@uga.edu
-  institution: 
+  institution: University of Georgia
   position-title: Clinical Information Librarian
   bio: Ed has worked in libraries in the Southeast, the Northeast and the Caribbean. His scholarly focus has been on the use of information visualization techniques to present search results through the development of such tools as PubVenn and Members by Interest.
   image_src: /assets/img/speakers/edwin-sperr.jpg
@@ -145,16 +145,16 @@
 - id: elisabeth-shook
   name: Elisabeth Shook
   email: elisabethshook@boisestate.edu
-  institution: 
+  institution: Boise State University
   position-title: Head, Scholarly Communications and Data Management
-  bio: 
+  bio: Elisabeth is Head o fScholarly Communications and Data Management at Boise State University
   image_src: /assets/img/nopics/nopic3.jpg
   keynote: false
 
 - id: eric-hellman
   name: Eric Hellman
   email: eric@ebookfoundation.org
-  institution: 
+  institution: Free Ebook Foundation
   position-title: President
   bio: Eric Hellman is Co-Founder and President of the Free Ebook Foundation. After 10 years doing physics research at Bell Labs, Eric got interested in electronic publishing, started an e-journal, started a company, built linking technology for libraries, sold that company to OCLC and worked there a few years, started blogging (at Go To Hellman), and then started working to make free ebooks work for libraries and everyone else. Eric believes that tools for modern cryptography and software engineering must be widely deployed in the library and publishing industries to ensure digital privacy, security and information freedom for all.
   image_src: /assets/img/nopics/nopic4.jpg
@@ -172,7 +172,7 @@
 - id: eric-pugh
   name: Eric Pugh
   email: epugh@opensourceconnections.com
-  institution: 
+  institution: OpenSource Connections
   position-title: Search Guru
   bio: Fascinated by the craft of software development, Eric Pugh has been involved in the open source world as a developer, committer and user for the past fifteen years. He is a member of the Apache Software Foundation and an active committer to Apache Solr. He co-authored the book Apache Solr Enterprise Search Server, now on its third edition. He also stewards Quepid, an open source platform for assessing and improving your search relevance.
   image_src: /assets/img/speakers/eric-pugh.png
@@ -190,7 +190,7 @@
 - id: hank-sway
   name: Hank Sway
   email: swayh@oclc.org
-  institution: 
+  institution: OCLC
   position-title: Product Manager
   bio: Hank Sway is Product Manager for APIs and EZproxy at OCLC.
   image_src: /assets/img/nopics/nopic6.jpg
@@ -199,7 +199,7 @@
 - id: hannah-lee
   name: Hannah Lee
   email: halee@csudh.edu
-  institution: 
+  institution: California State University
   position-title: Discovery & Systems Librarian
   bio: As the Discovery & Systems Librarian for California State University, Dominguez Hills, Hannah Lee collaborates with other library staff and faculty to develop policies, procedures and workflows that enhance access and discoverability of the library’s collections, web service integrations, and support the curation of the library’s digital content.
   image_src: /assets/img/nopics/nopic7.jpg
@@ -217,18 +217,18 @@
 - id: ian-matzen
   name: Ian Matzen
   email: imatzen@westfield.ma.edu
-  institution: 
+  institution: Westfield State University
   position-title: Systems and Digital Initiatives Librarian
-  bio: 
+  bio: Ian is Systems and Digital Initiatives Librarian at Westfield State University
   image_src: /assets/img/nopics/nopic8.jpg
   keynote: false
 
 - id: jason-a-clark
   name: Jason A. Clark
   email: jaclark@montana.edu
-  institution: 
+  institution: Montana State University
   position-title: Lead for Research Informatics
-  bio: Librarian @msulibrary, professor, hacker/developer, metadata geek, author - working under the Big Sky and focused on Semantic Web development, digital library development, metadata and data modeling, web services and APIs, search engine optimization, and interface design. http://jasonclark.info
+  bio: Librarian @msulibrary, professor, hacker/developer, metadata geek, author - working under the Big Sky and focused on Semantic Web development, digital library development, metadata and data modeling, web services and APIs, search engine optimization, and interface design. <a href="http://jasonclark.info">http://jasonclark.info</a>
   image_src: /assets/img/speakers/jason-clark.jpeg
   keynote: false
 
@@ -237,7 +237,7 @@
   email: jennzhawkins@gmail.com
   institution: 
   position-title: MLIS Graduate
-  bio: 
+  bio: Biography Forthcoming...
   image_src: /assets/img/nopics/nopic9.jpg
   keynote: false
 
@@ -253,7 +253,7 @@
 - id: julie-c-swierczek
   name: Julie C. Swierczek
   email: jswierczek@folger.edu
-  institution: 
+  institution: Folger Shakespeare Library
   position-title: Associate Librarian for Collection Description and Imaging
   bio: Cataloger. Metadata Librarian. Digital Archivist. Digital Asset Manager. Systems Librarian. Manager. Enjoying the privilege of serving really awesome colleagues.
   image_src: /assets/img/speakers/julie-swierczek.jpg
@@ -271,7 +271,7 @@
 - id: kevin-schlottmann
   name: Kevin Schlottmann
   email: kws2126@columbia.edu
-  institution: 
+  institution: Columbia University
   position-title: Head of Archives Processing
   bio: Kevin Schlottmann has been Head of Archives Processing at Columbia University’s Rare Book and Manuscript Library since 2018. Among his first tasks was spearheading migration into ArchivesSpace. Previously, Kevin was Digital Archives Manager at the New York Philharmonic and Archival Processing Manager at the Center for Jewish History.
   image_src: /assets/img/speakers/kevin-schlottmann.jpg
@@ -280,7 +280,7 @@
 - id: lucy-kiester
   name: Lucy Kiester
   email: lucy.kiester@mcgill.ca
-  institution: 
+  institution: McGill University
   position-title: Liaison librarian for undergraduate medical education
   bio: Lucy Kiester is the liaison librarian for undergraduate medical education at McGill University, teaching students how work with (instead of against) PubMed. She is interested in how unrecognized AI could effect Evidence-Based Decision Making in a medical context, and how information professionals can educate users on potential effects of algorithms.
   image_src: /assets/img/speakers/lucy-kiester.jpg
@@ -298,25 +298,25 @@
 - id: nick-krabbenhoeft
   name: Nick Krabbenhoeft
   email: nickkrabbenhoeft@nypl.org
-  institution: 
-  position-title: 
-  bio: 
+  institution: New York Public Library
+  position-title: Digital Preservation Manager
+  bio: Nick is the Digital Preservation Manager at the New York Public Library.
   image_src: /assets/img/nopics/nopic2.jpg
   keynote: false
 
 - id: paige-morfitt
   name: Paige Morfitt
   email: morfitpb@whitman.edu
-  institution: 
-  position-title: 
-  bio: 
+  institution: Whitman College
+  position-title: Digital Assets and Metadata Librarian
+  bio: Paige is the Digital Assets and Metadata Librarian at Whitman College
   image_src: /assets/img/nopics/nopic3.jpg
   keynote: false
 
 - id: sam-wilairat
   name: Sam Wilairat
   email: sckennefick@gmail.com
-  institution: 
+  institution: San Jose State University
   position-title: LIS student, Frictionless Data Reproducible Research Fellow
   bio: Sam Wilairat is an MLIS student at San Jose State University. She is currently a Frictionless Data Reproducible Research Fellow at Open Knowledge Foundation and a Graduate Assistant for Strauss Health Sciences Library at CU Anschutz. She has an interest in data librarianship and education and research.
   image_src: /assets/img/speakers/sam-wilairat.jpg
@@ -327,14 +327,14 @@
   email: sheila.rabun@lyrasis.org
   institution: LYRASIS
   position-title: ORCID US Community Specialist
-  bio: Sheila Rabun has worked in the academic library field since 2010, with a focus on digital workflows, agile project management, communicating technical information to diverse audiences, and advocating for interoperability in research and scholarly communication ecosystems. Learn more about Sheila at https://orcid.org/0000-0002-1196-6279
+  bio: Sheila Rabun has worked in the academic library field since 2010, with a focus on digital workflows, agile project management, communicating technical information to diverse audiences, and advocating for interoperability in research and scholarly communication ecosystems. Learn more about Sheila at <a href="https://orcid.org/0000-0002-1196-6279" target="_blank">https://orcid.org/0000-0002-1196-6279</a>.
   image_src: /assets/img/speakers/sheila-rabun.png
   keynote: false
 
 - id: wei-ma
   name: Wei Ma
   email: wma@csudh.edu
-  institution: 
+  institution: California State University
   position-title: Electronic Resources Librarian and Assistive Technology Librarian
   bio: Wei Ma is the Electronic Resources Librarian and Assistive Technology Librarian for California State University, Dominguez Hills (CSUDH). She worked as the Systems, Electronic Resources Librarian, and Web Librarian for CSUDH Library from 2006 to 2017. She helped CSUDH Library build a solid technology infrastructure and transit from print based to digitally based collections. Prior to CSUDH, she was the Electronic Resources Librarian & Associate Professor for Univ. of Illinois Urbana-Champaign (UIUC) (1996-2004).
   image_src: /assets/img/speakers/wei-ma.jpg
