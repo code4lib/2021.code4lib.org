@@ -1,221 +1,231 @@
-# Registration
-- timeImg: 8.00.png
-  title: Registration
-  day1: true
-  day2: true
-  day3: true
-  time: 08:00-09:00
-
-# Reception
-- timeImg: 7.00.png
-  title: Reception
-  day2: true
-  time: 19:00-21:00
-  menu: day2-menus
-  submenu: Reception
+## Registration
+#- timeImg: 8.00.png
+#  title: Registration
+#  day1: true
+#  day2: true
+#  day3: true
+#  time: 08:00-09:00
+#
+## Reception
+#- timeImg: 7.00.png
+#  title: Reception
+#  day2: true
+#  time: 19:00-21:00
+#  menu: day2-menus
+#  submenu: Reception
 
 # Announcements
-- timeImg: 9.00.png
+- timeImg: icosahedron.svg
   title: Announcements and Welcome
   day1: true
-  time: 09:00-09:15
+  time: 12:00-12:15
 
-- timeImg: 9.00.png
+- timeImg: icosahedron.svg
   title: Announcements
   day2: true
+  time: 12:00-12:05
+
+- timeImg: icosahedron.svg
+  title: Announcements
   day3: true
-  time: 09:00-09:15
+  day4: true
+  time: 12:00-12:10
 
 # Breaks
-- timeImg: 10.00.png
-  title: Morning Break
-  day1: true
-  time: 10:00-10:15
-  menu: day1-menus
-  submenu: Morning
-
-- timeImg: 2.40.png
-  title: Afternoon Break
-  day1: true
-  time: 14:40-14:45
-  menu: day1-menus
-  submenu: Afternoon
-
-- timeImg: 9.55.png
-  title: Morning Break
-  day2: true
-  time: 09:55-10:05
-  menu: day2-menus
-  submenu: Morning
-
-- timeImg: 3.00.png
-  title: Afternoon Break
-  day2: true
-  time: 15:00-15:15
-  menu: day2-menus
-  submenu: Afternoon
-
-- timeImg: 10.00.png
-  title: Morning Break
-  day3: true
-  time: 10:00-10:10
-  menu: day3-menus
-  submenu: Morning
+#- timeImg: 10.00.png
+#  title: Morning Break
+#  day1: true
+#  time: 10:00-10:15
+#  menu: day1-menus
+#  submenu: Morning
+#
+#- timeImg: 2.40.png
+#  title: Afternoon Break
+#  day1: true
+#  time: 14:40-14:45
+#  menu: day1-menus
+#  submenu: Afternoon
+#
+#- timeImg: 9.55.png
+#  title: Morning Break
+#  day2: true
+#  time: 09:55-10:05
+#  menu: day2-menus
+#  submenu: Morning
+#
+#- timeImg: 3.00.png
+#  title: Afternoon Break
+#  day2: true
+#  time: 15:00-15:15
+#  menu: day2-menus
+#  submenu: Afternoon
+#
+#- timeImg: 10.00.png
+#  title: Morning Break
+#  day3: true
+#  time: 10:00-10:10
+#  menu: day3-menus
+#  submenu: Morning
 
 # NOTE: first-timers page uses the link properties of the first events with
 # titles like "Breakout Sessions" and "Lightning Talks"
 # Breakouts
-- timeImg: 2.45.png
+- timeImg: icosahedron.svg
   title: Breakout Sessions 1
   day1: true
-  time: 14:45-15:55
-  link: https://wiki.code4lib.org/Code4Lib2018_Breakout_Sessions
+  time: 14:20-14:55
+  link:
 
-- timeImg: 10.05.png
+- timeImg: icosahedron.svg
   title: Breakout Sessions 2
-  day2: true
-  time: 10:05-10:55
-  link: https://wiki.code4lib.org/Code4Lib2018_Breakout_Sessions
+  day3: true
+  time: 14:20-14:55
+  link:
 
 # lightning
-- timeImg: 4.00.png
+- timeImg: icosahedron.svg
   title: Lightning Talks 1
-  day1: true
-  time: 16:00-17:05
-  link: https://wiki.code4lib.org/Code4Lib2019_Lightning_Talks#Day_1_-_February_20.2C_2019
-
-- timeImg: 2.05.png
-  title: Lightning Talks 2
   day2: true
-  time: 14:05-15:00
-  link: https://wiki.code4lib.org/Code4Lib2019_Lightning_Talks#Day_2_-_February_21.2C_2019
+  time: 12:05-12:55
+  link:
 
-- timeImg: 10.15.png
-  title: Lightning Talks 3
+- timeImg: icosahedron.svg
+  title: Lightning Talks 2
   day3: true
-  time: 10:15-11:00
-  link: https://wiki.code4lib.org/Code4Lib2019_Lightning_Talks#Day_3_-_February_22.2C_2019
+  time: 15:00-15:55
+  link:
+
+- timeImg: icosahedron.svg
+  title: Lightning Talks 3
+  day4: true
+  time: 13:10-14:15
+  link:
 
 # Poster Session
-- timeImg: 3.15.png
-  title: Poster Session in Foyer of the Regency Ballroom
+- timeImg: icosahedron.svg
+  title: Poster Sessions
   day2: true
-  time: 15:15 - 15:35
-  link: https://wiki.code4lib.org/Code4Lib2018_Posters#Code4Lib2018_Posters
+  time: 14:10 - 14:40
+  link:
 
 # wrap ups
-- timeImg: 5.05.png
+- timeImg: icosahedron.svg
   title: Daily Wrap-up
-  day1: true
-  time: 17:05-17:15
-
-- timeImg: 5.10.png
-  title: Daily Wrap-up
-  day2: true
-  time: 17:10-17:15
-
-- timeImg: 12.15.png
-  title: Wrap-up
-  day3: true
-  time: 12:15-12:35
-
-# lunches
-- timeImg: 12.10.png
-  title: Lunch
-  day1: true
-  time: 12:10-13:20
-  menu: day1-menus
-  submenu: Lunch
-
-- timeImg: 12.05.png
-  title: Lunch
-  day2: true
-  time: 12:05-13:05
-  menu: day2-menus
-  submenu: Lunch
-
-# housekeeping (announcements and giveaways)
-- timeImg: 10.15.png
-  title: Announcements
-  day1: true
-  time: 10:15-10:20
-
-- timeImg: 1.20.png
-  title: Announcements
-  day1: true
-  time: 13:20-13:25
-
-- timeImg: 3.40.png
-  title: Announcements
   day1: true
   time: 15:55-16:00
 
-- timeImg: 1.05.png
-  title: Announcements
+- timeImg: icosahedron.svg
+  title: Daily Wrap-up
   day2: true
-  time: 13:05-13:10
+  time: 15:55-16:00
 
-- timeImg: 3.35.png
-  title: Announcements
-  day2: true
-  time: 15:35-15:40
-
-- timeImg: 10.10.png
-  title: Announcements
+- timeImg: icosahedron.svg
+  title: Wrap-up
   day3: true
-  time: 10:10-10:15
+  time: 15:55-16:00
 
-- timeImg: 11.00.png
-  title: Announcements
-  day3: true
-  time: 11:00-11:05
+- timeImg: icosahedron.svg
+  title: Wrap-up
+  day4: true
+  time: 15:40-15:50
+
+## lunches
+#- timeImg: 12.10.png
+#  title: Lunch
+#  day1: true
+#  time: 12:10-13:20
+#  menu: day1-menus
+#  submenu: Lunch
+#
+#- timeImg: 12.05.png
+#  title: Lunch
+#  day2: true
+#  time: 12:05-13:05
+#  menu: day2-menus
+#  submenu: Lunch
+
+# housekeeping (announcements and giveaways)
+#- timeImg: 10.15.png
+#  title: Announcements
+#  day1: true
+#  time: 10:15-10:20
+#
+#- timeImg: 1.20.png
+#  title: Announcements
+#  day1: true
+#  time: 13:20-13:25
+#
+#- timeImg: 3.40.png
+#  title: Announcements
+#  day1: true
+#  time: 15:55-16:00
+#
+#- timeImg: 1.05.png
+#  title: Announcements
+#  day2: true
+#  time: 13:05-13:10
+#
+#- timeImg: 3.35.png
+#  title: Announcements
+#  day2: true
+#  time: 15:35-15:40
+#
+#- timeImg: 10.10.png
+#  title: Announcements
+#  day3: true
+#  time: 10:10-10:15
+#
+#- timeImg: 11.00.png
+#  title: Announcements
+#  day3: true
+#  time: 11:00-11:05
 
 # keynotes
-- timeImg: 9.15.png
+- timeImg: icosahedron.svg
   title: Opening Keynote
   day1: true
   groupId: key-open
-  time: 09:15-10:00
+  time: 12:10-13:00
 
-- timeImg: 9.15.png
+- timeImg: icosahedron.svg
   title: Closing Keynote
-  day3: true
+  day4: true
   groupId: key-close
-  time: 09:15-10:00
+  time: 12:10-13:00
 
 # groups
-- timeImg: 10.20.png
-  title: Group 1&#58; 110 minutes (6 talks)
+- timeImg: icosahedron.svg
+  title: Group 1&#58; 65 minutes (4 talks)
   day1: true
   groupId: 1
-  time: 10:20-12:10
+  time: 13:10-14:15
 
-- timeImg: 1.25.png
-  title: Group 2&#58; 75 minutes (5 talks)
+- timeImg: icosahedron.svg
+  title: Group 2&#58; 55 minutes (3 talks)
   day1: true
   groupId: 2
-  time: 13:25-14:40
+  time: 15:00-15:55
 
-- timeImg: 11.00.png
-  title: Group 3&#58; 60 minutes (3 talks)
+- timeImg: icosahedron.svg
+  title: Group 3&#58;  60 minutes (4 talks)
   day2: true
   groupId: 3
-  time: 11:00-12:00
+  time: 13:05-14:05
 
-- timeImg: 1.10.png
-  title: Group 4&#58; 55 minutes (3 talks)
+- timeImg: icosahedron.svg
+  title: Group 4&#58;  70 minutes (4 talks)
   day2: true
   groupId: 4
-  time: 13:10-14:05
+  time: 14:45-13:55
 
-- timeImg: 3.40.png
-  title: Group 5&#58; 110 minutes (6 talks)
-  day2: true
-  groupId: 5
-  time: 15:40-17:10
-
-- timeImg: 11.05.png
-  title: Group 6&#58; 70 minutes (4 talks)
+- timeImg: icosahedron.svg
+  title: Group 5&#58; 125 minutes (7 talks)
   day3: true
+  groupId: 5
+  time: 12:10-14:15
+
+- timeImg: icosahedron.svg
+  title: Group 6&#58; 75 minutes (4 talks)
+  day4: true
   groupId: 6
-  time: 11:05-12:15
+  time: 14:25-15:40

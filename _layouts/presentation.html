@@ -50,7 +50,7 @@
                             {% assign speaker = site.data.speakers | where: 'id', speaker_id | first %}
                             {% if speaker %}
                                 <div class="col-sm-3 text-center">
-                                    <a href="/speakers/#{{ speaker.id }}">
+                                    <a class="speaker-link" href="/speakers/#{{ speaker.id }}">
                                         <img class="clip-circle-speaker" src="{{ speaker.image_src }}" alt="{{ speaker.name }}">
                                         <span>{{ speaker.name }}</span>
                                     </a>
