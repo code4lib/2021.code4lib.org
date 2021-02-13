@@ -6,6 +6,7 @@ year: 2021
 hashtag: 'c4l21'
 location: 'Code4Lib 2021'
 search: false
+local-conference: false
 
 ###########################
 # Hero
