@@ -3,9 +3,9 @@
 // --------------------------------------
 
 .keynote-link {
-  color: #ea1cdd;
+  color: #EE44E2;
   &:hover {
-    color: #ea1cdd;
+    color: #EE44E2;
     text-decoration: underline;
   }
 }
@@ -180,7 +180,8 @@
 }
 
 .cd-timeline-content {
-  background: $timeline-content-bg;
+  background-color: $card-bg;
+  color: $gray-400;
   border-radius: .25em;
   box-shadow: 4px 5px 0px $timeline-content-shadow;
   margin-left: 70px;
@@ -195,7 +196,7 @@
 }
 
 .cd-timeline-content h2 {
-  color: $timeline-text-color;
+  color: $cultured-white;
   font-size: 20px;
   margin: 0;
   padding: 0;

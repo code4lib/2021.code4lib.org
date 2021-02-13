@@ -8,14 +8,14 @@
 }
 
 .talk-row:nth-child(odd) {
-  background-color: $gray-lighter;
+  background-color: darken($card-bg, 1%);
 }
 
 .talk-row {
   margin-top: 11px;
   padding: 11px 0 11px 11px;
   a {
-    color: #ea1cdd;
+    color: #EE44E2;
   }
   a:hover {
     text-decoration: underline;
