@@ -3,8 +3,8 @@
    ========================================================================== */
 
 .sched-well {
-  background-color: $cultured-white;
-  color: $speaker-info-color;
+  background-color: $card-bg;
+  color: $gray-400;
   border-radius: 10px;
   box-shadow: 4px 5px 0px rgba(0, 0, 0, .11);
   margin-bottom: 20px;
@@ -19,7 +19,7 @@
 
 .sched-well a {
   //@include link-styles;
-  color: #ea1cdd !important;
+  color: #EE44E2 !important;
 
   &:active,
   &:focus,
@@ -37,6 +37,7 @@
 
 .text-right h3 {
   font-size: 1.25em;
+  color: $gray-400;
 }
 
 .timezone {
