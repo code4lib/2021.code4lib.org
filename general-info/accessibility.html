@@ -73,61 +73,11 @@ subnav:
 				Attendees, both local and remote, may view the text stream at:
                <a href="{{site.data.conf.closed-captioning.url}}">{{site.data.conf.closed-captioning.url}}</a>.
 				{% endif %}
-				Sessions which were recorded before the conference will include captions as well.
+				Sessions which were recorded before the conference will include captions as well.<br/>
+				<span class="font-weight-bold">Note:</span> Do not use any built-in captioning options (such as Google Slides captioning or Microsoft Translator) while recording your presentation, as it will interfere with the automated captioning the conference will be using. 
             </p>
 		</div>
 	</div>
-			
-	<!--- #hide for online conference 
-	<div class="row">
-		<div class="col-12">
-			<h2>Use the Microphone</h2>
-            <p> The single greatest act you can to do to promote accessibility at Code4Lib {{site.data.conf.year}} is to
-                <span class="font-weight-bold">use the microphone</span>. It doesn't matter if you think you are loud or
-                you can project, you should use the microphone. It benefits everyone:
-            </p>
-            <ul>
-               <li>When a speaker uses the mic properly, you all hear them better. </li>
-               <li>When you ask a question with a mic, the speaker and everyone else hears your question. </li>
-               <li>Using the mic ensures everyone livestreaming or watching recorded talks can share the C4L experience. </li>
-               <li>Using the mic improves the quality of the live captioning feed.</li>
-            </ul>
-			
-			<li class="actions-list">
-				<span class="h3">Microphone Tips for Presenters</span>
-				<ul>
-					<li>For both a podium mic and one on a stand, it should point towards your mouth. Adjust the height
-						of the mic and angle its neck to point towards your mouth and nose.
-					</li>
-					<li>You should place your mouth about 8-10 inches (20-25cm or two hand widths) away from the mic. You can get closer but you may find that it limits your natural movement.
-					</li>
-					<li>If you move around the podium at all, you should adjust the mic as you move. You should always
-						be talking directly at the head of the mic from the front. Never to the side.
-					</li>
-					<li>If you are copresenting, you need to make sure the mic points at the speaker. Use the second
-						mic on stage or adjust it to point at who is speaking. Standing side by side with the mic in
-						the middle is not as effective as you may think.
-					</li>
-				</ul>
-			</li>
-			
-			<li class="actions-list">
-				<span class="h3">Using a Handheld Mic</span>
-				<ul>
-					<li>The line of the microphone should always point towards your mouth and nose. Do not hold it
-						like an ice cream cone. Hold it more like a candy bar or at a 45 degree angle.
-					</li>
-					<li>If you turn your head, the mic should also turn so that it stays pointed at your mouth.</li>
-					<li>You should hold the mic 5-8 inches (15-20cm) from your mouth.</li>
-					<li>Hold the mic firmly. Any shaking may be picked up and effect your voice quality.</li>
-					<li>If the mic is not working, wait for staff to offer a replacement or fix it. Do not
-                   just try yelling.
-					</li>
-				</ul>
-			</li>
-		</div>
-	</div>
-	--->
 	
 	<div class="row">
 		<div class="col-12">
@@ -267,6 +217,57 @@ subnav:
 			</ul>	
 		</div>
 	</div>
+	
+	{% if site.data.conf.quiet-room.show %}
+	<div class="row">
+		<div class="col-12">
+			<h2>Use the Microphone</h2>
+            <p> The single greatest act you can to do to promote accessibility at Code4Lib {{site.data.conf.year}} is to
+                <span class="font-weight-bold">use the microphone</span>. It doesn't matter if you think you are loud or
+                you can project, you should use the microphone. It benefits everyone:
+            </p>
+            <ul>
+               <li>When a speaker uses the mic properly, you all hear them better. </li>
+               <li>When you ask a question with a mic, the speaker and everyone else hears your question. </li>
+               <li>Using the mic ensures everyone livestreaming or watching recorded talks can share the C4L experience. </li>
+               <li>Using the mic improves the quality of the live captioning feed.</li>
+            </ul>
+			
+			<li class="actions-list">
+				<span class="h3">Microphone Tips for Presenters</span>
+				<ul>
+					<li>For both a podium mic and one on a stand, it should point towards your mouth. Adjust the height
+						of the mic and angle its neck to point towards your mouth and nose.
+					</li>
+					<li>You should place your mouth about 8-10 inches (20-25cm or two hand widths) away from the mic. You can get closer but you may find that it limits your natural movement.
+					</li>
+					<li>If you move around the podium at all, you should adjust the mic as you move. You should always
+						be talking directly at the head of the mic from the front. Never to the side.
+					</li>
+					<li>If you are copresenting, you need to make sure the mic points at the speaker. Use the second
+						mic on stage or adjust it to point at who is speaking. Standing side by side with the mic in
+						the middle is not as effective as you may think.
+					</li>
+				</ul>
+			</li>
+			
+			<li class="actions-list">
+				<span class="h3">Using a Handheld Mic</span>
+				<ul>
+					<li>The line of the microphone should always point towards your mouth and nose. Do not hold it
+						like an ice cream cone. Hold it more like a candy bar or at a 45 degree angle.
+					</li>
+					<li>If you turn your head, the mic should also turn so that it stays pointed at your mouth.</li>
+					<li>You should hold the mic 5-8 inches (15-20cm) from your mouth.</li>
+					<li>Hold the mic firmly. Any shaking may be picked up and effect your voice quality.</li>
+					<li>If the mic is not working, wait for staff to offer a replacement or fix it. Do not
+                   just try yelling.
+					</li>
+				</ul>
+			</li>
+		</div>
+	</div>
+	{% endif %}
 	
 	<div class="row">
 		<div class="col-12">
