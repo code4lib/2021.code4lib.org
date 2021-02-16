@@ -103,8 +103,8 @@
 
 .workshop-well {
   -webkit-flex-flow: row wrap;
-  background-color: $cultured-white;
-  color: $speaker-info-color;
+  background-color: $oxford-blue-desat;
+  color: #d4d8d1;
   border-radius: 5px;
   display: flex;
   flex-flow: row wrap;
@@ -122,7 +122,7 @@
 
 .workshop-well a {
   //@include link-styles;
-  color: #ea1cdd;
+  color: $crayola-pink-desat;
 
   &:hover,
   &:focus,
