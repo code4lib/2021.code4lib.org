@@ -12,7 +12,7 @@
 }
 
 .event-card {
-  background: $white;
+  background: $card-bg;
   border-radius: 5px;
   box-shadow: 3px 3px 9px rgba(0, 0, 0, .2);
   box-sizing: border-box;
@@ -31,9 +31,9 @@
     border-radius: 50%;
     box-sizing: border-box;
     max-width: 100px;
-    background: $white;
-    --primary-color: #{$sponsor-badge-primary};
-    --background-color: $white;
+    background: $day-night-icon-bg;
+    --primary-color: #{$day-event-icon-color};
+    --background-color: #{$night-event};
   }
 
   %card-content {
@@ -42,7 +42,7 @@
 
   .card-toolbar {
     @extend %card-content;
-    background: $day-event;
+    border-bottom: 2px solid $day-event-cap;
     color: $white;
     height: 3em;
 
@@ -62,7 +62,8 @@
     }
 
     &.night {
-      background: $night-event;
+      border-color: $night-event;
+      --primary-color: #{$night-event};
     }
   }
 
@@ -77,9 +78,13 @@
     }
 
     p {
-      color: #a1a1a1;
+      color: $text-color-subtle;
       margin: 0;
       line-height: initial;
     }
+    a {
+      color: $text-color;
+      text-decoration: underline;
+    }    
   }
 }

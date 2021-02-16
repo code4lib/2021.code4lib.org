@@ -2,6 +2,14 @@
 // Modules - reusable parts of our design
 // --------------------------------------
 
+.keynote-link {
+  color: #EE44E2;
+  &:hover {
+    color: #EE44E2;
+    text-decoration: underline;
+  }
+}
+
 .cd-container {
   // this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width
   margin: 0 auto;
@@ -87,6 +95,7 @@
   position: absolute;
   top: 0;
   width: 60px;
+  padding: 5px;
 }
 
 .cd-timeline-img img {
@@ -171,9 +180,10 @@
 }
 
 .cd-timeline-content {
-  background: $timeline-content-bg;
+  background-color: $card-bg;
+  color: $gray-400;
   border-radius: .25em;
-  box-shadow: 4px 5px 0px $timeline-content-shadow;
+  /*box-shadow: 4px 5px 0px $timeline-content-shadow; Dark mode */
   margin-left: 70px;
   padding: 1em;
   position: relative;
@@ -186,7 +196,7 @@
 }
 
 .cd-timeline-content h2 {
-  color: $timeline-text-color;
+  color: $cultured-white;
   font-size: 20px;
   margin: 0;
   padding: 0;

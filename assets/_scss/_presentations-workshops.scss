@@ -8,12 +8,19 @@
 }
 
 .talk-row:nth-child(odd) {
-  background-color: $gray-lighter;
+  background-color: darken($card-bg, 1%);
 }
 
 .talk-row {
   margin-top: 11px;
   padding: 11px 0 11px 11px;
+  border-top: 4px solid $body-bg;
+  a {
+    color: #EE44E2;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
 .back-workshops {
@@ -29,6 +36,12 @@
   cursor: pointer;
 }
 
+.speaker-link {
+  color: $turquoise;
+  &:hover {
+    color: $turquoise-lighter;
+  }
+}
 .talk-detail-box {
   animation: intro .34s .4s cubic-bezier(1, 1.4, .41, 1.01) forwards;
   background: $talk-box-bg;
