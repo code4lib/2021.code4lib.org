@@ -55,3 +55,14 @@
   img: /assets/img/sponsors/OCLC.png
   link: https://www.oclc.org/
   level: platinum
+
+- name: Blacklight
+  img: /assets/img/sponsors/blacklight-logo.svg
+  link: http://projectblacklight.org/
+  level: platinum
+
+- name: MIT Libraries
+  img: /assets/img/sponsors/MITLibraries.png
+  link: https://libraries.mit.edu/
+  level: silver
+  annotation: 'Closed Captioning & Post-Conference Video Production'
