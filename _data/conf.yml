@@ -190,7 +190,7 @@ panel-proposals:
   end-date: ''
 
 poster-proposals:
-  show: true
+  show: false
   submission-form: 'https://forms.gle/sSQWDgFxHbDwojoW6'
   end-date: '2020-02-15'
 
