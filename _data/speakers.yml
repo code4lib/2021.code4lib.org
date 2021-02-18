@@ -1,3 +1,14 @@
+- id: rudo-kemper
+  name: Rudo Kemper
+  email: rkemper@digital-democracy.org
+  institution: Digital Democracy
+  position-title: Earth Defenders Toolkit
+  bio: Rudo Kemper works with Digital Democracy on the programs team, and manages the creation of the Earth Defenders Toolkit. Rudo is a human geographer with a background in archives and international administration, and a lifelong technology tinkerer. He is passionate about co-creating and using technology to support marginalized communities in defending their right to self-determination and representation, and towards other decolonizing and emancipatory ends.<br/><br/>
+    Before joining Digital Democracy in 2020, Rudo worked for 6 years with the Amazon Conservation Team (ACT), most recently serving as mapping and programs manager with a particular focus on the organization’s participatory mapping, community-based monitoring, and intangible cultural heritage work with indigenous and Afro-descendant communities in Suriname and the Guiana Shield. Rudo currently serves on the executive boards of Native Land Digital and the International Society for Participatory Mapping. He is one of the core stewards of the open-source geostorytelling application Terrastories, and its principal representative in charge of community outreach and engagement.<br/><br/>
+    Originally from Curaçao, Rudo has worked with indigenous and other local communities across the Americas from Canada to the Amazon. He is currently based in Springfield, Virginia.
+  image_src: /assets/img/keynotes/rudo-kemper.jpg
+  keynote: true
+
 - id: alex-michael-berry
   name: Alex Michael Berry
   email: alexmiberry@gmail.com
@@ -220,7 +231,7 @@
   institution: Westfield State University
   position-title: Systems and Digital Initiatives Librarian
   bio: Ian is Systems and Digital Initiatives Librarian at Westfield State University
-  image_src: /assets/img/nopics/nopic8.jpg
+  image_src: /assets/img/speakers/ian-matzen.jpg
   keynote: false
 
 - id: jason-a-clark
@@ -292,7 +303,7 @@
   institution: University of Pittsburgh
   position-title: Head, Metadata and Discovery Unit
   bio: Michael Bolam is the Head of the Metadata and Discovery Unit for the University Library System, University of Pittsburgh. Michael has been working with digital collections metadata for nearly fifteen years, contributing to large-scale digitization projects such as the Historic Pittsburgh and Documenting Pitt projects.
-  image_src: /assets/img/nopics/nopic1.jpg
+  image_src: /assets/img/speakers/michael-bolam.jpg
   keynote: false
 
 - id: nick-krabbenhoeft
