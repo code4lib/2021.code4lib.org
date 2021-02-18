@@ -6,6 +6,13 @@ title: Schedule
 <div class="container">
     <div class="row">
         <h1 class="sr-only">Schedule</h1>
+
+        <div class="btn-group mx-auto" role="group" aria-label="choose your time zone">
+            <button type="button" class="btn btn-outline-light" onclick="toLocal()">To Your Local
+                Time</button>
+            <button type="button" class="btn btn-outline-light active" onclick="toEastern()" aria-pressed="true">Eastern
+                Time</button>
+        </div>
         <div class="col-12 sched-date">
             <h2>{{site.data.conf.days[0].weekday}}, {{site.data.conf.days[0].date}}</h2>
         </div>
@@ -13,10 +20,7 @@ title: Schedule
 
     <div class="row">
         <div class="col-12 col-md-3 text-right">
-            <h3>{{site.data.conf.days[0].eastern-time-start | date: "%l:%M %p"}} - {{site.data.conf.days[0].eastern-time-end | date: "%l:%M %p"}}
-                <br/><div class="timezone">Eastern Time</div>
-            </h3>
-
+            <h3><span id="first-start-time"></span> - <span id="first-end-time"></span></h3>
         </div>
         <div class="col-12 col-md-9 sched-well">
             <h4><a href="/schedule/day-1">General Conference, Day One</a></h4>
@@ -36,15 +40,19 @@ title: Schedule
             <p>
                 It is a Code4Lib tradition to welcome those who are new to the conference
                 by organizing dinner groups on the night before the general conference begins.
-                Sign-up is organized by the <a href="https://wiki.code4lib.org/Code4Lib_{{site.data.conf.year}}_Conference_Committees#Social_Activities_Committee">Social Activities Committee</a>
+                Sign-up is organized by the <a
+                    href="https://wiki.code4lib.org/Code4Lib_{{site.data.conf.year}}_Conference_Committees#Social_Activities_Committee">Social
+                    Activities Committee</a>
                 on the wiki, and we try to mix a few newcomers with a few veterans
-                who can offer an informal introduction to the conference.  Great for making
+                who can offer an informal introduction to the conference. Great for making
                 new friends!
             </p>
-            <p class="text-danger"><strong>Note: <a href="https://www.timeanddate.com/time/change/usa">Daylight Savings Time</a> begins tonight! Don't forget to set your clocks ahead an hour tonight.</strong></p>
+            <p class="text-danger"><strong>Note: <a href="https://www.timeanddate.com/time/change/usa">Daylight Savings
+                        Time</a> begins tonight! Don't forget to set your clocks ahead an hour tonight.</strong></p>
             {% if site.data.conf.newcomer-dinner.signup-url != '' %}
             <p>
-                <a class="btn btn-warning" href="{{ site.data.conf.newcomer-dinner.signup-url }}">Sign-up for the Newcomer Dinner</a>
+                <a class="btn btn-warning" href="{{ site.data.conf.newcomer-dinner.signup-url }}">Sign-up for the
+                    Newcomer Dinner</a>
             </p>
             {% endif %}
         </div>
@@ -59,9 +67,7 @@ title: Schedule
 
     <div class="row">
         <div class="col-12 col-md-3 text-right">
-            <h3>{{site.data.conf.days[1].eastern-time-start | date: "%l:%M %p"}} - {{site.data.conf.days[1].eastern-time-end | date: "%l:%M %p"}}
-                <br/><div class="timezone">Eastern Time</div>
-            </h3>
+            <h3><span id="second-start-time"></span> - <span id="second-end-time"></span></h3>
         </div>
         <div class="col-12 col-md-9 sched-well">
             <h4><a href="/schedule/day-2">General Conference, Day Two</a></h4>
@@ -81,7 +87,8 @@ title: Schedule
                 <h4>Reception</h4>
             </a>
             <p>
-                All attendees are invited to join us for the reception at the {{ site.data.conf.reception.venue }}. See the <a href="/general-info/venues/#reception" alt="Venues">Venues</a> page for more details.
+                All attendees are invited to join us for the reception at the {{ site.data.conf.reception.venue }}. See
+                the <a href="/general-info/venues/#reception" alt="Venues">Venues</a> page for more details.
             </p>
             {%- comment %}
             <p>
@@ -92,7 +99,7 @@ title: Schedule
     </div>
     {% endif %}
 
-   <div class="row">
+    <div class="row">
         <div class="col-12 sched-date">
             <h2>{{site.data.conf.days[2].weekday}}, {{site.data.conf.days[2].date}}</h2>
         </div>
@@ -100,9 +107,7 @@ title: Schedule
 
     <div class="row">
         <div class="col-12 col-md-3 text-right">
-            <h3>{{site.data.conf.days[2].eastern-time-start | date: "%l:%M %p"}} - {{site.data.conf.days[2].eastern-time-end | date: "%l:%M %p"}}
-                <br/><div class="timezone">Eastern Time</div>
-            </h3>
+            <h3><span id="third-start-time"></span> - <span id="third-end-time"></span></h3>
         </div>
         <div class="col-12 col-md-9 sched-well">
             <h4><a href="/schedule/day-3">General Conference, Day Three</a></h4>
@@ -120,15 +125,18 @@ title: Schedule
         <div class="col-12 col-md-9 sched-well">
             <h4>
                 {% if site.data.conf.libtech-women.url %}
-                    <a href="{{site.data.conf.libtech-women.url}}">
-                {% endif %}
-                LibTech Women
-                {% if site.data.conf.libtech-women.url %}</a>{% endif %}
+                <a href="{{site.data.conf.libtech-women.url}}">
+                    {% endif %}
+                    LibTech Women
+                    {% if site.data.conf.libtech-women.url %}</a>{% endif %}
             </h4>
             <p>
-              <a href="http://libtechwomen.org/">LibTechWomen</a> is a supportive space for women and their friends to network, develop skills, build confidence, and lead positive change. Are you a lurker? Are you a newcomer? All are welcome! Come meet wonderful colleagues in library technology{%- if site.data.conf.game-night.location -%}
-              &nbsp;at {{site.data.conf.game-night.location}}
-              {%- endif -%}!
+                <a href="http://libtechwomen.org/">LibTechWomen</a> is a supportive space for women and their friends to
+                network, develop skills, build confidence, and lead positive change. Are you a lurker? Are you a
+                newcomer? All are welcome! Come meet wonderful colleagues in library technology{%- if
+                site.data.conf.game-night.location -%}
+                &nbsp;at {{site.data.conf.game-night.location}}
+                {%- endif -%}!
             </p>
         </div>
     </div>
@@ -142,17 +150,18 @@ title: Schedule
         <div class="col-12 col-md-9 sched-well">
             <h4>
                 {% if site.data.conf.game-night.url %}
-                    <a href="{{ site.data.conf.game-night.url }}">
-                {% endif %}
-                Game Night
-                {% if site.data.conf.game-night.url %}</a>{% endif %}
+                <a href="{{ site.data.conf.game-night.url }}">
+                    {% endif %}
+                    Game Night
+                    {% if site.data.conf.game-night.url %}</a>{% endif %}
             </h4>
             <p>
-              Play games? Come join your fellow code4libers in a few board or card games{%- if site.data.conf.game-night.location -%}
-              &nbsp;at {{site.data.conf.game-night.location}}
-              {%- endif -%}! Feel free to bring your own games as well.
-              See the <a target="blank" href="{{ site.data.conf.game-night.url }}">
-              sign up list on the Social Activities wiki</a> to list any games you might bring with you.
+                Play games? Come join your fellow code4libers in a few board or card games{%- if
+                site.data.conf.game-night.location -%}
+                &nbsp;at {{site.data.conf.game-night.location}}
+                {%- endif -%}! Feel free to bring your own games as well.
+                See the <a target="blank" href="{{ site.data.conf.game-night.url }}">
+                    sign up list on the Social Activities wiki</a> to list any games you might bring with you.
             </p>
         </div>
     </div>
@@ -166,15 +175,17 @@ title: Schedule
         <div class="col-12 col-md-9 sched-well">
             <h4>
                 {% if site.data.conf.karaoke-night.url %}
-                    <a href="{{ site.data.conf.karaoke-night.url }}">
-                {% endif %}
-                Karaoke Night
-                {% if site.data.conf.karaoke-night.url %}</a>{% endif %}
+                <a href="{{ site.data.conf.karaoke-night.url }}">
+                    {% endif %}
+                    Karaoke Night
+                    {% if site.data.conf.karaoke-night.url %}</a>{% endif %}
             </h4>
             <p>
-                We also have Karaoke night for those who would like to share your passions in singing, or just hangout with friendly folks.
+                We also have Karaoke night for those who would like to share your passions in singing, or just hangout
+                with friendly folks.
                 {% if site.data.conf.karaoke-night.url %}
-                    <a target="blank" href="{{ site.data.conf.karaoke-night.url }}">Sign up as groups and head over to the lounge at the DIY Events</a>
+                <a target="blank" href="{{ site.data.conf.karaoke-night.url }}">Sign up as groups and head over to the
+                    lounge at the DIY Events</a>
                 {% endif %}.
             </p>
         </div>
@@ -189,9 +200,7 @@ title: Schedule
 
     <div class="row">
         <div class="col-12 col-md-3 text-right">
-            <h3>{{site.data.conf.days[3].eastern-time-start | date: "%l:%M %p"}} - {{site.data.conf.days[3].eastern-time-end | date: "%l:%M %p"}}
-                <br/><div class="timezone">Eastern Time</div>
-            </h3>
+            <h3><span id="fourth-start-time"></span> - <span id="fourth-end-time"></span></h3>
         </div>
         <div class="col-12 col-md-9 sched-well">
             <h4><a href="/schedule/day-4">General Conference, Day Four</a></h4>
@@ -209,16 +218,14 @@ title: Schedule
 
     <div class="row">
         <div class="col-12 col-md-3 text-right">
-            <h3>{{site.data.conf.days[4].eastern-time-start | date: "%l:%M %p"}} - {{site.data.conf.days[4].eastern-time-end | date: "%l:%M %p"}}
-                <br/><div class="timezone">Eastern Time</div>
-            </h3>
+            <h3><span id="fifth-start-time"></span> - <span id="fifth-end-time"></span></h3>
         </div>
         <div class="col-12 col-md-9 sched-well">
             <h3><a href="/workshops">Postconference Workshops</a></h3>
             <p>
                 Postconference details are available
                 {% if site.data.registration.workshop-only.url.size > 0 %}
-                    on the <a href="{{site.data.registration.workshop-only.url}}">registration site</a> and
+                on the <a href="{{site.data.registration.workshop-only.url}}">registration site</a> and
                 {% endif %}
                 on the <a href="/workshops">Postconference Workshops</a> page.
             </p>
@@ -226,19 +233,84 @@ title: Schedule
     </div>
 
     {% comment %}
-        <!-- BoF hangouts section, move to right date/time -->
-        <div class="row">
-            <div class="col-12 col-md-3 text-right">
-                <h3>Afternoon</h3>
-            </div>
-            <div class="col-12 col-md-9 sched-well">
-                <h4>Birds-of-a-Feather Hangouts?</h4>
-                <p>
-                    The general conference is over, but if you have a bunch of inspired nerds with common interests in one spot, why not organize a little hackfest or meetup?  You are on your own to organize at this point, but feel free to contact the
-                    <a href="http://wiki.code4lib.org/2017_Conference_Committees#Local_Planning_Committee">Local Planning Committee</a> if you would like assistance securing space.
-                </p>
-            </div>
+    <!-- BoF hangouts section, move to right date/time -->
+    <div class="row">
+        <div class="col-12 col-md-3 text-right">
+            <h3>Afternoon</h3>
         </div>
+        <div class="col-12 col-md-9 sched-well">
+            <h4>Birds-of-a-Feather Hangouts?</h4>
+            <p>
+                The general conference is over, but if you have a bunch of inspired nerds with common interests in one
+                spot, why not organize a little hackfest or meetup? You are on your own to organize at this point, but
+                feel free to contact the
+                <a href="http://wiki.code4lib.org/2017_Conference_Committees#Local_Planning_Committee">Local Planning
+                    Committee</a> if you would like assistance securing space.
+            </p>
+        </div>
+    </div>
     {% endcomment %}
 
 </div>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+<script>
+    // https://apidock.com/ruby/DateTime/strftime
+    function toEastern() {
+        $('#first-start-time').text('{{site.data.conf.days[0].eastern-time-start | date: "%l:%M %p"}}');
+        $('#first-end-time').text('{{site.data.conf.days[0].eastern-time-end | date: "%l:%M %p"}}');
+        $('#second-start-time').text('{{site.data.conf.days[1].eastern-time-start | date: "%l:%M %p"}}');
+        $('#second-end-time').text('{{site.data.conf.days[1].eastern-time-end | date: "%l:%M %p"}}');
+        $('#third-start-time').text('{{site.data.conf.days[2].eastern-time-start | date: "%l:%M %p"}}');
+        $('#third-end-time').text('{{site.data.conf.days[2].eastern-time-end | date: "%l:%M %p"}}');
+        $('#fourth-start-time').text('{{site.data.conf.days[3].eastern-time-start | date: "%l:%M %p"}}');
+        $('#fourth-end-time').text('{{site.data.conf.days[3].eastern-time-end | date: "%l:%M %p"}}');
+        $('#fifth-start-time').text('{{site.data.conf.days[4].eastern-time-start | date: "%l:%M %p"}}');
+        $('#fifth-end-time').text('{{site.data.conf.days[4].eastern-time-end | date: "%l:%M %p"}}');
+    }
+
+    function toLocal() {
+        var diff = (new Date()).getTimezoneOffset() / 60 - 5;
+        diff = 3; // This is a test. Remove it in production.
+
+        function ampm(e) {
+            return (e) > 11 ? 'PM' : 'AM';
+        }
+
+        var firstStartHour = parseInt('{{site.data.conf.days[0].eastern-time-start | date: "%k"}}') - diff;
+        var firstStartMinute = '{{site.data.conf.days[0].eastern-time-start | date: "%M"}}';
+        var firstEndHour = parseInt('{{site.data.conf.days[0].eastern-time-end | date: "%k"}}') - diff;
+        var firstEndMinute = '{{site.data.conf.days[0].eastern-time-end | date: "%M"}}';
+        $('#first-start-time').text(firstStartHour + ":" + firstStartMinute + " " + ampm(firstStartHour));
+        $('#first-end-time').text(firstEndHour + ":" + firstEndMinute + " " + ampm(firstEndHour));
+
+        var secondStartHour = parseInt('{{site.data.conf.days[1].eastern-time-start | date: "%k"}}') - diff;
+        var secondStartMinute = '{{site.data.conf.days[1].eastern-time-start | date: "%M"}}';
+        var secondEndHour = parseInt('{{site.data.conf.days[1].eastern-time-end | date: "%k"}}') - diff;
+        var secondEndMinute = '{{site.data.conf.days[1].eastern-time-end | date: "%M"}}';
+        $('#second-start-time').text(secondStartHour + ":" + secondStartMinute + " " + ampm(secondStartHour));
+        $('#second-end-time').text(secondEndHour + ":" + secondEndMinute + " " + ampm(secondEndHour));
+
+        var thirdStartHour = parseInt('{{site.data.conf.days[2].eastern-time-start | date: "%k"}}') - diff;
+        var thirdStartMinute = '{{site.data.conf.days[2].eastern-time-start | date: "%M"}}';
+        var thirdEndHour = parseInt('{{site.data.conf.days[2].eastern-time-end | date: "%k"}}') - diff;
+        var thirdEndMinute = '{{site.data.conf.days[2].eastern-time-end | date: "%M"}}';
+        $('#third-start-time').text(thirdStartHour + ":" + thirdStartMinute + " " + ampm(thirdStartHour));
+        $('#third-end-time').text(thirdEndHour + ":" + thirdEndMinute + " " + ampm(thirdEndHour));
+
+        var fourthStartHour = parseInt('{{site.data.conf.days[3].eastern-time-start | date: "%k"}}') - diff;
+        var fourthStartMinute = '{{site.data.conf.days[3].eastern-time-start | date: "%M"}}';
+        var fourthEndHour = parseInt('{{site.data.conf.days[3].eastern-time-end | date: "%k"}}') - diff;
+        var fourthEndMinute = '{{site.data.conf.days[3].eastern-time-end | date: "%M"}}';
+        $('#fourth-start-time').text(fourthStartHour + ":" + fourthStartMinute + " " + ampm(fourthStartHour));
+        $('#fourth-end-time').text(fourthEndHour + ":" + fourthEndMinute + " " + ampm(fourthEndHour));
+
+        var fifthStartHour = parseInt('{{site.data.conf.days[4].eastern-time-start | date: "%k"}}') - diff;
+        var fifthStartMinute = '{{site.data.conf.days[4].eastern-time-start | date: "%M"}}';
+        var fifthEndHour = parseInt('{{site.data.conf.days[4].eastern-time-end | date: "%k"}}') - diff;
+        var fifthEndMinute = '{{site.data.conf.days[4].eastern-time-end | date: "%M"}}';
+        $('#fifth-start-time').text(fifthStartHour + ":" + fifthStartMinute + " " + ampm(fifthStartHour));
+        $('#fifth-end-time').text(fifthEndHour + ":" + fifthEndMinute + " " + ampm(fifthEndHour));
+    }
+    toEastern();
+</script>
