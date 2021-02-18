@@ -8,9 +8,9 @@ title: Schedule
         <h1 class="sr-only">Schedule</h1>
 
         <div class="btn-group mx-auto" role="group" aria-label="choose your time zone">
-            <button type="button" class="btn btn-outline-light" onclick="toLocal()">To Your Local
+            <button type="button" class="btn btn-outline-light active" id="toLocal" onclick="toLocal()">To Your Local
                 Time</button>
-            <button type="button" class="btn btn-outline-light active" onclick="toEastern()" aria-pressed="true">Eastern
+            <button type="button" class="btn btn-outline-light active" id="toEastern" onclick="toEastern()">Eastern
                 Time</button>
         </div>
         <div class="col-12 sched-date">
@@ -257,6 +257,12 @@ title: Schedule
 <script>
     // https://apidock.com/ruby/DateTime/strftime
     function toEastern() {
+        $('button#toEastern').addClass('active');
+
+        if($('button#toLocal').hasClass('active')){
+            $('button#toLocal').removeClass('active')
+        }
+
         $('#first-start-time').text('{{site.data.conf.days[0].eastern-time-start | date: "%l:%M %p"}}');
         $('#first-end-time').text('{{site.data.conf.days[0].eastern-time-end | date: "%l:%M %p"}}');
         $('#second-start-time').text('{{site.data.conf.days[1].eastern-time-start | date: "%l:%M %p"}}');
@@ -270,6 +276,12 @@ title: Schedule
     }
 
     function toLocal() {
+        $('button#toLocal').addClass('active');
+        
+        if($('button#toEastern').hasClass('active')){
+            $('button#toEastern').removeClass('active')
+        }
+
         var diff = (new Date()).getTimezoneOffset() / 60 - 5;
         diff = 3; // This is a test. Remove it in production.
 
