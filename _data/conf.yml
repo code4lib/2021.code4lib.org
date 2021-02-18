@@ -33,18 +33,29 @@ days:
     date: March 22nd
     # date in a form that JS Date() constructor understands
     date-data: 2021-03-22T23:59
+    # Start and ending time in EST in 24h format
+    eastern-time-start: '12:00'
+    eastern-time-end: '16:00'
   - weekday: Tuesday
     date: March 23rd
     date-data: 2021-03-23T23:59
+    eastern-time-start: '12:00'
+    eastern-time-end: '16:00'
   - weekday: Wednesday
     date: March 24th
     date-data: 2021-03-24T23:59
+    eastern-time-start: '12:00'
+    eastern-time-end: '16:00'
   - weekday: Thursday
     date: March 25th
     date-data: 2021-03-25T23:59
+    eastern-time-start: '12:00'
+    eastern-time-end: '16:00'
   - weekday: Friday
     date: March 26th
     date-data: 2021-03-26T23:59
+    eastern-time-start: '9:00'
+    eastern-time-end: '17:00'
 
 #############################
 # Venue Information
