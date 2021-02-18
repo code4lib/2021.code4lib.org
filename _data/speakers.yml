@@ -9,6 +9,15 @@
   image_src: /assets/img/keynotes/rudo-kemper.jpg
   keynote: true
 
+- id: regina-gong
+  name: Regina Gong
+  email:
+  institution:
+  position-title:
+  bio: Biography Forthcoming
+  image_src: /assets/img/nopics/nopic3.jpg
+  keynote: true
+
 - id: alex-michael-berry
   name: Alex Michael Berry
   email: alexmiberry@gmail.com
@@ -159,7 +168,7 @@
   institution: Boise State University
   position-title: Head, Scholarly Communications and Data Management
   bio: Elisabeth is Head o fScholarly Communications and Data Management at Boise State University
-  image_src: /assets/img/nopics/nopic3.jpg
+  image_src: /assets/img/nopics/nopic7.jpg
   keynote: false
 
 - id: eric-hellman
