@@ -98,13 +98,14 @@ subnav:
 				<li class="actions-list">
 					<span class="h3 subsection">Action 1: Submit Video Recording and Slides Early</span>
 					<p>
-					Code4Lib {{site.data.conf.year}} will feature Zoom’s AI captioning during the conference. In order to improve the quality of this service, we ask presenters to <span class="font-weight-bold">speak slowly and clearly</span> so the AI Captioning service is able to accurately capture what you say. Also, upload the slides to the <em>repository</em> (link forthcoming) so that the post-event video editors can use them as reference and improve the quality of the final video.
+					Code4Lib {{site.data.conf.year}} will feature Zoom’s AI captioning during the conference. In order to improve the quality of this service, we ask presenters to <span class="font-weight-bold">speak slowly and clearly</span> so the AI Captioning service is able to accurately capture what you say. Also, upload the slides to the <a href="{{site.data.conf.slides.url}}">Code4Lib {{site.data.conf.year}} repository</a> (link forthcoming) so that the post-event video editors can use them as reference and improve the quality of the final video.
 					</p>
 			
 					{% if site.data.conf.slides.show %}
 					<p>
 					Please submit your slides to the <a href="{{site.data.conf.slides.url}}">Code4Lib {{site.data.conf.year}} repository</a>
-					or to {{site.data.conf.slides.contact}} (<a href="mailto:{{site.data.conf.slides.email}}?Subject=Code4Lib%20Slides">{{site.data.conf.slides.email}}</a>)
+					<!---
+					or to {{site.data.conf.slides.contact}} (<a href="mailto:{{site.data.conf.slides.email}}?Subject=Code4Lib%20Slides">{{site.data.conf.slides.email}} --></a>)
 					at least 48 hours before your presentation (the earlier the better).
 					</p>
 					{% endif %}
