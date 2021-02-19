@@ -12,10 +12,10 @@
 - id: regina-gong
   name: Regina Gong
   email:
-  institution:
+  institution: Michigan State University Libraries
   position-title:
   bio: Biography Forthcoming
-  image_src: /assets/img/nopics/nopic3.jpg
+  image_src: /assets/img/keynotes/regina-gong.jpg
   keynote: true
 
 - id: alex-michael-berry
