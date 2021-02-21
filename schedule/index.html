@@ -26,6 +26,28 @@ title: Schedule
         </div>
     </div>
 
+    {% if site.data.conf.community-gathering.show %}
+    <div class="row">
+        <div class="col-12 col-md-3 text-right">
+            <h3>{{ site.data.conf.community-gathering.time }}
+                <br/><div class="timezone">Eastern Time</div>
+            </h3>
+        </div>
+        <div class="col-12 col-md-9 sched-well">
+            <!-- <h4><a href="/general-info/social/#gathering">Community Gathering</a></h4> -->
+            <h4>Community Gathering</h4>
+            <p>
+               {{ site.data.conf.community-gathering.description }}
+            </p>
+            {% if site.data.conf.community-gathering.sign-up-url != '' %}
+                <p>
+                    <a class="btn btn-warning" href="{{ site.data.conf.community-gathering.sign-up-url }}">Sign-up for the Community Gathering</a>
+                </p>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+
     {% if site.data.conf.newcomer-dinner.show %}
     <div class="row">
         <div class="col-12 col-md-3 text-right">
@@ -70,6 +92,27 @@ title: Schedule
             </p>
         </div>
     </div>
+
+    {% if site.data.conf.game-night.show %}
+    <div class="row">
+        <div class="col-12 col-md-3 text-right">
+            <h3>{{ site.data.conf.game-night.time }}
+                <br/><div class="timezone">Eastern Time</div>
+            </h3>
+        </div>
+        <div class="col-12 col-md-9 sched-well">
+            <h4>Game Night</h4>
+            <p>
+               {{ site.data.conf.game-night.description }}
+            </p>
+            {% if site.data.conf.game-night.sign-up-url != '' %}
+                <p>
+                    <a class="btn btn-warning" href="{{ site.data.conf.game-night.sign-up-url }}">Sign-up for Game Night</a>
+                </p>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
 
     {% if site.data.conf.reception.show %}
     <div class="row">
@@ -134,49 +177,23 @@ title: Schedule
     </div>
     {% endif %}
 
-    {% if site.data.conf.game-night.show %}
-    <div class="row">
-        <div class="col-12 col-md-3 text-right">
-            <h3>{{site.data.conf.game-night.time}}</h3>
-        </div>
-        <div class="col-12 col-md-9 sched-well">
-            <h4>
-                {% if site.data.conf.game-night.url %}
-                    <a href="{{ site.data.conf.game-night.url }}">
-                {% endif %}
-                Game Night
-                {% if site.data.conf.game-night.url %}</a>{% endif %}
-            </h4>
-            <p>
-              Play games? Come join your fellow code4libers in a few board or card games{%- if site.data.conf.game-night.location -%}
-              &nbsp;at {{site.data.conf.game-night.location}}
-              {%- endif -%}! Feel free to bring your own games as well.
-              See the <a target="blank" href="{{ site.data.conf.game-night.url }}">
-              sign up list on the Social Activities wiki</a> to list any games you might bring with you.
-            </p>
-        </div>
-    </div>
-    {% endif %}
-
     {% if site.data.conf.karaoke-night.show %}
     <div class="row">
         <div class="col-12 col-md-3 text-right">
-            <h3>{{site.data.conf.karaoke-night.time}}</h3>
+            <h3>{{ site.data.conf.karaoke-night.time }}
+                <br/><div class="timezone">Eastern Time</div>
+            </h3>
         </div>
         <div class="col-12 col-md-9 sched-well">
-            <h4>
-                {% if site.data.conf.karaoke-night.url %}
-                    <a href="{{ site.data.conf.karaoke-night.url }}">
-                {% endif %}
-                Karaoke Night
-                {% if site.data.conf.karaoke-night.url %}</a>{% endif %}
-            </h4>
+            <h4>Karaoke Night</h4>
             <p>
-                We also have Karaoke night for those who would like to share your passions in singing, or just hangout with friendly folks.
-                {% if site.data.conf.karaoke-night.url %}
-                    <a target="blank" href="{{ site.data.conf.karaoke-night.url }}">Sign up as groups and head over to the lounge at the DIY Events</a>
-                {% endif %}.
+               {{ site.data.conf.karaoke-night.description }}
             </p>
+            {% if site.data.conf.karaoke-night.sign-up-url != '' %}
+                <p>
+                    <a class="btn btn-warning" href="{{ site.data.conf.karaoke-night.sign-up-url }}">Sign-up for Karaoke Night</a>
+                </p>
+            {% endif %}
         </div>
     </div>
     {% endif %}
@@ -200,6 +217,27 @@ title: Schedule
             </p>
         </div>
     </div>
+
+    {% if site.data.conf.trivia-night.show %}
+    <div class="row">
+        <div class="col-12 col-md-3 text-right">
+            <h3>{{ site.data.conf.trivia-night.time }}
+                <br/><div class="timezone">Eastern Time</div>
+            </h3>
+        </div>
+        <div class="col-12 col-md-9 sched-well">
+            <h4>Trivia Night</h4>
+            <p>
+               {{ site.data.conf.trivia-night.description }}
+            </p>
+            {% if site.data.conf.trivia-night.sign-up-url != '' %}
+                <p>
+                    <a class="btn btn-warning" href="{{ site.data.conf.trivia-night.sign-up-url }}">Sign-up for Trivia Night</a>
+                </p>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
 
     <div class="row">
         <div class="col-12 sched-date">

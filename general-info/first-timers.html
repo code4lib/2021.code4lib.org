@@ -76,8 +76,7 @@ active: First Timers
       {% if site.data.conf.social-activities-url != '' %}
       <h2>Social Activities</h2>
       <p>
-        There's a lot going on outside of the sessions, and <a href="{{site.data.conf.social-activities-url}}">this page has information about various gatherings, events, meals, etc.</a>
-        In addition, if you have any events that you’d like to organize, please feel free to add the event to the DIY Event Google Doc!
+        There's a lot going on outside of the sessions, and <a href="{{site.data.conf.social-activities-url}}">this page has information about various gatherings and events</a>
       </p>
        {% endif %}
 
@@ -95,14 +94,6 @@ active: First Timers
       <h3>All-Conference Reception</h3>
       <p>
         There will be an all-conference reception at the {{site.data.conf.reception.venue}}. See <a href="{{ '/general-info/venues/#reception' | relative_url }}">the venues page</a> for more information.
-      </p>
-      {% endif %}
-
-      {% if site.data.conf.game-night.show %}
-      <h3>Game Night</h3>
-      <p>
-        Another event is <a href="/general-info/venues/#gaming">Game Night on {{site.data.conf.game-night.date | date: '%A, %B %-d, %Y'}}</a>. While you do not need to bring something to participate, please let us know if you do plan to bring games.
-        Most importantly, bring yourself!
       </p>
       {% endif %}
 
