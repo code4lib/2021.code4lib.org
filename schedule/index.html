@@ -2,26 +2,39 @@
 layout: default
 title: Schedule
 ---
-
 <div class="container">
+    <!-- The real line. Uncommand it if in prduction -->
+    <!-- {% assign time-diff = 'now' | date: "%z" | plus: 500 | divided_by: 100 %} --> 
+    <!-- End of the real line -->
+
+    <!-- Following is a test. Command it if in production -->
+    {% assign time-diff = 'now' | date: "%z" | plus: 400 | divided_by: 100 %}
+    {{ time-diff }}
+    <!-- End of the test line -->
+
+
     <div class="row">
         <h1 class="sr-only">Schedule</h1>
-
         <div class="btn-group mx-auto" role="group" aria-label="choose your time zone">
             <button type="button" class="btn btn-outline-light active" id="toLocal" onclick="toLocal()">To Your Local
                 Time </button>
             <button type="button" class="btn btn-outline-light active" id="toEastern" onclick="toEastern()">Eastern
                 Time</button>
-            {% capture local_diff %} <span id="time-diff"></span>{% endcapture %}
-        </div>
-        <div class="col-12 sched-date">
-            <h2>{{site.data.conf.days[0].weekday}}, {{site.data.conf.days[0].date}}</h2>
         </div>
     </div>
 
+    <div class="col-12 sched-date">
+        <h2>{{site.data.conf.days[0].weekday}}, {{site.data.conf.days[0].date}}</h2>
+    </div>
     <div class="row">
         <div class="col-12 col-md-3 text-right">
-            <h3><span id="first-start-time"></span> - <span id="first-end-time"></span></h3>
+            <h3 class="d-eastern">{{site.data.conf.days[0].eastern-time-start | date: "%l:%M %p"}} -
+                {{site.data.conf.days[0].eastern-time-end | date: "%l:%M %p"}}</h3>
+            <h3 class="d-local">
+                {% assign local-hour = site.data.conf.days[0].eastern-time-start | date: "%l" | plus: time-diff %}
+                <span id="local-day0-hour">{{local-hour}}</span><span>:{{site.data.conf.days[0].eastern-time-start | date: "%M"}}</span>
+                <span id="local-day0-ampm">{% if local-hour >= 11 %}PM{% else %}AM{% endif %}</span>
+            </h3>
         </div>
         <div class="col-12 col-md-9 sched-well">
             <h4><a href="/schedule/day-1">General Conference, Day One</a></h4>
@@ -258,74 +271,17 @@ title: Schedule
 <script>
     // https://apidock.com/ruby/DateTime/strftime
     function toEastern() {
-        $('button#toEastern').addClass('active');
-
-        if($('button#toLocal').hasClass('active')){
+        $('button#toEastern').addClass('active')
+        if ($('button#toLocal').hasClass('active')) {
             $('button#toLocal').removeClass('active')
         }
-
-        $('#first-start-time').text('{{site.data.conf.days[0].eastern-time-start | date: "%l:%M %p"}}');
-        $('#first-end-time').text('{{site.data.conf.days[0].eastern-time-end | date: "%l:%M %p"}}');
-        $('#second-start-time').text('{{site.data.conf.days[1].eastern-time-start | date: "%l:%M %p"}}');
-        $('#second-end-time').text('{{site.data.conf.days[1].eastern-time-end | date: "%l:%M %p"}}');
-        $('#third-start-time').text('{{site.data.conf.days[2].eastern-time-start | date: "%l:%M %p"}}');
-        $('#third-end-time').text('{{site.data.conf.days[2].eastern-time-end | date: "%l:%M %p"}}');
-        $('#fourth-start-time').text('{{site.data.conf.days[3].eastern-time-start | date: "%l:%M %p"}}');
-        $('#fourth-end-time').text('{{site.data.conf.days[3].eastern-time-end | date: "%l:%M %p"}}');
-        $('#fifth-start-time').text('{{site.data.conf.days[4].eastern-time-start | date: "%l:%M %p"}}');
-        $('#fifth-end-time').text('{{site.data.conf.days[4].eastern-time-end | date: "%l:%M %p"}}');
     }
-
     function toLocal() {
         $('button#toLocal').addClass('active');
-        
-        if($('button#toEastern').hasClass('active')){
+        if ($('button#toEastern').hasClass('active')) {
             $('button#toEastern').removeClass('active')
         }
-
-        var diff = (new Date()).getTimezoneOffset() / 60 - 5;
-        diff = 3; // This is a test. Remove it in production.
-
-        $('#time-diff').text(diff);
-
-        function ampm(e) {
-            return (e) > 11 ? 'PM' : 'AM';
-        }
-
-        var firstStartHour = parseInt('{{site.data.conf.days[0].eastern-time-start | date: "%k"}}') - diff;
-        var firstStartMinute = '{{site.data.conf.days[0].eastern-time-start | date: "%M"}}';
-        var firstEndHour = parseInt('{{site.data.conf.days[0].eastern-time-end | date: "%k"}}') - diff;
-        var firstEndMinute = '{{site.data.conf.days[0].eastern-time-end | date: "%M"}}';
-        $('#first-start-time').text(firstStartHour + ":" + firstStartMinute + " " + ampm(firstStartHour));
-        $('#first-end-time').text(firstEndHour + ":" + firstEndMinute + " " + ampm(firstEndHour));
-
-        var secondStartHour = parseInt('{{site.data.conf.days[1].eastern-time-start | date: "%k"}}') - diff;
-        var secondStartMinute = '{{site.data.conf.days[1].eastern-time-start | date: "%M"}}';
-        var secondEndHour = parseInt('{{site.data.conf.days[1].eastern-time-end | date: "%k"}}') - diff;
-        var secondEndMinute = '{{site.data.conf.days[1].eastern-time-end | date: "%M"}}';
-        $('#second-start-time').text(secondStartHour + ":" + secondStartMinute + " " + ampm(secondStartHour));
-        $('#second-end-time').text(secondEndHour + ":" + secondEndMinute + " " + ampm(secondEndHour));
-
-        var thirdStartHour = parseInt('{{site.data.conf.days[2].eastern-time-start | date: "%k"}}') - diff;
-        var thirdStartMinute = '{{site.data.conf.days[2].eastern-time-start | date: "%M"}}';
-        var thirdEndHour = parseInt('{{site.data.conf.days[2].eastern-time-end | date: "%k"}}') - diff;
-        var thirdEndMinute = '{{site.data.conf.days[2].eastern-time-end | date: "%M"}}';
-        $('#third-start-time').text(thirdStartHour + ":" + thirdStartMinute + " " + ampm(thirdStartHour));
-        $('#third-end-time').text(thirdEndHour + ":" + thirdEndMinute + " " + ampm(thirdEndHour));
-
-        var fourthStartHour = parseInt('{{site.data.conf.days[3].eastern-time-start | date: "%k"}}') - diff;
-        var fourthStartMinute = '{{site.data.conf.days[3].eastern-time-start | date: "%M"}}';
-        var fourthEndHour = parseInt('{{site.data.conf.days[3].eastern-time-end | date: "%k"}}') - diff;
-        var fourthEndMinute = '{{site.data.conf.days[3].eastern-time-end | date: "%M"}}';
-        $('#fourth-start-time').text(fourthStartHour + ":" + fourthStartMinute + " " + ampm(fourthStartHour));
-        $('#fourth-end-time').text(fourthEndHour + ":" + fourthEndMinute + " " + ampm(fourthEndHour));
-
-        var fifthStartHour = parseInt('{{site.data.conf.days[4].eastern-time-start | date: "%k"}}') - diff;
-        var fifthStartMinute = '{{site.data.conf.days[4].eastern-time-start | date: "%M"}}';
-        var fifthEndHour = parseInt('{{site.data.conf.days[4].eastern-time-end | date: "%k"}}') - diff;
-        var fifthEndMinute = '{{site.data.conf.days[4].eastern-time-end | date: "%M"}}';
-        $('#fifth-start-time').text(fifthStartHour + ":" + fifthStartMinute + " " + ampm(fifthStartHour));
-        $('#fifth-end-time').text(fifthEndHour + ":" + fifthEndMinute + " " + ampm(fifthEndHour));
     }
+
     toEastern();
 </script>
