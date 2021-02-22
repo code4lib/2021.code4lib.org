@@ -31,13 +31,20 @@
                         {% endif %}
                     </div>
                     <div class="col-sm-5 col-12 text-right">
-                        <h2>
+                        <h2 class="d-eastern">
                             {% capture eventTime %}{{ event.time | replace: '-', ' ' }}{% endcapture %}
                             {% capture beginTime %}{{ eventTime | truncatewords: 1, '' }}{% endcapture %}
                             {% capture endTime %}{{ eventTime | replace: beginTime, '' }}{% endcapture %}
                             {{ beginTime | date: "%l:%M%p" | strip }} to {{ endTime | date: "%l:%M%p" | strip }}
                         </h2>
-                        <div class="timezone">Eastern Time</div>
+                        <h2 class="d-local">
+                            {% assign local-0-h = beginTime | date: "%k" | plus: time-diff %}
+                            {% assign local-0-m = beginTime | date: "%M" %}
+                            {% assign local-1-h = endTime | date: "%k" | plus: time-diff %}
+                            {% assign local-1-m = endTime | date: "%M" %}
+                            {{local-0-h}}:{{local-0-m}}{% if local-0-h >= 12 %}PM{% else %}AM{% endif %} to
+                            {{local-1-h}}:{{local-1-m}}{% if local-1-h >= 12 %}PM{% else %}AM{% endif %}
+                        </h2>
                     </div>
                 </div>
                 {% if event.groupId %}
@@ -76,3 +83,24 @@
         </div> <!-- cd-timeline-block -->
     {% endfor %}
 </div> <!-- cd-timeline -->
+
+<script>
+    // https://apidock.com/ruby/DateTime/strftime
+    function toEastern() {
+        $('button#toEastern').addClass('active')
+        $('.d-eastern').css('display', 'block')
+        $('.d-local').css('display', 'none')
+        if ($('button#toLocal').hasClass('active')) {
+            $('button#toLocal').removeClass('active')
+        }
+    }
+    function toLocal() {
+        $('button#toLocal').addClass('active');
+        $('.d-local').css('display', 'block')
+        $('.d-eastern').css('display', 'none')
+        if ($('button#toEastern').hasClass('active')) {
+            $('button#toEastern').removeClass('active')
+        }
+    }
+    toEastern();
+</script>

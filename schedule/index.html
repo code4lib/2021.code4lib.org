@@ -3,22 +3,13 @@ layout: default
 title: Schedule
 ---
 <div class="container">
-    <!-- The real line. Uncommand it if in prduction -->
-    <!-- {% assign time-diff = 'now' | date: "%z" | plus: 500 | divided_by: 100 %} --> 
-    <!-- End of the real line -->
-
-    <!-- Following is a test. Command it if in production -->
-    {% assign time-diff = 'now' | date: "%z" | plus: 400 | divided_by: 100 %}
-    {{ time-diff }}
-    <!-- End of the test line -->
-
-
+    {% assign time-diff = 'now' | date: "%z" | plus: 500 | divided_by: 100 %}
     <div class="row">
         <h1 class="sr-only">Schedule</h1>
         <div class="btn-group mx-auto" role="group" aria-label="choose your time zone">
-            <button type="button" class="btn btn-outline-light active" id="toLocal" onclick="toLocal()">To Your Local
+            <button type="button" class="btn btn-outline-light" id="toLocal" onclick="toLocal()">To Your Local
                 Time </button>
-            <button type="button" class="btn btn-outline-light active" id="toEastern" onclick="toEastern()">Eastern
+            <button type="button" class="btn btn-outline-light" id="toEastern" onclick="toEastern()">Eastern
                 Time</button>
         </div>
     </div>
@@ -28,12 +19,15 @@ title: Schedule
     </div>
     <div class="row">
         <div class="col-12 col-md-3 text-right">
-            <h3 class="d-eastern">{{site.data.conf.days[0].eastern-time-start | date: "%l:%M %p"}} -
-                {{site.data.conf.days[0].eastern-time-end | date: "%l:%M %p"}}</h3>
+            <h3 class="d-eastern">{{site.data.conf.days[0].eastern-start | date: "%l:%M %p"}} -
+                {{site.data.conf.days[0].eastern-end | date: "%l:%M %p"}}</h3>
             <h3 class="d-local">
-                {% assign local-hour = site.data.conf.days[0].eastern-time-start | date: "%l" | plus: time-diff %}
-                <span id="local-day0-hour">{{local-hour}}</span><span>:{{site.data.conf.days[0].eastern-time-start | date: "%M"}}</span>
-                <span id="local-day0-ampm">{% if local-hour >= 11 %}PM{% else %}AM{% endif %}</span>
+                {% assign local-d00-h = site.data.conf.days[0].eastern-start | date: "%k" | plus: time-diff %}
+                {% assign local-d00-m = site.data.conf.days[0].eastern-start | date: "%M" %}
+                {% assign local-d01-h = site.data.conf.days[0].eastern-end | date: "%k" | plus: time-diff %}
+                {% assign local-d01-m = site.data.conf.days[0].eastern-end | date: "%M" %}
+                {{local-d00-h}}:{{local-d00-m}} {% if local-d00-h >= 12 %}PM{% else %}AM{% endif %} -
+                {{local-d01-h}}:{{local-d01-m}} {% if local-d01-h >= 12 %}PM{% else %}AM{% endif %}
             </h3>
         </div>
         <div class="col-12 col-md-9 sched-well">
@@ -81,7 +75,16 @@ title: Schedule
 
     <div class="row">
         <div class="col-12 col-md-3 text-right">
-            <h3><span id="second-start-time"></span> - <span id="second-end-time"></span></h3>
+            <h3 class="d-eastern">{{site.data.conf.days[1].eastern-start | date: "%l:%M %p"}} -
+                {{site.data.conf.days[1].eastern-end | date: "%l:%M %p"}}</h3>
+            <h3 class="d-local">
+                {% assign local-d10-h = site.data.conf.days[1].eastern-start | date: "%k" | plus: time-diff %}
+                {% assign local-d10-m = site.data.conf.days[1].eastern-start | date: "%M" %}
+                {% assign local-d11-h = site.data.conf.days[1].eastern-end | date: "%k" | plus: time-diff %}
+                {% assign local-d11-m = site.data.conf.days[1].eastern-end | date: "%M" %}
+                {{local-d10-h}}:{{local-d10-m}} {% if local-d10-h >= 12 %}PM{% else %}AM{% endif %} -
+                {{local-d11-h}}:{{local-d11-m}} {% if local-d11-h >= 12 %}PM{% else %}AM{% endif %}
+            </h3>
         </div>
         <div class="col-12 col-md-9 sched-well">
             <h4><a href="/schedule/day-2">General Conference, Day Two</a></h4>
@@ -121,7 +124,16 @@ title: Schedule
 
     <div class="row">
         <div class="col-12 col-md-3 text-right">
-            <h3><span id="third-start-time"></span> - <span id="third-end-time"></span></h3>
+            <h3 class="d-eastern">{{site.data.conf.days[2].eastern-start | date: "%l:%M %p"}} -
+                {{site.data.conf.days[2].eastern-end | date: "%l:%M %p"}}</h3>
+            <h3 class="d-local">
+                {% assign local-d20-h = site.data.conf.days[2].eastern-start | date: "%k" | plus: time-diff %}
+                {% assign local-d20-m = site.data.conf.days[2].eastern-start | date: "%M" %}
+                {% assign local-d21-h = site.data.conf.days[2].eastern-end | date: "%k" | plus: time-diff %}
+                {% assign local-d21-m = site.data.conf.days[2].eastern-end | date: "%M" %}
+                {{local-d20-h}}:{{local-d20-m}} {% if local-d20-h >= 12 %}PM{% else %}AM{% endif %} -
+                {{local-d21-h}}:{{local-d21-m}} {% if local-d21-h >= 12 %}PM{% else %}AM{% endif %}
+            </h3>
         </div>
         <div class="col-12 col-md-9 sched-well">
             <h4><a href="/schedule/day-3">General Conference, Day Three</a></h4>
@@ -214,7 +226,16 @@ title: Schedule
 
     <div class="row">
         <div class="col-12 col-md-3 text-right">
-            <h3><span id="fourth-start-time"></span> - <span id="fourth-end-time"></span></h3>
+            <h3 class="d-eastern">{{site.data.conf.days[3].eastern-start | date: "%l:%M %p"}} -
+                {{site.data.conf.days[3].eastern-end | date: "%l:%M %p"}}</h3>
+            <h3 class="d-local">
+                {% assign local-d30-h = site.data.conf.days[3].eastern-start | date: "%k" | plus: time-diff %}
+                {% assign local-d30-m = site.data.conf.days[3].eastern-start | date: "%M" %}
+                {% assign local-d31-h = site.data.conf.days[3].eastern-end | date: "%k" | plus: time-diff %}
+                {% assign local-d31-m = site.data.conf.days[3].eastern-end | date: "%M" %}
+                {{local-d30-h}}:{{local-d30-m}} {% if local-d30-h >= 12 %}PM{% else %}AM{% endif %} -
+                {{local-d31-h}}:{{local-d31-m}} {% if local-d31-h >= 12 %}PM{% else %}AM{% endif %}
+            </h3>
         </div>
         <div class="col-12 col-md-9 sched-well">
             <h4><a href="/schedule/day-4">General Conference, Day Four</a></h4>
@@ -232,7 +253,16 @@ title: Schedule
 
     <div class="row">
         <div class="col-12 col-md-3 text-right">
-            <h3><span id="fifth-start-time"></span> - <span id="fifth-end-time"></span></h3>
+            <h3 class="d-eastern">{{site.data.conf.days[4].eastern-start | date: "%l:%M %p"}} -
+                {{site.data.conf.days[4].eastern-end | date: "%l:%M %p"}}</h3>
+            <h3 class="d-local">
+                {% assign local-d40-h = site.data.conf.days[4].eastern-start | date: "%k" | plus: time-diff %}
+                {% assign local-d40-m = site.data.conf.days[4].eastern-start | date: "%M" %}
+                {% assign local-d41-h = site.data.conf.days[4].eastern-end | date: "%k" | plus: time-diff %}
+                {% assign local-d41-m = site.data.conf.days[4].eastern-end | date: "%M" %}
+                {{local-d40-h}}:{{local-d40-m}} {% if local-d40-h >= 12 %}PM{% else %}AM{% endif %} -
+                {{local-d41-h}}:{{local-d41-m}} {% if local-d41-h >= 12 %}PM{% else %}AM{% endif %}
+            </h3>
         </div>
         <div class="col-12 col-md-9 sched-well">
             <h3><a href="/workshops">Postconference Workshops</a></h3>
@@ -266,18 +296,21 @@ title: Schedule
     {% endcomment %}
 
 </div>
-<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-    crossorigin="anonymous"></script>
+
 <script>
     // https://apidock.com/ruby/DateTime/strftime
     function toEastern() {
         $('button#toEastern').addClass('active')
+        $('.d-eastern').css('display', 'block')
+        $('.d-local').css('display', 'none')
         if ($('button#toLocal').hasClass('active')) {
             $('button#toLocal').removeClass('active')
         }
     }
     function toLocal() {
         $('button#toLocal').addClass('active');
+        $('.d-local').css('display', 'block')
+        $('.d-eastern').css('display', 'none')
         if ($('button#toEastern').hasClass('active')) {
             $('button#toEastern').removeClass('active')
         }
