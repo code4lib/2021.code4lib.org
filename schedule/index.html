@@ -9,9 +9,10 @@ title: Schedule
 
         <div class="btn-group mx-auto" role="group" aria-label="choose your time zone">
             <button type="button" class="btn btn-outline-light active" id="toLocal" onclick="toLocal()">To Your Local
-                Time</button>
+                Time </button>
             <button type="button" class="btn btn-outline-light active" id="toEastern" onclick="toEastern()">Eastern
                 Time</button>
+            {% capture local_diff %} <span id="time-diff"></span>{% endcapture %}
         </div>
         <div class="col-12 sched-date">
             <h2>{{site.data.conf.days[0].weekday}}, {{site.data.conf.days[0].date}}</h2>
@@ -284,6 +285,8 @@ title: Schedule
 
         var diff = (new Date()).getTimezoneOffset() / 60 - 5;
         diff = 3; // This is a test. Remove it in production.
+
+        $('#time-diff').text(diff);
 
         function ampm(e) {
             return (e) > 11 ? 'PM' : 'AM';
