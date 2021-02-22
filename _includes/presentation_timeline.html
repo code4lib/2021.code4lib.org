@@ -42,8 +42,7 @@
                             {% assign local-0-m = beginTime | date: "%M" %}
                             {% assign local-1-h = endTime | date: "%k" | plus: time-diff %}
                             {% assign local-1-m = endTime | date: "%M" %}
-                            {{local-0-h}}:{{local-0-m}}{% if local-0-h >= 12 %}PM{% else %}AM{% endif %} to
-                            {{local-1-h}}:{{local-1-m}}{% if local-1-h >= 12 %}PM{% else %}AM{% endif %}
+                            {{local-0-h}}:{{local-0-m}} to {{local-1-h}}:{{local-1-m}}
                         </h2>
                     </div>
                 </div>

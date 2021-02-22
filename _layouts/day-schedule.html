@@ -8,10 +8,10 @@
             {% if site.data.conf.have-schedule %}
             {% assign time-diff = 'now' | date: "%z" | plus: 500 | divided_by: 100 %}
             <div class="btn-group mx-auto" role="group" aria-label="choose your time zone">
-                <button type="button" class="btn btn-outline-light" id="toLocal" onclick="toLocal()">To Your Local
-                    Time </button>
                 <button type="button" class="btn btn-outline-light active" id="toEastern" onclick="toEastern()">Eastern
                     Time</button>
+                <button type="button" class="btn btn-outline-light" id="toLocal" onclick="toLocal()">Your Local
+                        Time {{'now'| date: "%Z"}} in 24h</button>
             </div>
                 {% include schedule_nav.html param=page.day %}
                 {{ content }}

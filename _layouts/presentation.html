@@ -16,6 +16,8 @@
     {% assign page_date = page.startTime %}
 {% endif %}
 
+{% assign time-diff = 'now' | date: "%z" | plus: 500 | divided_by: 100 %}
+
 <div class="container">
     <div class="row">
         <div class="col-12 col-sm-8 col-md-9">
@@ -50,8 +52,7 @@
                             {% assign speaker = site.data.speakers | where: 'id', speaker_id | first %}
                             {% if speaker %}
                                 <div class="col-sm-3 text-center">
-                                    <a class="speaker-link
-" href="/speakers/#{{ speaker.id }}">
+                                    <a class="speaker-link" href="/speakers/#{{ speaker.id }}">
                                         <img class="clip-circle-speaker" src="{{ speaker.image_src }}" alt="{{ speaker.name }}">
                                         <span>{{ speaker.name }}</span>
                                     </a>
@@ -81,7 +82,14 @@
             {% endif %}
             {% endcomment %}
         </div>
+        
         <div class="col-12 col-sm-4 col-md-3 text-center">
+            <div class="btn-group mx-auto" role="group" aria-label="choose your time zone">
+                <button type="button" class="btn btn-outline-light" id="toEastern" onclick="toEastern()">Eastern
+                    Time</button>
+                <button type="button" class="btn btn-outline-light" id="toLocal" onclick="toLocal()">Your Local
+                    Time {{'now'| date: "%Z"}} in 24h</button>
+            </div>
             <div class="row talk-detail-box">
                 <!-- date -->
                 <div class="col-12 col-sm-12 col-md-12">
@@ -108,7 +116,15 @@
                 {% elsif page.type == 'poster' %}
                 <div class="col-12 col-sm-12 col-md-12 time-slot">
                     <div class="talk-box-detail-icon"><span class="glyphicon glyphicon-time"></span></div>
-                    <div class="talk-box-detail-value">{{ page.startTime | date: "%l:%M %p" }}</div>
+                    <div class="talk-box-detail-value">
+                    <h3 class="d-eastern">{{ page.startTime | date: "%l:%M %p" }}</h3>
+                    <h3 class="d-local">
+                        {% assign local-h = page.startTime | date: "%k" | plus: time-diff %}
+                        {% assign local-m = page.startTime | date: "%M" %}
+                        {{local-h}}:{{local-m}}
+                    </h3>
+                </div>
+
                 </div>
                 {% endif %}
 
@@ -142,7 +158,14 @@
                     <!--<h3>Group {{ page.group }}
                     <p>{{ group.time }}</p></h3>-->
                     <div class="talk-box-detail-icon"><span class="glyphicon glyphicon-time"></span></div>
-                    <div class="talk-box-detail-value">{{ page.startTime | date: "%l:%M %p" }}</div>
+                    <div class="talk-box-detail-value">
+                        <h3 class="d-eastern">{{ page.startTime | date: "%l:%M %p" }}</h3>
+                    <h3 class="d-local">
+                        {% assign local-h = page.startTime | date: "%k" | plus: time-diff %}
+                        {% assign local-m = page.startTime | date: "%M" %}
+                        {{local-h}}:{{local-m}}
+                    </h3>
+                    </div>
 
                 </div>
                 {% endif %}
@@ -167,5 +190,26 @@
         </div>
     </div>
 </div>
+<script>
+    // https://apidock.com/ruby/DateTime/strftime
+    function toEastern() {
+        $('button#toEastern').addClass('active')
+        $('.d-eastern').css('display', 'block')
+        $('.d-local').css('display', 'none')
+        if ($('button#toLocal').hasClass('active')) {
+            $('button#toLocal').removeClass('active')
+        }
+    }
+    function toLocal() {
+        $('button#toLocal').addClass('active');
+        $('.d-local').css('display', 'block')
+        $('.d-eastern').css('display', 'none')
+        if ($('button#toEastern').hasClass('active')) {
+            $('button#toEastern').removeClass('active')
+        }
+    }
+
+    toEastern();
+</script>
 
 {% include footer.html %}

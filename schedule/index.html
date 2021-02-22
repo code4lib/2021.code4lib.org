@@ -7,10 +7,10 @@ title: Schedule
     <div class="row">
         <h1 class="sr-only">Schedule</h1>
         <div class="btn-group mx-auto" role="group" aria-label="choose your time zone">
-            <button type="button" class="btn btn-outline-light" id="toLocal" onclick="toLocal()">To Your Local
-                Time </button>
             <button type="button" class="btn btn-outline-light" id="toEastern" onclick="toEastern()">Eastern
                 Time</button>
+            <button type="button" class="btn btn-outline-light" id="toLocal" onclick="toLocal()">Your Local
+                Time {{'now'| date: "%Z"}} in 24h</button>
         </div>
     </div>
 
