@@ -182,13 +182,13 @@
 
 # keynotes
 - timeImg: icosahedron.svg
-  title: Opening Keynote
+  title: Opening Keynote - Rudo Kemper
   day1: true
   groupId: key-open
   time: 12:10-13:00
 
 - timeImg: icosahedron.svg
-  title: Closing Keynote
+  title: Closing Keynote - Regina Gong
   day4: true
   groupId: key-close
   time: 12:10-13:00
