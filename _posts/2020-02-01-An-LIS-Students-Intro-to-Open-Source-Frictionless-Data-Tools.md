@@ -1,13 +1,13 @@
 ---
 layout: presentation
-day: 3
-group: 5
-spot: 7
-length: 15
+day: 1
+group: 1
+spot: 4
+length: 10
 type: talk
 categories: talks
 time: 02:05 PM
-startTime: 2021-03-24T14:05
+startTime: 2021-03-22T14:05
 speakers-text: Sam Wilairat
 speakers:
 - sam-wilairat

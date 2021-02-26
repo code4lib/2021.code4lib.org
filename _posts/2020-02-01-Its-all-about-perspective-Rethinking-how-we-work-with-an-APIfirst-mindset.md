@@ -3,7 +3,7 @@ layout: presentation
 day: 1
 group: 1
 spot: 1
-length: 15
+length: 20
 type: talk
 categories: talks
 time: 01:10 PM
