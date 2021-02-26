@@ -249,9 +249,11 @@ community-gathering:
     show: true
     date: '2021-03-22'
     time: '7PM'
-    description: ''
+    description: 'Are you a crafter, artist, maker, or collector? We want your show-and-tell proposal! Please fill out the interest form by March 1st.'
     event-url: ''
-    sign-up-url: ''
+    event-url-button-text: ''
+    sign-up-url: 'https://forms.gle/z9RPURMRzEoW3ZHY7'
+    sign-up-button-text: 'Submit a Proposal'
 
 game-night:
     show: true
@@ -259,7 +261,9 @@ game-night:
     time: '6PM to 8PM'
     description: 'Play games? Come join your fellow code4libers in a few board or card games!'
     event-url: ''
+    event-url-button-text: ''
     sign-up-url: ''
+    sign-up-button-text: ''
 
 karaoke-night:
     show: true
@@ -267,7 +271,9 @@ karaoke-night:
     time: '6PM to 7:30PM'
     description: 'We also have Karaoke night for those who would like to share your passions in singing, or just hangout with friendly folks.'
     event-url: ''
+    event-url-button-text: ''
     sign-up-url: ''
+    sign-up-button-text: ''
 
 trivia-night:
     show: true
@@ -275,7 +281,9 @@ trivia-night:
     time: '6PM to 7:30PM'
     description: ''
     event-url: ''
+    event-url-button-text: ''
     sign-up-url: ''
+    sign-up-button-text: ''
 
 newcomer-dinner:
     show: false
