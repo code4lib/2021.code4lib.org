@@ -2,14 +2,18 @@
 <section class="general-info social-event">
   <div class="col-12">
       <h2 id="gathering">Game Night</h2>
-      <p>{{ site.data.conf.game-night.description }}</p>
-      <ul>
-        <li><span class="font-weight-bold">When: </span>{{site.data.conf.game-night.date | date: '%A, %B %-d, %Y'}}</li>
-        <li><a target="blank" href="{{site.data.conf.game-night.sign-up-url}}">Sign up to attend game night</a></li>
-      {% if site.data.conf.game-night.event-url != '' %}
-        <li><span class="font-weight-bold">Join: </span> <a target="blank" href="{{site.data.conf.game-night.event-url}}"> {{site.data.conf.game-night.event-url}}</a></li>
-      {% endif %}
-      </ul>
+      <div class="social-event-details">
+          <p><span class="font-weight-bold">When: </span>{{site.data.conf.game-night.date | date: '%A, %B %-d, %Y'}}</p>
+          <p>{{ site.data.conf.game-night.description }}</p>
+
+          {% if site.data.conf.game-night.sign-up-url != '' %}
+            <a class="btn btn-warning" target="blank" href="{{site.data.conf.game-night.sign-up-url}}">{{site.data.conf.game-night.sign-up-button-text}}</a>
+          {% endif %}
+
+          {% if site.data.conf.game-night.event-url != '' %}
+            <a class="btn btn-warning" target="blank" href="{{site.data.conf.game-night.event-url}}"> {{site.data.conf.game-night.event-url-button-text}}</a>
+          {% endif %}
+      </div>
   </div>
 </section>
 {% endif %}
