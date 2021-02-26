@@ -1,0 +1,19 @@
+{% if site.data.conf.trivia-night.show %}
+<section class="general-info social-event">
+  <div class="col-12">
+      <h2 id="trivia-night">Trivia Night</h2>
+      <div class="social-event-details">
+          <p><span class="font-weight-bold">When: </span>{{site.data.conf.trivia-night.date | date: '%A, %B %-d, %Y'}}</p>
+          <p>{{ site.data.conf.trivia-night.description }}</p>
+
+          {% if site.data.conf.trivia-night.sign-up-url != '' %}
+            <a class="btn btn-warning" target="blank" href="{{site.data.conf.trivia-night.sign-up-url}}">{{site.data.conf.trivia-night.sign-up-button-text}}</a>
+          {% endif %}
+
+          {% if site.data.conf.trivia-night.event-url != '' %}
+            <a class="btn btn-warning" target="blank" href="{{site.data.conf.trivia-night.event-url}}"> {{site.data.conf.trivia-night.event-url}}</a>
+          {% endif %}
+      </div>
+  </div>
+</section>
+{% endif %}

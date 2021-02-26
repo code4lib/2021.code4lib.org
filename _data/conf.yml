@@ -245,6 +245,46 @@ shirt-voting:
 # usually on the wiki
 social-activities-url: ''
 
+community-gathering:
+    show: true
+    date: '2021-03-22'
+    time: '7PM'
+    description: 'Are you a crafter, artist, maker, or collector? We want your show-and-tell proposal! Please fill out the interest form by March 1st.'
+    event-url: ''
+    event-url-button-text: ''
+    sign-up-url: 'https://forms.gle/z9RPURMRzEoW3ZHY7'
+    sign-up-button-text: 'Submit a Proposal'
+
+game-night:
+    show: true
+    date: '2021-03-23'
+    time: '6PM to 8PM'
+    description: 'Play games? Come join your fellow code4libers in a few board or card games!'
+    event-url: ''
+    event-url-button-text: ''
+    sign-up-url: ''
+    sign-up-button-text: ''
+
+karaoke-night:
+    show: true
+    date: '2021-03-24'
+    time: '6PM to 7:30PM'
+    description: 'We also have Karaoke night for those who would like to share your passions in singing, or just hangout with friendly folks.'
+    event-url: ''
+    event-url-button-text: ''
+    sign-up-url: ''
+    sign-up-button-text: ''
+
+trivia-night:
+    show: true
+    date: '2021-03-25'
+    time: '6PM to 7:30PM'
+    description: ''
+    event-url: ''
+    event-url-button-text: ''
+    sign-up-url: ''
+    sign-up-button-text: ''
+
 newcomer-dinner:
     show: false
     # entering the URL doubles as a "show more info" switch, too
@@ -252,13 +292,6 @@ newcomer-dinner:
     transit-info: 'https://docs.google.com/document/d/1vOgMNG0kOaPdsvnjNLld5xlK7pLKZPYzytp7u14MRnQ/edit'
     activities-info: 'https://www.google.com/maps/d/viewer?mid=1RI4SjmFkzoYX1k5cUgTlJ5zzjHQeAhui&ll=40.44383527823009%2C-79.9586392&z=14'
     date: '2020-03-08'
-
-game-night:
-    show: false
-    url: 'https://docs.google.com/spreadsheets/d/1QBJPChuIionq3wT_OaToQJ_eAuFpgWRWnxHvVqBLnjY/edit?usp=sharing'
-    date: '2020-03-10'
-    time: '7:30PM to 10:30PM'
-    location: 'Bill’s Bar & Burger (in the Conference Hotel)'
 
 libtech-women:
     show: false
@@ -276,14 +309,6 @@ reception:
     contact: 'straubn@carnegiemuseums.org'
     times: '6:30PM to 8:30PM'
     date: '2020-03-09'
-
-karaoke-night:
-    show: false
-    url: 'https://docs.google.com/document/d/1bKuSy14npN2uq-rqE9RAEmc4nZRpn99KnU9SK8dfEQ8/edit#heading=h.kxso70piv9tw'
-    date: ''
-    time: '8PM to 2AM'
-    location: 'Tequila Cowboy Karaoke'
-    location-url: 'https://tequilacowboy.com/pittsburgh/'
 
 self-event:
     show: false
