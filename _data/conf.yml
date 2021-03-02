@@ -262,8 +262,8 @@ game-night:
     description: 'Play games? Come join your fellow code4libers in a few board or card games!'
     event-url: ''
     event-url-button-text: ''
-    sign-up-url: ''
-    sign-up-button-text: ''
+    sign-up-url: 'https://docs.google.com/document/d/1o3RIpQcswaxqRdL4brkkrbOKaLPgwj2HBBwlR_w0gI4/edit?usp=sharing'
+    sign-up-button-text: 'Sign Up for Game Night'
 
 karaoke-night:
     show: true
@@ -279,7 +279,7 @@ trivia-night:
     show: true
     date: '2021-03-25'
     time: '6PM to 7:30PM'
-    description: ''
+    description: 'If you miss the good old pub trivia days, come join us as we compete for bragging rights at Trivia Night hosted by DC-based District Trivia!'
     event-url: ''
     event-url-button-text: ''
     sign-up-url: ''
