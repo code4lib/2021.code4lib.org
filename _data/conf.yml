@@ -106,7 +106,7 @@ anonymous-form: 'https://css4csv.clir.org/anonymous-incident-report-form/'
 # - post:   for after the conference is over (TODO: we never made this template!)
 #
 ####################
-homepage-display: pre
+homepage-display: peri
 
 livestream:
   show: false
@@ -129,20 +129,20 @@ closed-captioning:
 peri:
   day1-am-title: "Conference, Day 1"
   day1-am-desc: "Keynote"
-  day1-pm-title: "Reception?"
-  day1-pm-desc: "Join us"
+  day1-pm-title: "Gathering"
+  day1-pm-desc: "Show-and-Tell"
   day2-am-title: "Conference, Day 2"
   day2-am-desc: "Awesome Talks"
   day2-pm-title: "Game Night"
   day2-pm-desc: "Board or card games"
   day3-am-title: "Conference, Day 3"
   day3-am-desc: "Awesome Talks"
-  day3-pm-title: "Social Event"
-  day3-pm-desc: "Lots of folks having fun"
+  day3-pm-title: "Karaoke Night"
+  day3-pm-desc: "Join us"
   day4-am-title: "Conference, Day 4"
   day4-am-desc: "Awesome Talks"
-  day4-pm-title: "Hackathon"
-  day4-pm-desc: "Let's do this"
+  day4-pm-title: "Trivia Night"
+  day4-pm-desc: "Bragging Rights"
   day5-am-title: "Conference, Day 5"
   day5-am-desc: "Workshops"
 
