@@ -1,8 +1,8 @@
 ---
 layout: presentation
 day: 3
-group: 5
-spot: 7
+group: 6
+spot: 4
 length: 10
 type: talk
 categories: talks

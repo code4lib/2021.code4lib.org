@@ -1,7 +1,7 @@
 ---
 layout: presentation
 day: 4
-group: 6
+group: 7
 spot: 2
 length: 20
 type: talk
