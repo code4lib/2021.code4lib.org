@@ -219,13 +219,19 @@
   time: 14:45-15:55
 
 - timeImg: icosahedron.svg
-  title: Group 5&#58; 125 minutes (7 talks)
+  title: Group 5&#58; 50 minutes (3 talks)
   day3: true
   groupId: 5
-  time: 12:10-14:15
+  time: 12:10-13:00
 
 - timeImg: icosahedron.svg
-  title: Group 6&#58; 75 minutes (4 talks)
-  day4: true
+  title: Group 6&#58; 65 minutes (4 talks)
+  day3: true
   groupId: 6
+  time: 13:10-14:15
+
+- timeImg: icosahedron.svg
+  title: Group 7&#58; 75 minutes (4 talks)
+  day4: true
+  groupId: 7
   time: 14:25-15:40
