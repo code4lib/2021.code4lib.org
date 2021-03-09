@@ -252,7 +252,7 @@ community-gathering:
     description: 'Are you a crafter, artist, maker, or collector? We want your show-and-tell proposal! Please fill out the interest form by March 1st.'
     event-url: ''
     event-url-button-text: ''
-    sign-up-url: 'https://forms.gle/z9RPURMRzEoW3ZHY7'
+    sign-up-url: ''
     sign-up-button-text: 'Submit a Proposal'
 
 game-night:
