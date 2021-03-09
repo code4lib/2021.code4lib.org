@@ -270,15 +270,6 @@
   image_src: /assets/img/nopics/nopic10.jpg
   keynote: false
 
-- id: julie-c-swierczek
-  name: Julie C. Swierczek
-  email: jswierczek@folger.edu
-  institution: Folger Shakespeare Library
-  position-title: Associate Librarian for Collection Description and Imaging
-  bio: Cataloger. Metadata Librarian. Digital Archivist. Digital Asset Manager. Systems Librarian. Manager. Enjoying the privilege of serving really awesome colleagues.
-  image_src: /assets/img/speakers/julie-swierczek.jpg
-  keynote: false
-
 - id: kelsey-george
   name: Kelsey George
   email: kelsey.george@unlv.edu

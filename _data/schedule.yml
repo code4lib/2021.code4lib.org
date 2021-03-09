@@ -105,7 +105,7 @@
 - timeImg: icosahedron.svg
   title: Poster Sessions
   day2: true
-  time: 14:10 - 14:40
+  time: 14:00 - 14:35
   link:
 
 # wrap ups
@@ -207,10 +207,10 @@
   time: 15:00-15:55
 
 - timeImg: icosahedron.svg
-  title: Group 3&#58;  60 minutes (4 talks)
+  title: Group 3&#58;  45 minutes (3 talks)
   day2: true
   groupId: 3
-  time: 13:05-14:05
+  time: 13:05-13:50
 
 - timeImg: icosahedron.svg
   title: Group 4&#58;  70 minutes (4 talks)
