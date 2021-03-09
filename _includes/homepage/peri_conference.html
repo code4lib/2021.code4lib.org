@@ -16,29 +16,38 @@
             <a href="https://twitter.com/hashtag/{{site.data.conf.hashtag}}" target="_blank">#{{ site.data.conf.hashtag }}</a></p>
         <label class="sr-only" id="twitterHashtagLabel">Twitter Hashtag</label>
     </div>
-    <div class="col-12 col-md-3 event-day" data-date="{{ site.data.conf.days[0].date-data }}">
+
+
+    <div class="col-md-2.5 event-day" data-date="{{ site.data.conf.days[0].date-data }}">
         <h2 class="text-center">{{site.data.conf.days[0].date | date: "%b. %d"}}</h2>
-        {% include homepage/event_card.html icon='am' link='/workshops' title=site.data.conf.peri.day1-am-title description=site.data.conf.peri.day1-am-desc %}
-        {% include homepage/event_card.html icon='pm' link='/general-info/venues/#dinner' title=site.data.conf.peri.day1-pm-title description=site.data.conf.peri.day1-pm-desc %}
+        {% include homepage/event_card.html icon='am' link='/schedule/day-1' title=site.data.conf.peri.day1-am-title description=site.data.conf.peri.day1-am-desc %}
+        {% include homepage/event_card.html icon='pm' link='/general-info/social/#gathering' title=site.data.conf.peri.day1-pm-title description=site.data.conf.peri.day1-pm-desc %}
     </div>
-    <div class="col-12 col-md-3 event-day" data-date="{{ site.data.conf.days[1].date-data }}">
+    <div class="col-md-2.5 event-day" data-date="{{ site.data.conf.days[1].date-data }}">
         <h2 class="text-center">{{site.data.conf.days[1].date | date: "%b. %d"}}</h2>
-        {% include homepage/event_card.html icon='am' link='/schedule/day-1' title=site.data.conf.peri.day2-am-title description=site.data.conf.peri.day2-am-desc %}
-        {% include homepage/event_card.html icon='pm' link='/general-info/venues/#reception' title=site.data.conf.peri.day2-pm-title description=site.data.conf.peri.day2-pm-desc %}
+        {% include homepage/event_card.html icon='am' link='/schedule/day-2' title=site.data.conf.peri.day2-am-title description=site.data.conf.peri.day2-am-desc %}
+        {% include homepage/event_card.html icon='pm' link='/general-info/social/#game-night' title=site.data.conf.peri.day2-pm-title description=site.data.conf.peri.day2-pm-desc %}
     </div>
-    <div class="col-12 col-md-3 event-day" data-date="{{ site.data.conf.days[2].date-data }}">
+    <div class="col-md-2.5 event-day" data-date="{{ site.data.conf.days[2].date-data }}">
         <h2 class="text-center">{{site.data.conf.days[2].date | date: "%b. %d"}}</h2>
-        {% include homepage/event_card.html icon='am' link='/schedule/day-2' title=site.data.conf.peri.day3-am-title description=site.data.conf.peri.day3-am-desc %}
-        {% include homepage/event_card.html icon='pm' link='/general-info/venues/#gaming' title=site.data.conf.peri.day3-pm-title description=site.data.conf.peri.day3-pm-desc %}
+        {% include homepage/event_card.html icon='am' link='/schedule/day-3' title=site.data.conf.peri.day3-am-title description=site.data.conf.peri.day3-am-desc %}
+        {% include homepage/event_card.html icon='pm' link='/general-info/social/#karaoke-night' title=site.data.conf.peri.day3-pm-title description=site.data.conf.peri.day3-pm-desc %}
     </div>
-    <div class="col-12 col-md-3 event-day" data-date="{{ site.data.conf.days[3].date-data }}">
+    <div class="col-md-2.5 event-day" data-date="{{ site.data.conf.days[3].date-data }}">
         <h2 class="text-center">{{site.data.conf.days[3].date | date: "%b. %d"}}</h2>
-        {% include homepage/event_card.html icon='am' link='/schedule/day-3' title=site.data.conf.peri.day4-am-title description=site.data.conf.peri.day4-am-desc %}
+        {% include homepage/event_card.html icon='am' link='/schedule/day-4' title=site.data.conf.peri.day4-am-title description=site.data.conf.peri.day4-am-desc %}
+        {% include homepage/event_card.html icon='pm' link='/general-info/social/#trivia-night' title=site.data.conf.peri.day4-pm-title description=site.data.conf.peri.day4-pm-desc %}
     </div>
+    <div class="col-md-2.5 event-day" data-date="{{ site.data.conf.days[4].date-data }}">
+        <h2 class="text-center">{{site.data.conf.days[4].date | date: "%b. %d"}}</h2>
+        {% include homepage/event_card.html icon='am' link='/workshops' title=site.data.conf.peri.day5-am-title description=site.data.conf.peri.day5-am-desc %}
+    </div>
+
     <div class="col-12 text-center">
         <h2>Need help?</h2>
         <a href="/conduct/#officers" class="btn btn-warning btn-lg">Contact a Community Support Volunteer</a>
     </div>
+
 </div>
 
 {% if site.data.conf.show-sponsors %}
