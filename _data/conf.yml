@@ -106,7 +106,7 @@ anonymous-form: 'https://css4csv.clir.org/anonymous-incident-report-form/'
 # - post:   for after the conference is over (TODO: we never made this template!)
 #
 ####################
-homepage-display: pre
+homepage-display: peri
 
 livestream:
   show: false
@@ -143,7 +143,7 @@ peri:
   day4-am-desc: "Awesome Talks"
   day4-pm-title: "Trivia Night"
   day4-pm-desc: "Bragging Rights"
-  day5-am-title: "Conference, Day 5"
+  day5-am-title: "Postconference"
   day5-am-desc: "Workshops"
 
 ###########
