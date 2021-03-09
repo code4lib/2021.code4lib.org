@@ -40,6 +40,10 @@
     padding: 1em;
   }
 
+  p {
+      color: #ddd;
+  }
+
   .card-toolbar {
     @extend %card-content;
     border-bottom: 2px solid $day-event-cap;
