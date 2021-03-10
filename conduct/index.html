@@ -172,19 +172,19 @@ active: 'Conduct & Safety'
 
                     <h3>Contacting a Community Support Volunteer</h3>
 
-                    {% unless site.data.duty-officers %}
+                    {% unless site.data.community-support %}
                         <p>Community Support Volunteers for the {{site.data.conf.year}} conference have not year been selected. You still may send concerns or questions about the Code of Conduct and how it's been applied in the past using the means listed below.</p>
                     {% endunless %}
 
                       <ul>
-                        {% if site.data.conf.duty-officer-email != '' %}
-                            <li>Send an email to <a href="mailto:{{site.data.conf.duty-officer-email}}">{{site.data.conf.duty-officer-email}}</a>. Only Community Support Volunteers are subscribed to this mailing list, and no archive is kept.
+                        {% if site.data.conf.community-support-email != '' %}
+                            <li>Send an email to <a href="mailto:{{site.data.conf.community-support-email}}">{{site.data.conf.community-support-email}}</a>. Only Community Support Volunteers are subscribed to this mailing list, and no archive is kept.
                         {% else %}
                             <li>While no Community Support Volunteer email is available yet, you can contact the Local Planning Committee at <a href="mailto:{{site.data.conf.main-conf-email}}">{{site.data.conf.main-conf-email}}</a>
                         {% endif %}
 
-                        {% if site.data.conf.duty-officer-phone != '' %}
-                            <li>Call a Community Support Volunteer at <a href="tel:{{site.data.conf.duty-officer-phone}}">{{site.data.conf.duty-officer-phone}}</a>.</li>
+                        {% if site.data.conf.community-support-phone != '' %}
+                            <li>Call a Community Support Volunteer at <a href="tel:{{site.data.conf.community-support-phone}}">{{site.data.conf.community-support-phone}}</a>.</li>
                         {% endif %}
 
                         {% if site.data.conf.anonymous-form != '' %}
@@ -194,11 +194,11 @@ active: 'Conduct & Safety'
                         <li>Use the <code>/support</code> command on the <a href="https://code4lib.slack.com/">Code4lib Slack team.</a> Not a member of the Slack team? <a href="https://docs.google.com/forms/d/120Dw1JjLxPJB9VTGl0mUY7Ot6yg6YNY1RZUISJFzdwk/viewform?c=0&w=1">Sign up here</a>.</li>
                       </ul>
 
-                    {% if site.data.duty-officers %}
+                    {% if site.data.community-support %}
                         <h3>On-Site Community Support Volunteers</h3>
 
                         <div class="row">
-                          {% assign onsite_officers = site.data.duty-officers | where:"onsite","true" %}
+                          {% assign onsite_officers = site.data.community-support | where:"onsite","true" %}
                             {% for officer in onsite_officers %}
                             <div class="col-4">
                                 <div class="speaker-box text-center">
@@ -215,7 +215,7 @@ active: 'Conduct & Safety'
                           <p>Community Support Volunteers are also present on various online code4lib platforms, primarily <a href="https://wiki.code4lib.org/How_to_hack_code4lib#Or_get_to_the_.23code4lib_IRC_channel_.28and_other_discussions.29_via_Slack">Slack</a>. IRC and the <a href="https://twitter.com/hashtag/{{site.data.conf.hashtag}}">#{{site.data.conf.hashtag}}</a> conference hashtag feed have some coverage as well, but if you should observe or experience a code of conduct violation on IRC or the hashtag, please contact the community support volunteers via Slack, email, or the anonymous reporting form.
                           </p>
 
-                          {% assign online_officers = site.data.duty-officers | where:"online","true" %}
+                          {% assign online_officers = site.data.community-support | where:"online","true" %}
                           {% for officer in online_officers %}
                             <div class="col-4">
                               <h4 class="speaker-name">{{ officer.name }}</h4>
@@ -227,13 +227,13 @@ active: 'Conduct & Safety'
                 </div>
            </div>
 
-            {% if site.data.duty-officer-schedule %}
+            {% if site.data.community-support-schedule %}
             <div class="row">
                 <div class="col-12">
                     <h2 id="schedule">Community Support Volunteer Schedule</h2>
 
                     <h3>On-Site</h3>
-                    {% for session in site.data.duty-officer-schedule %}
+                    {% for session in site.data.community-support-schedule %}
                         <h4>{{ session.title }}</h4>
                         <div class="row">
                             <div class="col-12 keynote-sequence sequence">
@@ -241,7 +241,7 @@ active: 'Conduct & Safety'
                                     <p><strong>All community support volunteers attending the event &mdash; look for the black & white striped lanyards!</strong></p>
                                 {% else %}
                                     {% for officerId in session.officers %}
-                                    {% assign officer = site.data.duty-officers[officerId] %}
+                                    {% assign officer = site.data.community-support[officerId] %}
                                     <div class="speaker-box text-center">
                                         <div class="speaker-box-inner">
                                             <img class="clip-circle-lg" src="/{{ officer.img }}" alt="{{ officer.name }}">
@@ -254,8 +254,8 @@ active: 'Conduct & Safety'
                         </div>
                     {% endfor %}
                        <h3>Online</h3>
-                    {% for period in site.data.online-duty-officer-schedule %}
-                       {% assign officer = site.data.duty-officers[period.officer] %}
+                    {% for period in site.data.online-community-support-schedule %}
+                       {% assign officer = site.data.community-support[period.officer] %}
                        <div class="row">
                           <div class="col-2">{{ period.day }}</div>
                           <div class="col-3">{{ period.interval }}</div>
