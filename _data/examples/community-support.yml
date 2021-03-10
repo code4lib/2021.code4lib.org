@@ -8,7 +8,7 @@ surname:
 othersurname:
     name: Community Support
     img: assets/img/nopics/nopic3.jpg
-    slack_handle: dutydude
+    slack_handle: communitysupport
     onsite: true
     online: false
 

@@ -1,0 +1,86 @@
+phetteplace:
+  name: Eric Phetteplace
+  img: assets/img/speakers/eric-phetteplace.jpg
+  slack_handle: phette23
+  onsite: false
+  online: true
+
+friesen:
+  name: Jeremy Friesen
+  img: assets/img/community-support/friesen-jeremy.jpg
+  slack_handle: jeremyfriesen
+  twitter_handle:
+  onsite: false
+  online: true
+
+slaughter:
+  name: Anne Slaughter
+  img: assets/img/community-support/slaughter-anne.jpg
+  slack_handle: aslaughter
+  twitter_handle: aslaughter
+  onsite: false
+  online: true
+
+graham:
+  name: Wayne Graham
+  img: assets/img/community-support/graham-wayne.jpg
+  slack_handle: wayne
+  twitter_handle:
+  onsite: false
+  online: true
+
+fox:
+  name: Bobbi Fox
+  img: assets/img/community-support/fox-bobbi.jpg
+  slack_handle: bobbifox
+  twitter_handle: bobbi_fox_SMR
+  onsite: false
+  online: true
+
+giarlo:
+  name: Mike Giarlo
+  img: assets/img/community-support/giarlo-mike.jpg
+  slack_handle: mjgiarlo
+  twitter_handle: mjgiarlo
+  onsite: false
+  online: true
+
+mesco:
+  name: Ann Marie Mesco
+  img: assets/img/community-support/mesco-ann-marie.jpg
+  slack_handle: Ann Marie
+  twitter_handle: amarieannm
+  onsite: false
+  online: true
+
+averkamp:
+  name: Shawn Averkamp
+  img: assets/img/community-support/averkamp-shawn.jpg
+  slack_handle: saverkamp
+  twitter_handle: saverkamp
+  onsite: false
+  online: true
+
+kwasigroch:
+  name: Louisa Kwasigroch
+  img: assets/img/community-support/kwasigroch-louisa.jpg
+  slack_handle: louisa
+  twitter_handle: louisa
+  onsite: false
+  online: true
+
+lynch:
+  name: Kate Lynch
+  img: assets/img/community-support/lynch-kate.jpg
+  slack_handle: kat3_drx
+  twitter_handle: kat3_drx
+  onsite: false
+  online: true
+
+janowiecki:
+  name: Michelle Janowiecki
+  img: assets/img/community-support/janowiecki-michelle.jpg
+  slack_handle: mjanowiecki
+  twitter_handle: mjanowiecki
+  onsite: false
+  online: true
