@@ -1,0 +1,71 @@
+- day: Monday
+  time: 12PM - 2PM ET
+  volunteers:
+    - mesco
+    - averkamp
+
+- day: Monday
+  time: 2PM - 4PM ET
+  volunteers:
+    - graham
+    - friesen
+
+- day: Monday
+  time: Community Gathering
+  volunteers:
+    - fox
+    - lynch
+
+- day: Tuesday
+  time: 12PM - 2PM ET
+  volunteers:
+    - phetteplace
+    - kwasigroch
+
+- day: Tuesday
+  time: 2PM - 4PM ET
+  volunteers:
+    - slaughter
+    - janowiecki
+
+- day: Wednesday
+  time: 12PM - 2PM ET
+  volunteers:
+    - slaughter
+    - friesen
+
+- day: Wednesday
+  time: 2PM - 4PM ET
+  volunteers:
+    - friesen
+    - lynch
+
+- day: Wednesday
+  time: Karaoke Night
+  volunteers:
+    - janowiecki
+    - giarlo
+
+- day: Thursday
+  time: 12PM - 2PM ET
+  volunteers:
+    - averkamp
+    - graham
+
+- day: Thursday
+  time: 2PM - 4PM ET
+  volunteers:
+    - fox
+    - mesco
+
+- day: Friday
+  time: Morning Postconferences
+  volunteers:
+    - giarlo
+    - mesco
+
+- day: Friday
+  time: Afternoon Postconferences
+  volunteers:
+    - phetteplace
+    - kwasigroch

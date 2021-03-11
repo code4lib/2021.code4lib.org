@@ -8,7 +8,7 @@ subnav:
 - name: Emergency
   url: '#emergency'
 - name: Community Support Volunteers
-  url: '#officers'
+  url: '#volunteers'
 - name: Community Support Volunteer Schedule
   url: '#schedule'
 - name: Accessibility
@@ -60,7 +60,7 @@ active: 'Conduct & Safety'
                 <div class="col-12">
                     <h2 id="emergency">Emergency Resources</h2>
 
-                    <p>See also the contact information for <a href="#officers">community support volunteers</a> on this page.</p>
+                    <p>See also the contact information for <a href="#volunteers">community support volunteers</a> on this page.</p>
 
                     <h3>{{ site.data.conf.city-state }} Police Department</h3>
                     <p>
@@ -160,7 +160,7 @@ active: 'Conduct & Safety'
 
             <div class="row">
                 <div class="col-12">
-                    <h2 id="officers">Community Support Volunteers</h2>
+                    <h2 id="volunteers">Community Support Volunteers</h2>
 
                     <p>
                         During all days of the conference, including post-conference and sponsored
@@ -172,54 +172,62 @@ active: 'Conduct & Safety'
 
                     <h3>Contacting a Community Support Volunteer</h3>
 
-                    {% unless site.data.duty-officers %}
+                    {% unless site.data.community-support %}
                         <p>Community Support Volunteers for the {{site.data.conf.year}} conference have not year been selected. You still may send concerns or questions about the Code of Conduct and how it's been applied in the past using the means listed below.</p>
                     {% endunless %}
 
                       <ul>
-                        {% if site.data.conf.duty-officer-email != '' %}
-                            <li>Send an email to <a href="mailto:{{site.data.conf.duty-officer-email}}">{{site.data.conf.duty-officer-email}}</a>. Only Community Support Volunteers are subscribed to this mailing list, and no archive is kept.
+                        {% if site.data.conf.community-support-email != '' %}
+                            <li>Send an email to <a href="mailto:{{site.data.conf.community-support-email}}">{{site.data.conf.community-support-email}}</a>. Only Community Support Volunteers are subscribed to this mailing list, and no archive is kept.
                         {% else %}
                             <li>While no Community Support Volunteer email is available yet, you can contact the Local Planning Committee at <a href="mailto:{{site.data.conf.main-conf-email}}">{{site.data.conf.main-conf-email}}</a>
                         {% endif %}
 
-                        {% if site.data.conf.duty-officer-phone != '' %}
-                            <li>Call a Community Support Volunteer at <a href="tel:{{site.data.conf.duty-officer-phone}}">{{site.data.conf.duty-officer-phone}}</a>.</li>
+                        {% if site.data.conf.community-support-phone != '' %}
+                            <li>Call a Community Support Volunteer at <a href="tel:{{site.data.conf.community-support-phone}}">{{site.data.conf.community-support-phone}}</a>.</li>
                         {% endif %}
 
                         {% if site.data.conf.anonymous-form != '' %}
                             <li>Use the <a href="{{site.data.conf.anonymous-form}}">anonymous reporting form</a>.
                         {% endif %}
 
-                        <li>Use the <code>/support</code> command on the <a href="https://code4lib.slack.com/">Code4lib Slack team.</a> Not a member of the Slack team? <a href="https://docs.google.com/forms/d/120Dw1JjLxPJB9VTGl0mUY7Ot6yg6YNY1RZUISJFzdwk/viewform?c=0&w=1">Sign up here</a>.</li>
+                        <li>Message the <code>@css</code> group on the <a href="https://code4lib.slack.com/">Code4lib Slack team.</a> You can also ping Community Support by writing a message containing the phrase <code>c4lcss</code> or <code>c4lcsv</code> (no hashtag) in any public channel. Not a member of the Slack team? <a href="https://docs.google.com/forms/d/120Dw1JjLxPJB9VTGl0mUY7Ot6yg6YNY1RZUISJFzdwk/viewform?c=0&w=1">Sign up here</a>.</li>
+
+                        <li>Message <code>@community_support_volunteers</code> on the Code4Lib Discord</li>
                       </ul>
 
-                    {% if site.data.duty-officers %}
-                        <h3>On-Site Community Support Volunteers</h3>
+                    {% if site.data.community-support %}
+                        {% if site.data.conf.local-conference %}
+                            <h3>On-Site Community Support Volunteers</h3>
 
-                        <div class="row">
-                          {% assign onsite_officers = site.data.duty-officers | where:"onsite","true" %}
-                            {% for officer in onsite_officers %}
-                            <div class="col-4">
-                                <div class="speaker-box text-center">
-                                    <div class="speaker-box-inner">
-                                        <img class="clip-circle-lg" src="/{{ officer.img }}" alt="{{ officer.name }}">
-                                        <h4 class="speaker-name">{{ officer.name }}</h4>
+                            <div class="row">
+                              {% assign onsite_volunteers = site.data.community-support | where:"onsite","true" %}
+                                {% for volunteer in onsite_volunteers %}
+                                <div class="col-4">
+                                    <div class="speaker-box text-center">
+                                        <div class="speaker-box-inner">
+                                            <img class="clip-circle-lg" src="/{{ volunteer.img }}" alt="{{ volunteer.name }}">
+                                            <h4 class="speaker-name">{{ volunteer.name }}</h4>
+                                        </div>
                                     </div>
                                 </div>
+                            {% endfor %}
                             </div>
-                        {% endfor %}
-                        </div>
+                        {% endif %}
+
                         <div class="row">
                           <h3>Online Community Support Volunteers</h3>
-                          <p>Community Support Volunteers are also present on various online code4lib platforms, primarily <a href="https://wiki.code4lib.org/How_to_hack_code4lib#Or_get_to_the_.23code4lib_IRC_channel_.28and_other_discussions.29_via_Slack">Slack</a>. IRC and the <a href="https://twitter.com/hashtag/{{site.data.conf.hashtag}}">#{{site.data.conf.hashtag}}</a> conference hashtag feed have some coverage as well, but if you should observe or experience a code of conduct violation on IRC or the hashtag, please contact the community support volunteers via Slack, email, or the anonymous reporting form.
+                          <p>Community Support Volunteers are also present on various online code4lib platforms, primarily <a href="https://wiki.code4lib.org/How_to_hack_code4lib#Or_get_to_the_.23code4lib_IRC_channel_.28and_other_discussions.29_via_Slack">Slack</a> and the livestream. IRC and the <a href="https://twitter.com/hashtag/{{site.data.conf.hashtag}}">#{{site.data.conf.hashtag}}</a> conference hashtag feed have some coverage as well, but if you should observe or experience a code of conduct violation on IRC or the hashtag, please contact the community support volunteers via Slack, email, or the anonymous reporting form.
                           </p>
 
-                          {% assign online_officers = site.data.duty-officers | where:"online","true" %}
-                          {% for officer in online_officers %}
+                          {% assign online_volunteers = site.data.community-support | where:"online","true" %}
+                          {% for volunteer in online_volunteers %}
                             <div class="col-4">
-                              <h4 class="speaker-name">{{ officer.name }}</h4>
-                              <p>Slack: {{ officer.slack_handle }}</p>
+                                <div class="text-center">
+                                    <img class="clip-circle-lg" src="/{{ volunteer.img }}" alt="{{ volunteer.name }}">
+                                    <h4 class="speaker-name">{{ volunteer.name }}</h4>
+                                    <div class="speaker-mini"><p>Slack: {{ volunteer.slack_handle }}</p></div>
+                                </div>
                             </div>
                           {% endfor %}
                         </div>
@@ -227,25 +235,29 @@ active: 'Conduct & Safety'
                 </div>
            </div>
 
-            {% if site.data.duty-officer-schedule %}
-            <div class="row">
+            {% if site.data.community-support-schedule %}
+            <div class="row csv-schedule">
                 <div class="col-12">
-                    <h2 id="schedule">Community Support Volunteer Schedule</h2>
-
-                    <h3>On-Site</h3>
-                    {% for session in site.data.duty-officer-schedule %}
-                        <h4>{{ session.title }}</h4>
+                    <h2 id="schedule">Community Support Volunteer Schedule
+                        {% if site.data.conf.local-conference %}
+                            - On-Site
+                        {% else %}
+                            - Online
+                        {% endif %}
+                    </h2>
+                    {% for session in site.data.community-support-schedule %}
+                        <h3>{{ session.day }} — {{ session.time }}</h3>
                         <div class="row">
                             <div class="col-12 keynote-sequence sequence">
                                 {% if session.all-hands %}
                                     <p><strong>All community support volunteers attending the event &mdash; look for the black & white striped lanyards!</strong></p>
                                 {% else %}
-                                    {% for officerId in session.officers %}
-                                    {% assign officer = site.data.duty-officers[officerId] %}
+                                    {% for volunteerId in session.volunteers %}
+                                    {% assign volunteer = site.data.community-support[volunteerId] %}
                                     <div class="speaker-box text-center">
                                         <div class="speaker-box-inner">
-                                            <img class="clip-circle-lg" src="/{{ officer.img }}" alt="{{ officer.name }}">
-                                            <h5 class="speaker-name">{{ officer.name }}</h5>
+                                            <img class="clip-circle-lg" src="/{{ volunteer.img }}" alt="{{ volunteer.name }}">
+                                            <h4 class="speaker-name">{{ volunteer.name }}</h4>
                                         </div>
                                     </div>
                                     {% endfor %}
@@ -253,15 +265,17 @@ active: 'Conduct & Safety'
                             </div>
                         </div>
                     {% endfor %}
-                       <h3>Online</h3>
-                    {% for period in site.data.online-duty-officer-schedule %}
-                       {% assign officer = site.data.duty-officers[period.officer] %}
-                       <div class="row">
-                          <div class="col-2">{{ period.day }}</div>
-                          <div class="col-3">{{ period.interval }}</div>
-                          <div class="col-4">{{ officer.name }} ({{ officer.slack_handle }})</div>
-                       </div>
-                    {% endfor %}
+                    {% if site.data.conf.local-conference %}
+                        <h3>Online</h3>
+                        {% for period in site.data.online-community-support-schedule %}
+                           {% assign officer = site.data.community-support[period.officer] %}
+                           <div class="row">
+                              <div class="col-2">{{ period.day }}</div>
+                              <div class="col-3">{{ period.interval }}</div>
+                              <div class="col-4">{{ officer.name }} ({{ officer.slack_handle }})</div>
+                           </div>
+                        {% endfor %}
+                    {% endif %}
                 </div>
             </div>
             {% else %}

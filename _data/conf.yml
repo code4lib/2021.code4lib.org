@@ -93,8 +93,8 @@ lpc-contact-email: 'code4liblpc@gmail.com'
 # accessibility-email: 'code4lib.accessibility@gmail.com'
 accessibility-email: 'code4libaccessibility@googlegroups.com'
 # when empty, community support volunteers page will use main-conf-email
-duty-officer-email: 'c4lcommunitysupport@googlegroups.com'
-duty-officer-phone: ''
+community-support-email: 'c4lcommunitysupport@googlegroups.com'
+community-support-phone: '510-423-3356'
 anonymous-form: 'https://css4csv.clir.org/anonymous-incident-report-form/'
 
 ###################
@@ -120,7 +120,7 @@ slides:
 
 slide-template:
   url: '/assets/C4L2021-template.pptx'
-  
+
 closed-captioning:
   url: 'https://2021archive.1capapp.com/event/cod4lib/'
   show: false
