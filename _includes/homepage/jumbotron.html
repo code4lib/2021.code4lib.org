@@ -23,7 +23,7 @@
                 <div id="conferenceActions">
                     {% if site.data.conf.livestream.show %}
                         <a class="btn btn-lg jumbotron-btn" href="{{ site.data.conf.livestream.url }}">
-                            Livestream {% if site.data.conf.homepage-display == 'post' %} Archive{% endif %}
+                            {{ site.data.conf.livestream.button-label }} {% if site.data.conf.homepage-display == 'post' %} Archive{% endif %}
                         </a>
                     {% endif %}
                     {% if site.data.conf.closed-captioning.show %}
