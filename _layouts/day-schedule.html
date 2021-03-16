@@ -4,7 +4,10 @@
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <h1>{{ page.title }}</h1>
+            <h1>{% assign day = page.day | slice: -1 %}
+                {% assign index = day | plus: 0 | minus: 1 %}
+                {{ page.title }} - {{site.data.conf.days[index].date}}
+            </h1>
             {% if site.data.conf.have-schedule %}
                 {% include schedule_nav.html param=page.day %}
                 {{ content }}
