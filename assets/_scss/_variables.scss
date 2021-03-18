@@ -26,6 +26,7 @@ $btn-bg-color-mid: $honey-yellow;
 $btn-color-mid: #000;
 $btn-border-color-mid: #000;
 $btn-border-hover: $honey-yellow-lighter;
+$honey-yellow-darker: darken($honey-yellow, 10%);
 
 // Random Utils
 $transparent: transparent !important;

@@ -29,7 +29,7 @@ title: Color Test Page
     <p>Customized buttons here <button class="btn ct-btn-middle">button middle</button> <button type="button" class="btn ct-btn-outline-middle">middle outline</button></p>
     <p>Customized buttons here <button class="btn ct-btn-dark">button dark</button> <button type="button" class="btn ct-btn-outline-dark">middle dark</button></p>
 </div>
-
+``
 ---
 
 <div class="row">
