@@ -74,3 +74,11 @@ p {
   margin: 0;
   padding: 0;
 }
+
+// Contrast Fix for 2021 "dark mode"
+.btn-warning {
+    color: $gray-900;
+    &:hover {
+        color: $black !important;
+    }
+}
