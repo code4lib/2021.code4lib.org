@@ -75,10 +75,12 @@ p {
   padding: 0;
 }
 
-// Contrast Fix for 2021 "dark mode"
-.btn-warning {
-    color: $gray-900;
+.ct-btn-light{
+    background-color: $honey-yellow;
+    color: $black;
     &:hover {
-        color: $black !important;
+        background-color: transparent;
+        color: $honey-yellow-lighter !important;
+        border-color: $honey-yellow-darker;
     }
 }
