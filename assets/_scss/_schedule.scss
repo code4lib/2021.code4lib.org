@@ -17,7 +17,7 @@
   font-size: 1.75em;
 }
 
-.sched-well a {
+.sched-well a:not(.ct-btn-light) {
   //@include link-styles;
   color: #EE44E2 !important;
 
@@ -29,17 +29,17 @@
   }
 }
 
-.sched-well a.btn {
-  background-color: $btn-bg-color-mid;
-  color: $btn-color-mid !important;
-  border-color: $btn-border-color-mid;
-  border: 1px solid;
-  text-decoration: none;
-    &:hover {
-        border: 1px solid $btn-border-hover;
-        //outline-offset: -2px;
-    }
-}
+// .sched-well a.btn {
+//   background-color: $btn-bg-color-mid;
+//   color: $btn-color-mid !important;
+//   border-color: $btn-border-color-mid;
+//   border: 1px solid;
+//   text-decoration: none;
+//     &:hover {
+//         border: 1px solid $btn-border-hover;
+//         //outline-offset: -2px;
+//     }
+// }
 
 .sched-well p {
   font-size: .9em;
