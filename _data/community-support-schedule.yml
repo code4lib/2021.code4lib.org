@@ -10,12 +10,6 @@
     - graham
     - friesen
 
-- day: Monday
-  time: Community Gathering
-  volunteers:
-    - fox
-    - lynch
-
 - day: Tuesday
   time: 12PM - 2PM ET
   volunteers:
@@ -58,14 +52,20 @@
     - fox
     - mesco
 
+- day: Thursday
+  time: Trivia Night
+  volunteers:
+    - giarlo
+    - lynch
+
 - day: Friday
   time: Morning Postconferences
   volunteers:
-    - giarlo
+    - phetteplace
     - mesco
 
 - day: Friday
   time: Afternoon Postconferences
   volunteers:
-    - phetteplace
     - kwasigroch
+    - slaughter
