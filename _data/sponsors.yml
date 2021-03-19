@@ -66,3 +66,28 @@
   link: https://libraries.mit.edu/
   level: silver
   annotation: 'Closed Captioning & Post-Conference Video Production'
+
+- name: Disability, Mental Health, and Accessibility in Libraries
+  img: /assets/img/sponsors/DMHALibraries.png
+  link:
+  level: bronze
+
+- name: Carnegie Mellon University Libraries
+  img: /assets/img/sponsors/CMU.png
+  link: https://www.library.cmu.edu/
+  level: supporter
+
+- name: Index Data
+  img: /assets/img/sponsors/IndexData.png
+  link: https://www.indexdata.com/
+  level: bronze
+
+- name: Samvera
+  img: /assets/img/sponsors/Samvera.png
+  link: https://samvera.org/
+  level: contributor
+
+- name: VALE - Virtual Academic Library Environment of New Jersey
+  img: /assets/img/sponsors/VALE.png
+  link: https://vale.njedge.net/
+  level: supporter
