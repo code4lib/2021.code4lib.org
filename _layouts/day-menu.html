@@ -2,6 +2,7 @@
 {% include search_results.html %}
 
 {% assign menu = site.data[page.menu] %}
+<div id="main">{% comment %} #main element needed for skip-menu link but we can't add it inside the loop {% endcomment %}</div>
 {% for meal in menu %}
 <section>
     <div class="container">
