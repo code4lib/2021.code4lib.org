@@ -34,7 +34,7 @@
             {% for talk in talks  %}
                 {% for speaker_id in talk.speakers %}
                     {% if speaker_id == speaker.id %}
-                    <p class="speaker-session">Talk: <a href="{{ talk.url }}">{{ talk.title }}</a></p>
+                    <p class="speaker-session">Talk: <a href="{{ talk.url }}" tabindex="-1">{{ talk.title }}</a></p>
                     {% endif %}
                 {% endfor %}
             {% endfor %}
