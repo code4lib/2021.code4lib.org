@@ -261,7 +261,7 @@ game-night:
     description: 'Play games? Come join your fellow code4libers in a few board or card games!'
     event-url: ''
     event-url-button-text: ''
-    sign-up-url: 'https://docs.google.com/document/d/1o3RIpQcswaxqRdL4brkkrbOKaLPgwj2HBBwlR_w0gI4/edit?usp=sharing'
+    sign-up-url: ''
     sign-up-button-text: 'Sign Up for Game Night'
 
 karaoke-night:
