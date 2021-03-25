@@ -271,7 +271,7 @@ karaoke-night:
     description: 'We also have Karaoke night for those who would like to share your passions in singing, or just hangout with friendly folks.'
     event-url: ''
     event-url-button-text: ''
-    sign-up-url: 'https://forms.gle/PaXu39TiWYL5PMhJ6'
+    sign-up-url: ''
     sign-up-button-text: 'Sign Up for a Song!'
 
 trivia-night:

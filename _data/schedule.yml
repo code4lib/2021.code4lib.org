@@ -75,7 +75,7 @@
   day1: true
   time: 14:20-14:55
   description: Are you interested in collaborating during the conference? Pitch an idea for a Breakout Session!
-  link: https://www.signupgenius.com/go/BreakoutMon
+  link:
   button_label: Sign Up
 
 - timeImg: icosahedron.svg
@@ -83,7 +83,7 @@
   day3: true
   time: 14:20-14:55
   description: Are you interested in collaborating during the conference? Pitch an idea for a Breakout Session!
-  link: https://www.signupgenius.com/go/BreakoutWed
+  link:
   button_label: Sign Up
 
 
@@ -93,7 +93,7 @@
   day2: true
   time: 12:05-12:55
   description: Do you have an idea, a project, or a practice that you would like to share with the community?
-  link: https://www.signupgenius.com/go/LTTue
+  link:
   button_label: Sign Up
 
 - timeImg: icosahedron.svg
@@ -101,7 +101,7 @@
   day3: true
   time: 15:00-15:55
   description: Do you have an idea, a project, or a practice that you would like to share with the community?
-  link: https://www.signupgenius.com/go/LTWed
+  link:
   button_label: Sign Up
 
 - timeImg: icosahedron.svg
