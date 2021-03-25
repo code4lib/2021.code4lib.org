@@ -110,11 +110,11 @@ homepage-display: peri
 
 livestream:
   show: true
-  button-label: "Registered? Join Live"
+  button-label: "Join Workshop"
   url: 'https://whova.com/portal/webapp/codel_202103/'
 
 slides:
-  show: false
+  show: true
   url: 'https://osf.io/meetings/c4l21/'
   contact: ''
   email: ''

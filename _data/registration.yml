@@ -24,7 +24,7 @@ conference:
   end-date: 2021-03-12
   cancellation-date:
   # "open" means people can register
-  open: true
+  open: false
   cost: "$49"
   late-cost: "$59"
   workshop-half-day-cost: ""
