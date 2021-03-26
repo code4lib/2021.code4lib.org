@@ -281,7 +281,7 @@ trivia-night:
     description: 'If you miss the good old pub trivia days, come join us as we compete for bragging rights at Trivia Night hosted by DC-based District Trivia!'
     event-url: ''
     event-url-button-text: ''
-    sign-up-url: 'https://us02web.zoom.us/meeting/register/tZAtd-yhqj8iHNDYxfasXHQZpQ0MZStZ_O-0'
+    sign-up-url: ''
     sign-up-button-text: 'Sign Up! Registration Limited'
 
 newcomer-dinner:
