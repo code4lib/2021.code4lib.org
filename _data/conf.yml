@@ -106,15 +106,15 @@ anonymous-form: 'https://css4csv.clir.org/anonymous-incident-report-form/'
 # - post:   for after the conference is over (TODO: we never made this template!)
 #
 ####################
-homepage-display: peri
+homepage-display: post
 
 livestream:
-  show: true
+  show: false
   button-label: "Join Workshop"
   url: 'https://whova.com/portal/webapp/codel_202103/'
 
 slides:
-  show: true
+  show: false
   url: 'https://osf.io/meetings/c4l21/'
   contact: ''
   email: ''
